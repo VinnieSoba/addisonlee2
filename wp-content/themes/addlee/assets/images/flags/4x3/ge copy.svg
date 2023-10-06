@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="22 180.9 640 480"
+	 style="enable-background:new 22 180.9 640 480;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#FF0000;}
+</style>
+<g>
+	<rect id="rect3009" x="-42.6" y="132.4" class="st0" width="769.2" height="576.9"/>
+	<g>
+		<rect id="rect13" x="-19.6" y="180" class="st0" width="723.2" height="482.1"/>
+		<path id="path15" class="st1" d="M293.8,180v192.9H-19.6v96.4h313.4v192.9h96.4V469.2h313.4v-96.4H390.2V180L293.8,180L293.8,180z
+			"/>
+		<g>
+			<g id="smallcross">
+				<g>
+					<defs>
+						<path id="SVGID_1_" d="M-127,525.8c138.5,0,250.7-112.2,250.7-250.7S11.5,24.3-127,24.3h525.5
+							c-138.5,0-250.7,112.2-250.7,250.7s112.2,250.7,250.7,250.7H-127z"/>
+					</defs>
+					<clipPath id="SVGID_2_">
+						<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+					</clipPath>
+				</g>
+			</g>
+			<g>
+				<g id="smallcross_1_">
+					<g>
+						<defs>
+							<path id="SVGID_3_" d="M285.5,817.7c138.5,0,250.7-112.2,250.7-250.7S423.9,316.3,285.5,316.3H811
+								c-138.5,0-250.7,112.2-250.7,250.7S672.5,817.7,811,817.7H285.5z"/>
+						</defs>
+						<clipPath id="SVGID_4_">
+							<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+						</clipPath>
+					</g>
+					<g id="use19" transform="matrix(.66855 0 0 .66855 163.86 120.53)">
+						<g>
+							<defs>
+								<path id="SVGID_5_" d="M297.5,304.2c0,138.5,112.2,250.7,250.7,250.7s250.7-112.2,250.7-250.7v525.5
+									c0-138.5-112.2-250.7-250.7-250.7S297.5,691.3,297.5,829.8V304.2z"/>
+							</defs>
+							<clipPath id="SVGID_6_">
+								<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+							</clipPath>
+						</g>
+					</g>
+				</g>
+				<g id="flag">
+					<g id="smallcross_2_">
+						<g>
+							<defs>
+								<path id="SVGID_7_" d="M285.5,525.8c138.5,0,250.7-112.2,250.7-250.7S423.9,24.3,285.5,24.3H811
+									c-138.5,0-250.7,112.2-250.7,250.7S672.5,525.8,811,525.8H285.5z"/>
+							</defs>
+							<clipPath id="SVGID_8_">
+								<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+							</clipPath>
+						</g>
+						<g id="use21" transform="matrix(.66855 0 0 .66855 163.86 39.566)">
+							<g>
+								<defs>
+									<path id="SVGID_9_" d="M548.2,263c138.5,0,250.7-112.2,250.7-250.7v525.5c0-138.5-112.2-250.7-250.7-250.7
+										S297.5,399.4,297.5,537.8V12.3"/>
+								</defs>
+								<clipPath id="SVGID_10_">
+									<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+								</clipPath>
+							</g>
+						</g>
+					</g>
+					<g id="g3001">
+						<g id="smallcross_3_">
+							<g>
+								<defs>
+									<path id="SVGID_11_" d="M-127,817.7c138.5,0,250.7-112.2,250.7-250.7S11.5,316.3-127,316.3h525.5
+										c-138.5,0-250.7,112.2-250.7,250.7s112.2,250.7,250.7,250.7H-127z"/>
+								</defs>
+								<clipPath id="SVGID_12_">
+									<use xlink:href="#SVGID_11_"  style="overflow:visible;"/>
+								</clipPath>
+							</g>
+							<g id="use23" transform="matrix(.66855 0 0 .66855 49.472 120.53)">
+								<g>
+									<defs>
+										<path id="SVGID_13_" d="M-115,829.8V304.2C-115,442.7-2.7,555,135.8,555s250.7-112.2,250.7-250.7v525.5"/>
+									</defs>
+									<clipPath id="SVGID_14_">
+										<use xlink:href="#SVGID_13_"  style="overflow:visible;"/>
+									</clipPath>
+								</g>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

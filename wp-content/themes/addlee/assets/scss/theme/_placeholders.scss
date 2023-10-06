@@ -1,0 +1,332 @@
+/*********************
+REUSABLE CLASSES
+*********************/
+
+/* CTAs, Buttons */
+%cta {
+    @extend %content-padding-small;
+    background: $yellow-brand;
+    border: 2px solid transparent;
+    color: $gray-dark;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    font-family: $font-family-sans-serif;
+    letter-spacing: 1px;
+    margin: 2em auto;
+    max-width: 350px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+    min-width: 300px;
+    overflow: hidden;
+    position: relative;
+    &:hover {
+        background: $yellow-brand-hover;
+        text-decoration: none;
+    }
+    &.inverse {
+        background: $gray-dark;
+        color: $yellow-brand;
+        &:hover {
+            background: $gray-dark-mid;
+            text-decoration: none;
+        }
+        .ink {
+            background:$gray-dark;
+        }
+    }
+    &.mini {
+        max-width: 200px;
+    }
+}
+%label {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: $yellow-gold;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+}
+%navbar-link {
+    color: #969696;
+    display: block;
+    padding:  25px 0 25px 0;
+    line-height: 15px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @media only screen and (min-width: 992px) {
+        padding:  34px 0 31px 0;
+    }
+}
+
+/* Width / Alignment */
+%full-width {
+    width: 100%;
+}
+%container-width {
+		width: 90%;
+		margin: 0 auto;
+}
+%center {
+    text-align: center;
+}
+%left {
+    text-align: left;
+}
+%right {
+    text-align: right;
+}
+%two-col {
+    -webkit-columns: 2 300px;
+    -moz-columns: 2 300px;
+    columns: 2 300px;
+    -webkit-column-rule: 1px outset $gray-border;
+    -moz-column-rule: 1px outset $gray-border;
+    column-rule: 1px outset $gray-border;
+    -webkit-column-gap: 3em;
+    -mox-column-gap: 3em;
+    column-gap: 3em;
+}
+%three-col {
+    -webkit-columns: 3 200px;
+    -moz-columns: 3 200px;
+    columns: 3 200px;
+    -webkit-column-gap: 1.5em;
+    -moz-column-gap: 1.5em;
+    column-gap: 1.5em;
+    margin-bottom: 3rem;
+}
+%inline {
+    display: inline-block;
+}
+
+/* Font */
+%capitalize {
+    text-transform: capitalize;
+}
+%full-width {
+    width: 100%;
+}
+%lowercase {
+    text-transform: lowercase;
+}
+%uppercase {
+    text-transform: uppercase;
+}
+%no-bullet {
+    list-style-type: none;
+}
+%para-light {
+    font-weight: $font-weight-light;
+}
+%terms {
+    @extend %text-small;
+    a {
+        color: $gold;
+    }
+}
+%text-small {
+    font-size: 0.9rem;
+}
+
+/* Margin / Padding */
+%no-gutter {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+/* Margin / Padding */
+%tiny-gutter {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+}
+%content-margin-standard {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+%content-padding-standard {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+%content-padding-standard-all {
+    padding: 3.5rem;
+}
+%content-padding-medium {
+    padding: 2em;
+}
+%content-padding-medium-top {
+    padding: 2em 0;
+}
+%content-padding-small {
+    padding: 1em;
+}
+%content-padding-small-top {
+    padding: 1em 0;
+}
+%content-margin-small-top {
+    margin-top: 1em;
+}
+%content-padding-tiny {
+    padding: 0.5em;
+}
+%content-padding-tiny-top {
+    padding: 0.5em 0;
+}
+%content-padding-tiny-sides {
+    padding: 0 0.5em;
+}
+%unpadded {
+    padding: 0;
+}
+%container-padding-large {
+    padding: 6em 0 2em;
+}
+
+/* Background */
+%bg-beige {
+    background: $beige-light;
+}
+%bg-white {
+    background: $white;
+}
+%bg-gray, %grey {
+    background: $gray-light;
+}
+%bg-gray-dark {
+    background: $footer-gray-top;
+}
+%bg-light-grey {
+	background: $grey-light-section;
+}
+%bg-black {
+		background: $rich-black;
+}
+%section-gray-darkest {
+    background: $gray-dark;
+    color: $white;
+    h2,
+    h3,
+    h4 {
+        color: $white
+    }
+}
+%section-black {
+    background: $rich-black;
+    color: $white;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		a:not(.cta) {
+			color: $white;
+		}
+}
+%box-shadow {
+    -webkit-box-shadow: 0;
+    -moz-box-shadow: 0;
+    box-shadow: 0px;
+}
+
+/* Borders */
+%border-top-yellow {
+    border-top: 4px solid $yellow-brand;
+}
+%border-yellow {
+    border: 2px solid $yellow-brand;
+}
+%border-gray {
+    border: 1px solid $gray-light;
+}
+%separator {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: $gray-border;
+    margin: 1rem 0;
+}
+%border-text-underline {
+		text-decoration: none;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+				&:hover {
+						border-bottom: 1px solid $rich-black;
+				}
+}
+
+// Border Animations
+%panel-border {
+    display: block;
+    position: relative;
+    .border {
+        position: absolute;
+        background: transparent;
+        width: 0px;
+        height: 0px;
+        &.tl, &.tr, &.bl, &.br {
+            -webkit-animation-duration: .3s;
+            -webkit-animation-iteration-count:1;
+            -webkit-animation-timing-function: ease-in-out;
+            -webkit-animation-fill-mode: forwards;
+        }
+        &.sl, &.sr {
+            -webkit-animation-duration: .4s;
+            -webkit-animation-iteration-count:1;
+            -webkit-animation-timing-function: ease-in-out;
+            -webkit-animation-fill-mode: forwards;
+        }
+        &.tr {
+            left: 50%;
+            top: 0;
+            height: 2px;
+            width: 50%;
+        }
+        &.sr {
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 100%;
+        }
+        &.br  {
+            right: 0%;
+            bottom: 0;
+            height: 2px;
+            width: 50%;
+        }
+        &.tl {
+            right: 50%;
+            top: 0;
+            height: 2px;
+            width: 50%;
+        }
+        &.sl {
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+        }
+        &.bl {
+            left: 0%;
+            bottom: 0;
+            height: 2px;
+            width: 50%;
+        }
+    }
+}
+
+// Text
+%center-text {
+    text-align: center !important;
+}

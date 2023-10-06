@@ -1,0 +1,24 @@
+/**Breadcrumb**/
+
+#breadcrumbs{
+      background-image: linear-gradient(to left, rgba(95,95,95,0),rgba(95,95,95,1));
+    position: absolute;
+    bottom: 0px;
+    padding: 6px 6px 6px 20px;
+  text-transform: uppercase; 
+  font-size:90%;
+}
+#breadcrumbs a{
+  color:#fff;
+}
+.home #breadcrumbs{
+  display:none;
+}
+@media only screen and (max-width: 812px) {
+  #breadcrumbs{
+    height: 32px;
+    top: 0px!important;
+    font-size: 9px;
+    padding-top: 5px;
+  }
+}

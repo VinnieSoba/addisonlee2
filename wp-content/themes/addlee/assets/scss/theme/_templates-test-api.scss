@@ -1,0 +1,14 @@
+.test-application {
+    height: 200px;
+    width: 100%;
+    background-color: $brand-danger;
+   
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+    h1 {
+        color: $white;
+    }
+}

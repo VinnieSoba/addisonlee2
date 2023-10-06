@@ -1,0 +1,169 @@
+/*********************
+FOOTER STYLES
+*********************/
+
+#footer-cta {
+    display: none;
+}
+
+.page-footer {
+    .footer-section {
+        @extend %content-padding-small;
+    }
+    #upper-footer {
+        background-color: $footer-gray-top;
+    }
+    #lower-footer {
+        @extend %center;
+        background-color: $footer-gray-middle;
+        .global-links {
+            text-align: left;
+            li {
+                display: inline;
+                width: 100%;
+                max-width: 12.5%;
+                clear: none;
+            }
+        }
+    }
+    .fm-title {
+        @extend %content-padding-small-top;
+    }
+    #bottom-footer {
+        background-color: $footer-gray-bottom;
+        line-height: 1.25rem;
+        img {
+            height: 40px;
+            margin: 1em auto;
+        }
+        #footer-social {
+            margin-top: 15px;
+            float: right;
+            text-align: right;
+            a {
+                font-size: 1.5rem;
+                padding: 5px;
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                color: $gray-light;
+                &:hover {
+                    text-decoration: none;
+                    color: $gray-light;
+                }
+            }
+        }
+        #footer-logo {
+            float: right;
+            text-align: center;
+        }
+        #footer-terms {
+            float: left;
+            margin-top: 20px;
+            p.copyright {
+                margin: 0;
+                font-size: 0.75rem;
+            }
+            li {
+                float: none;
+                font-size: 0.75rem;
+                display: inline;
+                margin-right: 10px;
+                a {
+                    color: $gray-light;
+                }
+            }
+        }
+    }
+    .fm-menu {
+        ul {
+            @extend %no-bullet;
+            li {
+                display: block;
+                clear: both;
+                a {
+                    color: $gray-light;
+                    font-size: 0.8rem;
+                    padding-right: 1em;
+                }
+            }
+        }
+        &.global {
+            ul {
+                li {
+                    display: inline-block;
+                    clear: none;
+                    text-align: left;
+                }
+            }
+        }
+        &.open {
+            display: block;
+            transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+        }
+    }
+    bottom: 0;
+    clear: both;
+    color: $gray-light;
+    left: 0;
+    width: 100%;
+    a {
+        color: $gray-light;
+    }
+}
+
+/*--------
+RESPONSIVE 
+---------*/
+
+@media only screen and (min-width: 768px) {
+    .page-footer {
+        .fm-title {
+            font-weight: 500;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .page-footer {
+        min-width: 300px;
+        #upper-footer {
+            background-color: $footer-gray-top;
+            .fm-block {
+                &:nth-child(3n) {
+                    clear: left;
+                }
+            }
+        }
+        #bottom-footer {
+            text-align: center;
+            #footer-social {
+                text-align: center;
+            }
+        }
+        .fm-title {
+            cursor: pointer;
+            &:after {
+                content: '';
+                position: absolute;
+                margin: 10px;
+                border-right: 4px solid transparent;
+                border-top: 4px solid white;
+                border-bottom: 0;
+                border-left: 4px solid transparent;
+            }
+            &.open {
+                &:after {
+                    border-right: 4px solid transparent;
+                    border-bottom: 4px solid $gray-light;
+                    border-top: 0;
+                    border-left: 4px solid transparent;
+                }
+            }
+        }
+        .fm-menu {
+            display: none;
+        }
+    }
+}

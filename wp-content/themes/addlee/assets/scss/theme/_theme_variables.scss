@@ -1,0 +1,320 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2016 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Insigne Design
+ * License URL: https://www.fontspring.com/licenses/insigne/webfont
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'Steagal';
+    src: url('/wp-content/themes/addlee/assets/fonts/steagal-thin/SteagalThin-webfont.eot');
+    src: url('/wp-content/themes/addlee/assets/fonts/steagal-thin/SteagalThin-webfont.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/addlee/assets/fonts/steagal-thin/SteagalThin-webfont.woff2') format('woff2'), url('/wp-content/themes/addlee/assets/fonts/steagal-thin/SteagalThin-webfont.woff') format('woff'), url('/wp-content/themes/addlee/assets/fonts/steagal-thin/SteagalThin-webfont.ttf') format('truetype'), url('/wp-content/themes/addlee/assets/fonts/steagal-thin/SteagalThin-webfont.svg#steagalthin') format('svg');
+    font-weight: 200;
+    font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steagal';
+    src: url('/wp-content/themes/addlee/assets/fonts/steagal-light/SteagalLight-webfont.eot');
+    src: url('/wp-content/themes/addlee/assets/fonts/steagal-light/SteagalLight-webfont.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/addlee/assets/fonts/steagal-light/SteagalLight-webfont.woff2') format('woff2'), url('/wp-content/themes/addlee/assets/fonts/steagal-light/SteagalLight-webfont.woff') format('woff'), url('/wp-content/themes/addlee/assets/fonts/steagal-light/SteagalLight-webfont.ttf') format('truetype'), url('/wp-content/themes/addlee/assets/fonts/steagal-light/SteagalLight-webfont.svg#steagallight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steagal';
+    src: url('/wp-content/themes/addlee/assets/fonts/steagal-regular/SteagalRegular-webfont.eot');
+    src: url('/wp-content/themes/addlee/assets/fonts/steagal-regular/SteagalRegular-webfont.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/addlee/assets/fonts/steagal-regular/SteagalRegular-webfont.woff2') format('woff2'), url('/wp-content/themes/addlee/assets/fonts/steagal-regular/SteagalRegular-webfont.woff') format('woff'), url('/wp-content/themes/addlee/assets/fonts/steagal-regular/SteagalRegular-webfont.ttf') format('truetype'), url('/wp-content/themes/addlee/assets/fonts/steagal-regular/SteagalRegular-webfont.svg#steagal_regularregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steagal';
+    src: url('/wp-content/themes/addlee/assets/fonts/steagal-medium/SteagalMedium-webfont.eot');
+    src: url('/wp-content/themes/addlee/assets/fonts/steagal-medium/SteagalMedium-webfont.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/addlee/assets/fonts/steagal-medium/SteagalMedium-webfont.woff2') format('woff2'), url('/wp-content/themes/addlee/assets/fonts/steagal-medium/SteagalMedium-webfont.woff') format('woff'), url('/wp-content/themes/addlee/assets/fonts/steagal-medium/SteagalMedium-webfont.ttf') format('truetype'), url('/wp-content/themes/addlee/assets/fonts/steagal-medium/SteagalMedium-webfont.svg#steagalmedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steagal';
+    src: url('/wp-content/themes/addlee/assets/fonts/steagal-bold/SteagalBold-webfont.eot');
+    src: url('/wp-content/themes/addlee/assets/fonts/steagal-bold/SteagalBold-webfont.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/addlee/assets/fonts/steagal-bold/SteagalBold-webfont.woff2') format('woff2'), url('/wp-content/themes/addlee/assets/fonts/steagal-bold/SteagalBold-webfont.woff') format('woff'), url('/wp-content/themes/addlee/assets/fonts/steagal-bold/SteagalBold-webfont.ttf') format('truetype'), url('/wp-content/themes/addlee/assets/fonts/steagal-bold/SteagalBold-webfont.svg#steagalbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+	font-display: swap;
+}
+
+// Color Variables
+$black: #363636;
+$white: #ffffff;
+$red: #e74c3c;
+$yellow-brand: #fedb00;
+$yellow-brand-hover: #ffec76;
+$yellow-bright: #ffd600;
+$beige-light: #f7f7ef;
+$beige: #eeebd8;
+$beige-dark: #c1ba97;
+$gold: #9c977a;
+$yellow-gold: #c1ba97;
+$privacy-links-blue: #005098;
+// Home page update 11/20
+$grey-light-section: #F6F6F6;
+$rich-black: #000000;
+$charcoal: #383A35;
+// Basics of a navbar
+$navbar-height: 60px;
+$navbar-margin-bottom: 0px;
+$navbar-border-radius: 0px;
+$navbar-inverse-bg: $white;
+$navbar-gray-sub-menu: #676862;
+$gray: #55595c !default;
+$gray-dark: #494a43;
+$gray-dark-mid: #61625d;
+$gray-light: #e8e7e2;
+$gray-lighter: #e8e7e2;
+$gray-lightest: #f8f8f8;
+$gray-border: #e6e5e5;
+$gray-border-dark: #d0d0c4;
+$footer-gray-top: #6d6e69;
+$footer-gray-middle: $gray-dark-mid;
+$footer-gray-bottom: #5b5c57;
+$brand-success: #5cb85c !default;
+$brand-info: #5bc0de !default;
+$brand-warning: #f0ad4e !default;
+$brand-danger: #d9534f !default;
+$body-font-weight: normal !default;
+$headings-font-family: "Steagal";
+$headings-font-weight: 400 !default;
+$headings-line-height: 1.1 !default;
+$headings-color: $gray-dark;
+$line-height: 1.5 !default;
+$abbr-border-color: $gray-lighter !default;
+$sprite-version: 1 0;
+// Options
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-flex: false !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: false !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+// Spacing
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+.next {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12.5px 0 12.5px 12px;
+    border-color: transparent transparent transparent #000000;
+}
+
+.prev {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12.5px 12px 12.5px 0;
+    border-color: transparent #000000 transparent transparent;
+}
+
+$spacer: 1rem !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+$spacers: ( 0: ( x: 0,
+y: 0),
+1: ( x: $spacer-x,
+y: $spacer-y),
+2: ( x: ($spacer-x * 1.5),
+y: ($spacer-y * 1.5)),
+3: ( x: ($spacer-x * 3),
+y: ($spacer-y * 3))) !default;
+$border-width: 1px !default;
+// Body
+//
+// Settings for the `<body>` element.
+$body-bg: $white !default;
+$body-color: $gray-dark !default;
+// Links
+//
+// Style anchor elements.
+$link-color: $gray-dark !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color,
+5%) !default;
+$link-hover-decoration: underline !default;
+// Grid breakpoints
+//
+// Define the minimum and maximum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+$grid-breakpoints: ( // Extra small screen / phone
+xs: 0, // Small screen / phone
+sm: 544px, // Medium screen / tablet
+md: 768px, // Large screen / desktop
+lg: 992px, // Extra large screen / wide desktop
+xl: 1200px) !default;
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+$container-max-widths: ( sm: 576px,
+md: 720px,
+lg: 940px,
+xl: 1140px) !default;
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+$grid-columns: 12 !default;
+$grid-gutter-width: 1.875rem !default; // 30px
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif: "Steagal",
+Arial,
+sans-serif !default;
+$font-family-serif: "Libre Baskerville",
+Georgia,
+"Times New Roman",
+Times,
+serif !default;
+$font-family-monospace: Menlo,
+Monaco,
+Consolas,
+"Courier New",
+monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+$font-family-strong: "Steagal",
+Arial,
+sans-serif !default;
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$font-size-root: 14px !default;
+$font-size-base: 1rem !default;
+$font-size-lg: 1.25rem !default;
+$font-size-sm: .875rem !default;
+$font-size-xs: .75rem !default;
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 1.8rem !default;
+$font-size-h3: 1.4rem !default;
+$font-size-h4: 1.2rem !default;
+$font-size-h5: 1.1rem !default;
+$font-size-h6: 1rem !default;
+$font-weight-thin: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+/*  Bootstrap Clearfix */
+
+
+/*  Tablet  */
+
+@media (min-width:767px) {
+    /* Column clear fix */
+    .col-lg-1:nth-child(12n+1),
+    .col-lg-2:nth-child(6n+1),
+    .col-lg-3:nth-child(4n+1),
+    .col-lg-4:nth-child(3n+1),
+    .col-lg-6:nth-child(2n+1),
+    .col-md-1:nth-child(12n+1),
+    .col-md-2:nth-child(6n+1),
+    .col-md-3:nth-child(4n+1),
+    .col-md-4:nth-child(3n+1),
+    .col-md-6:nth-child(2n+1) {
+        clear: left;
+    }
+    .col-sm-1:nth-child(12n+1),
+    .col-sm-2:nth-child(6n+1),
+    .col-sm-3:nth-child(4n+1),
+    .col-sm-4:nth-child(3n+1),
+    .col-sm-6:nth-child(2n+1) {
+        clear: none;
+    }
+}
+
+
+/*  Medium Desktop  */
+
+@media (min-width:992px) {
+    /* Column clear fix */
+    .col-lg-1:nth-child(12n+1),
+    .col-lg-2:nth-child(6n+1),
+    .col-lg-3:nth-child(4n+1),
+    .col-lg-4:nth-child(3n+1),
+    .col-lg-6:nth-child(2n+1),
+    .col-sm-1:nth-child(12n+1),
+    .col-sm-2:nth-child(6n+1),
+    .col-sm-3:nth-child(4n+1),
+    .col-sm-4:nth-child(3n+1),
+    .col-sm-6:nth-child(2n+1) {
+        clear: left;
+    }
+    .col-md-1:nth-child(12n+1),
+    .col-md-2:nth-child(6n+1),
+    .col-md-3:nth-child(4n+1),
+    .col-md-4:nth-child(3n+1),
+    .col-md-6:nth-child(2n+1) {
+        clear: none;
+    }
+}
+
+
+/*  Large Desktop  */
+
+@media (min-width:1200px) {
+    /* Column clear fix */
+    .col-md-1:nth-child(12n+1),
+    .col-md-2:nth-child(6n+1),
+    .col-md-3:nth-child(4n+1),
+    .col-md-4:nth-child(3n+1),
+    .col-md-6:nth-child(2n+1),
+    .col-sm-1:nth-child(12n+1),
+    .col-sm-2:nth-child(6n+1),
+    .col-sm-3:nth-child(4n+1),
+    .col-sm-4:nth-child(3n+1),
+    .col-sm-6:nth-child(2n+1) {
+        clear: left;
+    }
+    .col-lg-1:nth-child(12n+1),
+    .col-lg-2:nth-child(6n+1),
+    .col-lg-3:nth-child(4n+1),
+    .col-lg-4:nth-child(3n+1),
+    .col-lg-6:nth-child(2n+1) {
+        clear: none;
+    }
+}
+
+
+
+/*  vertical padding top and bottom */
+.py1 { padding-top: 1em; padding-bottom: 1em }
+.py2 { padding-top: 1em; padding-bottom: 2em }
+.py3 { padding-top: 3em; padding-bottom: 3em }
+.py4 { padding-top: 4em; padding-bottom: 4em }
+.py5 { padding-top: 5em; padding-bottom: 5em }
+.py6 { padding-top: 6em; padding-bottom: 6em }
+.py7 { padding-top: 7em; padding-bottom: 7em }
+.py8 { padding-top: 8em; padding-bottom: 8em }
+.py9 { padding-top: 9em; padding-bottom: 9em }

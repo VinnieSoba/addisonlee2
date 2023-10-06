@@ -1,0 +1,22 @@
+.navigation {
+     ul {
+        display: flex;
+        float: right;
+     }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: $black;
+        font-size: 20px;
+        text-decoration: none;
+        
+    }
+}
+
+
+
+
+

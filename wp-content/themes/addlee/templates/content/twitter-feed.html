@@ -1,0 +1,21 @@
+<div class="social-feed-element {{? !it.moderation_passed}}hidden{{?}}{{=it.social_network}}" dt-create="{{=it.dt_create}}" social-feed-id = "{{=it.id}}">
+    {{=it.attachment}}
+    <div class='content'>
+        <i class="icon-{{=it.social_network}}-2"></i>
+        <a class="social-img" href="{{=it.author_link}}" target="_blank">
+            <img class="media-object" src="{{=it.author_picture}}">
+            <span class="author-title">{{=it.author_name}}</span>
+            <span class="author-handle">{{=it.author_handle}}</span>
+        </a>
+        <div class="media-body">
+            <div class='text-wrapper'>
+                <p class="social-feed-text">{{=it.text}} <a href="{{=it.link}}" target="_blank" class="read-button">read more</a></p>
+                <span class="muted"> {{=it.time_ago}}</span> 
+                <p class="interact">
+                    <a href="https://twitter.com/intent/favorite?tweet_id={{=it.post_id}}" class="icon-favourite" target="_blank"></a><a href="https://twitter.com/intent/retweet?tweet_id={{=it.post_id}}" class="icon-retweet" target="_blank"></a><a href="https://twitter.com/intent/tweet?in_reply_to={{=it.post_id}}" class="icon-reply" target="_blank"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</div>

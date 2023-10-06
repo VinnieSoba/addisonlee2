@@ -1,0 +1,106 @@
+#app-banner {
+    display: none;
+}
+body:not(.showBanner) {
+    #page-navigation {
+        top:0 !important;
+        position: fixed !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    body.showBanner {
+        #page-navigation {
+            top: 80px;
+        }
+        #main {
+            padding-top: 145px;
+        }
+    }
+    #app-banner {
+        background: $gray-light;
+        position: absolute;
+        top: -80px;
+        left: 0;
+        width: 100%;
+        padding: 10px 5px 10px 10px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        height: 80px;
+        min-width: 300px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        a {
+            border: none;
+        }
+        &.showBanner {
+            top: 0;
+            display: block;
+        }
+        .icon-cancel {
+            font-size: 14px;
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 900;
+            border-bottom: none;
+        }
+        .app-icon {
+            position: relative;
+            left: 7px;
+            top: 5px;
+            display: block;
+            width: 50px;
+            height: 50px;
+            text-indent: -9999em;
+            margin: 0 10px 10px 0;
+            float: left;
+            background: url("../images/icons/apple-icon.png");
+            background-size: contain;
+        }
+        .banner-copy {
+            display: block;
+            text-decoration: none;
+            margin-bottom: 15px;
+            position: relative;
+            left: 9px;
+            right: 40px;
+            width: 100%;
+            max-width: 80%;
+            line-height: 17px;
+            padding: 5px 0;
+            span {
+                margin-bottom: 0;
+                font-weight: $font-weight-regular;
+                text-transform: uppercase;
+                line-height: 15px 12px;
+                margin-bottom: 0;
+            }
+        }
+        a.cta {
+            display: inline;
+            font-size: 14px;
+            float: right;
+            top: 26px;
+            text-decoration: none;
+            width: initial;
+            font-weight: 400;
+            max-width: 100px;
+            min-width: initial;
+            margin: 0 8px;
+            padding: 5px 15px;
+        }
+    }
+}

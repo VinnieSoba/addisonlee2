@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:tns="http://www.dnb.com/DNB_WebServices/Providers/OrderAndInvestigations/WorldBase_V3/wsp_WorldBase_V3" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="wsp_WorldBase_V3" targetNamespace="http://www.dnb.com/DNB_WebServices/Providers/OrderAndInvestigations/WorldBase_V3/wsp_WorldBase_V3">
+  <wsdl:types>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.dnb.com/DNB_WebServices/Providers/OrderAndInvestigations/WorldBase_V3/wsp_WorldBase_V3" xmlns:SOAP_ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://www.dnb.com/DNB_WebServices/Providers/OrderAndInvestigations/WorldBase_V3/wsp_WorldBase_V3">
+          
+          <xsd:complexType name="ws_WorldBase">
+            <xsd:sequence>
+              <xsd:element name="worldBaseRequest" nillable="true" type="tns:prodOrderRequest_2"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="prodOrderRequest_2">
+            <xsd:sequence>
+              <xsd:element name="UserId" type="xsd:string"/>
+              <xsd:element name="Password" type="xsd:string"/>
+              <xsd:element name="TRNUID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SRVRTID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="socCode" nillable="true" type="tns:socCode" minOccurs="0"/>
+              <xsd:element name="Orders" nillable="true" type="tns:Orders"/>
+              <xsd:element name="Immediate_Delivery" nillable="true" type="tns:Immediate_Delivery"/>
+              <xsd:element name="Investigation" nillable="true" type="tns:Investigation" minOccurs="0"/>
+              <xsd:element name="AdditionalFields" nillable="true" type="tns:ArrayOfAdditionalFields" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="socCode">
+            <xsd:sequence>
+              <xsd:element name="AppId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="AppVer" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="Orders">
+            <xsd:sequence>
+              <xsd:element name="User_Language" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DnB_DUNS_Number" nillable="true" type="xsd:string"/>
+              <xsd:element name="Country_Code" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Trade_Up_Indicator" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Product" type="xsd:string"/>
+              <xsd:element name="Product_Type" type="xsd:string"/>
+              <xsd:element name="Reason_Code" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="FileId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SBRI_Unmatched_AGN" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Char_Set_Override" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="Immediate_Delivery">
+            <xsd:sequence>
+              <xsd:element name="Mode" nillable="true" type="xsd:string"/>
+              <xsd:element name="Format" nillable="true" type="xsd:string"/>
+              <xsd:element name="Rpt_Language" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Ignore_Missing_Fields" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Email" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Email_Copy" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Not_From_Cache" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="Investigation">
+            <xsd:sequence>
+              <xsd:element name="InvestigationDelivery" nillable="true" type="tns:InvestigationDelivery" minOccurs="0"/>
+              <xsd:element name="NotificationDelivery" nillable="true" type="tns:NotificationDelivery" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="InvestigationDelivery">
+            <xsd:sequence>
+              <xsd:element name="Mode" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Format" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Rpt_Language" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Email" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Email_Copy" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Service" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Endorsement" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Cust_Request" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="NotificationDelivery">
+            <xsd:sequence>
+              <xsd:element name="Mode" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Format" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Rpt_Language" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Email" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Email_Copy" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Name" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Business_Num" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Business_Num_Type" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Phone" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Address_Line1" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Address_Line2" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Town" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="State_or_Province" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Postal_Code" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="AdditionalFields">
+            <xsd:sequence>
+              <xsd:element name="FieldName" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="FieldValue" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ArrayOfAdditionalFields"><xsd:sequence>
+			<xsd:element name="ArrayOfAdditionalFieldsItem" type="tns:AdditionalFields" maxOccurs="unbounded"/>
+		</xsd:sequence>
+
+          </xsd:complexType>
+          <xsd:complexType name="ws_WorldBaseResponse">
+            <xsd:sequence>
+              <xsd:element name="worldBaseResponse" nillable="true" type="tns:worldBaseProductsResponse"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="worldBaseProductsResponse">
+            <xsd:sequence>
+              <xsd:element name="DGX" nillable="true" type="tns:DGX"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="DGX">
+            <xsd:sequence>
+              <xsd:element name="SIGNONMSGSRSV1" nillable="true" type="tns:SIGNONMSGSRSV1"/>
+              <xsd:element name="CREDITMSGSRSV2" nillable="true" type="tns:CREDITMSGSRSV2" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="SIGNONMSGSRSV1">
+            <xsd:sequence>
+              <xsd:element name="SONRS" nillable="true" type="tns:SONRS"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="SONRS">
+            <xsd:sequence>
+              <xsd:element name="STATUS" nillable="true" type="tns:STATUS"/>
+              <xsd:element name="DTSERVER" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="LANGUAGE" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="STATUS">
+            <xsd:sequence>
+              <xsd:element name="CODE" nillable="true" type="xsd:string"/>
+              <xsd:element name="SEVERITY" nillable="true" type="xsd:string"/>
+              <xsd:element name="MESSAGE" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="CREDITMSGSRSV2">
+            <xsd:sequence>
+              <xsd:element name="PROFILERS" nillable="true" type="tns:PROFILERS" minOccurs="0"/>
+              <xsd:element name="DATATRNRS" nillable="true" type="tns:DATATRNRS" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="PROFILERS">
+            <xsd:sequence>
+              <xsd:element name="USR_ID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="USR_CUST" nillable="true" type="tns:USR_CUST" minOccurs="0"/>
+              <xsd:element name="USR" nillable="true" type="tns:USR" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="USR_CUST">
+            <xsd:sequence>
+              <xsd:element name="SUBR_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DUNS_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="ULT_DUNS_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="PNT_DUNS_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DEFU_DB_USR_ID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DEFU_DB_PSWD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_CO_NME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_ADR_LINE_1" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_ADR_LINE_2" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_ADR_LINE_3" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_CITY" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_RGN" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_POST_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_CTRY_ID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_FAX_AREA_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_FAX_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_FAX_EXTN" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_REQG_NME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_CTAC_NME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_CTAC_PH_AREA_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_CTAC_PH_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_CTAC_PH_EXTN" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DEFU_DELV_EMAIL" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="INTERNAL_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="EXPIRY_DT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="LAST_CTAC_DT" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="USR">
+            <xsd:sequence>
+              <xsd:element name="DB_USR_ID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DB_PSWD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DEFU_ENDR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DEFU_BILG_REF_1" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DEFU_BILG_REF_2" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="USR_NME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_NME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_ADR_LINE_1" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_ADR_LINE_2" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_ADR_LINE_3" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_CITY" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_RGN" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_POST_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_CTRY_ID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_EMAIL" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_FAX_AREA_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_FAX_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DELV_FAX_EXTN" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="CTAC_PH_AREA_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="CTAC_PH_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="CTAC_PH_EXTN" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="USR_STAT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="USR_LVL" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="EXPIRY_DT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="TEST_USER" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="LAST_CTAC_DT" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="DATATRNRS">
+            <xsd:sequence>
+              <xsd:element name="TRNUID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="STATUS" nillable="true" type="tns:STATUS2" minOccurs="0"/>
+              <xsd:element name="DATARS" nillable="true" type="tns:DATARS" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="STATUS2">
+            <xsd:sequence>
+              <xsd:element name="CODE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SEVERITY" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MESSAGE" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="DATARS">
+            <xsd:sequence>
+              <xsd:element name="SRVRTID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="GDA_ID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="CACHE_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="PRD_DT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="CTRY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_DUNS_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_PRIM_NME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_TRDG_STYL" nillable="true" type="tns:ArrayOfstring" minOccurs="0"/>
+              <xsd:element name="MKT_FRMR_PRIM_NME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_FRMR_DUNS_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_REGD_ADR_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_PHYS_ADR_LINE" nillable="true" type="tns:ArrayOfstring" minOccurs="0"/>
+              <xsd:element name="MKT_PHYS_POST_TOWN_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_PHYS_GEO_AREA_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_PHYS_CTRY_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_PHYS_CITY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_PHYS_CNTY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_PHYS_GEO_AREA_SHRT_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_PHYS_GEO_AREA_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_PHYS_CTRY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_PHYS_POST_TOWN_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_PHYS_CONT_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_BUS_REGN_NBR_TYPE_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_BUS_REGN_NBR_TYPE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_PHON_ACS_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_PHON_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_TELX_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_FAX_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_CTRL_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_MKTB_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_MLG_ADR_LINE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_MLG_POST_TOWN_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_MLG_CNTY_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_MLG_GEO_AREA_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_MLG_CTRY_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_MLG_CITY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_MLG_CNTY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_MLG_GEO_AREA_SHRT_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_MLG_GEO_AREA_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_MLG_CTRY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_MLG_POST_TOWN_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_MLG_CONT_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_CEO_NME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_CEO_TITL" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_EXEC_NME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_LOB" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_SIC8" nillable="true" type="tns:ArrayOfstring" minOccurs="0"/>
+              <xsd:element name="MKT_LCL_SIC" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_ACTV_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_STRT_YR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_ANN_SALE_VOL" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_ANN_SALE_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_ANN_SALE_VOL_US" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_NET_INCM" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_NET_INCM_US" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_NET_WRTH" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_NET_WRTH_US" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_CRCY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_EMPL_AT_PHYS_ADR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_EMPL_AT_PHYS_ADR_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_TOT_EMPL" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_TOT_EMPL_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_INCL_PRIN_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_IMPT_EXPT_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_LGL_FORM" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_OUT_BUS_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_BUS_STRUC_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_SUBS_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_NIX_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_STMT_DT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_RPT_DT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_HDQ_PNT_DUNS" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_HDQ_PNT_PRIM_NME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_HDQ_PNT_ADR_LINE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_HDQ_PNT_POST_TOWN_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_HDQ_PNT_GEO_AREA_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_HDQ_PNT_CTRY_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_HDQ_PNT_CITY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_HDQ_PNT_CNTY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_HDQ_PNT_GEO_AREA_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_HDQ_PNT_CTRY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_HDQ_PNT_POST_TOWN_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_HDQ_PNT_CONT_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_DOM_ULT_PNT_DUNS" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_DOM_ULT_PRIM_NME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_DOM_ULT_ADR_LINE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_DOM_ULT_POST_TOWN_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_DOM_ULT_GEO_AREA_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_DOM_ULT_CITY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_DOM_ULT_CNTY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_DOM_ULT_GEO_AREA_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_DOM_ULT_POST_TOWN_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_GLBL_ULT_PNT_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_GLBL_ULT_PNT_DUNS" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_GBL_ULT_PRIM_NME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_GBL_ULT_ADR_LINE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_GBL_ULT_POST_TOWN_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_GBL_ULT_GEO_AREA_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_GBL_ULT_CTRY_TEXT" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_GBL_ULT_CITY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_GBL_ULT_CNTY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_GBL_ULT_GEO_AREA_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_GLBL_ULT_CTRY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_GBL_ULT_POST_TOWN_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_GBL_ULT_CONT_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_GBL_FAM_MBR_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_DIAS_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_HIER_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MKT_FAM_UPD_DT" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ArrayOfstring"><xsd:sequence>
+			<xsd:element name="ArrayOfstringItem" type="xsd:string" maxOccurs="unbounded"/>
+		</xsd:sequence>
+
+          </xsd:complexType>
+        			<xsd:element name="ws_WorldBase" type="tns:ws_WorldBase"/>
+			<xsd:element name="ws_WorldBaseResponse" type="tns:ws_WorldBaseResponse"/>
+	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="wsp_WorldBase_V3_PortType_ws_WorldBase">
+    <wsdl:part name="parameters" element="tns:ws_WorldBase">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="wsp_WorldBase_V3_PortType_ws_WorldBaseResponse">
+    <wsdl:part name="parameters" element="tns:ws_WorldBaseResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="wsp_WorldBase_V3_PortType">
+    <wsdl:operation name="ws_WorldBase">
+      <wsdl:input message="tns:wsp_WorldBase_V3_PortType_ws_WorldBase">
+    </wsdl:input>
+      <wsdl:output message="tns:wsp_WorldBase_V3_PortType_ws_WorldBaseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DNB_WebServices_Providers_OrderAndInvestigations_WorldBase_V3_wsp_WorldBase_V3_Binder" type="tns:wsp_WorldBase_V3_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ws_WorldBase">
+      <soap:operation soapAction="DNB_WebServices_Providers_OrderAndInvestigations_WorldBase_V3_wsp_WorldBase_V3_Binder_ws_WorldBase" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsp_WorldBase_V3">
+    <wsdl:port name="DNB_WebServices_Providers_OrderAndInvestigations_WorldBase_V3_wsp_WorldBase_V3_Port" binding="tns:DNB_WebServices_Providers_OrderAndInvestigations_WorldBase_V3_wsp_WorldBase_V3_Binder">
+      <soap:address location="https://toolkit-api.dnb.com/ws/DNB_WebServices.Providers.OrderAndInvestigations.WorldBase_V3:wsp_WorldBase_V3"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,9 @@
+$enable-flex:               false;
+$enable-grid-classes:       true;
+
+@import '../../src/bootstrap/scss/_variables.scss';
+@import '../../src/bootstrap/scss/_mixins.scss';
+@import '../../src/bootstrap/scss/_normalize.scss';
+@import '../../src/bootstrap/scss/_reboot.scss';
+@import '../../src/bootstrap/scss/_grid.scss';
+@import '../../src/bootstrap/scss/_utilities.scss';

@@ -1,0 +1,94 @@
+/*------
+CLUBLEE
+----- */
+.page-template-template-clublee {
+    .page-content {
+        @extend %bg-beige;
+        .container-fluid {
+            &.blocks {
+                @extend %bg-gray, %center;
+                .info-blocks {
+                    @extend %content-padding-medium;
+                    .tile {
+                        padding: 0 2em;   
+                    }
+                    &:nth-child(2) {
+                        &:before {
+                            background: $gray-border-dark;
+                            content: '';
+                            display: block;
+                            height: 50%;
+                            left: 0;
+                            position: absolute;
+                            top: 25%;
+                            width: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Sidebar Couriers */
+#form-lookup {
+    form {
+        display: block; 
+        label {            
+            text-align: center;
+            color: $gray-dark;
+        }
+        input {
+            max-width: 300px;
+            display: inline;
+            float: none;
+            color: #000000;
+            &:-webkit-autofill {
+                -webkit-box-shadow: 0 0 0px 1000px white inset;
+            }
+        }
+        input, button {
+            @extend %content-padding-small;
+            width: 100%;
+            background-color: $white;
+            box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.03);
+            border: solid 0.5px #c3c3c3;
+            margin: 0.625rem auto;
+        }
+        button.cta.inverse {
+            color: $yellow-brand;
+            &:hover {
+                color: $white;
+            }
+        }
+       
+    }
+    .enquiries {
+        @extend %content-padding-medium;
+    }
+}
+/*------
+HOME PAGE
+----- */
+#business {
+    @extend %bg-beige;
+}
+
+/*--------
+RESPONSIVE 
+---------*/
+@media only screen and (max-width : 768px) {
+    .page-template-template-clublee {
+        .page-content {
+            .container-fluid {
+                &:nth-child(2) {
+                    .info-blocks {
+                        &:nth-child(2) {
+                            border-left: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

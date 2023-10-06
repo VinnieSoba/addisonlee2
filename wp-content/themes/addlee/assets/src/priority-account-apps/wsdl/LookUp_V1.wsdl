@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:tns="http://www.dnb.com/DNB_WebServices/Providers/LookUp_V1/wsp_LookUp_V1" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="wsp_LookUp_V1" targetNamespace="http://www.dnb.com/DNB_WebServices/Providers/LookUp_V1/wsp_LookUp_V1">
+  <wsdl:types>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.dnb.com/DNB_WebServices/Providers/LookUp_V1/wsp_LookUp_V1" xmlns:SOAP_ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://www.dnb.com/DNB_WebServices/Providers/LookUp_V1/wsp_LookUp_V1">
+          
+          <xsd:complexType name="ws_LookUp">
+            <xsd:sequence>
+              <xsd:element name="lookUpRequest" nillable="true" type="tns:lookUpRequest"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="lookUpRequest">
+            <xsd:sequence>
+              <xsd:element name="UserId" type="xsd:string"/>
+              <xsd:element name="Password" type="xsd:string"/>
+              <xsd:element name="TRNUID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="socCode" nillable="true" type="tns:socCode" minOccurs="0"/>
+              <xsd:element name="lookUpInput" type="tns:lookUpInput"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="socCode">
+            <xsd:sequence>
+              <xsd:element name="AppId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="AppVer" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="lookUpInput">
+            <xsd:sequence>
+              <xsd:element name="Name" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Street_Address" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Town" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="PostTown" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="State_or_Region" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Post_Code" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DnB_DUNS_Number" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Country_Code" nillable="true" type="xsd:string"/>
+              <xsd:element name="Business_Number" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Telephone_Number" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Reason_Code" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Match_Type" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Max_Responses" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="File_Id" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Search_Rule_Code" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ws_LookUpResponse">
+            <xsd:sequence>
+              <xsd:element name="lookupResponse" nillable="true" type="tns:lookUpResponse"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="lookUpResponse">
+            <xsd:sequence>
+              <xsd:element name="DGX" nillable="true" type="tns:DGX"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="DGX">
+            <xsd:sequence>
+              <xsd:element name="SIGNONMSGSRSV1" nillable="true" type="tns:SIGNONMSGSRSV1"/>
+              <xsd:element name="CREDITMSGSRSV2" nillable="true" type="tns:CREDITMSGSRSV2" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="SIGNONMSGSRSV1">
+            <xsd:sequence>
+              <xsd:element name="SONRS" nillable="true" type="tns:SONRS"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="SONRS">
+            <xsd:sequence>
+              <xsd:element name="STATUS" nillable="true" type="tns:STATUS"/>
+              <xsd:element name="DTSERVER" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="LANGUAGE" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="STATUS">
+            <xsd:sequence>
+              <xsd:element name="CODE" nillable="true" type="xsd:string"/>
+              <xsd:element name="SEVERITY" nillable="true" type="xsd:string"/>
+              <xsd:element name="MESSAGE" nillable="true" type="xsd:string"/>
+              <xsd:element name="TECH_MESSAGE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SUPPORT_MESSAGE" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="CREDITMSGSRSV2">
+            <xsd:sequence>
+              <xsd:element name="LOOKUPTRNRS" nillable="true" type="tns:LOOKUPTRNRS" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="LOOKUPTRNRS">
+            <xsd:sequence>
+              <xsd:element name="TRNUID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="STATUS" nillable="true" type="tns:STATUS2" minOccurs="0"/>
+              <xsd:element name="LOOKUPRS" nillable="true" type="tns:LOOKUPRS" minOccurs="0"/>
+              <xsd:element name="FRD_RISK_SCR" nillable="true" type="tns:FRD_RISK_SCR" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="STATUS2">
+            <xsd:sequence>
+              <xsd:element name="SEVERITY" nillable="true" type="xsd:string"/>
+              <xsd:element name="CODE" nillable="true" type="xsd:string"/>
+              <xsd:element name="MESSAGE" nillable="true" type="xsd:string"/>
+              <xsd:element name="TECH_MESSAGE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SUPPORT_MESSAGE" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="LOOKUPRS">
+            <xsd:sequence>
+              <xsd:element name="LOOKUPRSCOMPANY" nillable="true" type="tns:ArrayOfLOOKUPRSCOMPANY" minOccurs="0"/>
+              <xsd:element name="SRVTID" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="LOOKUPRSCOMPANY">
+            <xsd:sequence>
+              <xsd:element name="ADR_LINE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="BR_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="BUS_REGN_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="CONF_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="CTRY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DSR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DUNS_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="IN_DT_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MTCH_GRD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="NME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="NME_PCT_GRD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="NON_POST_TOWN" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="NON_POST_TWN_PCT_GRD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="PRIM_GEO_AREA" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="POST_CODE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="POST_TOWN" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="PO_BOX_PCT_GRD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="PRIM_GEO_AREA_NBR_PCT_GRD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="PROB_OF_ACCR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="STR_NBR_PCT_GRD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="STR_NME_PCT_GRD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SBRI_UMTC_AGN" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="TLCM_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="TLCM_PCT_GRD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="TRDG_STYL" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MTCH_BASS" nillable="true" type="tns:MTCH_BASS" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="MTCH_BASS">
+            <xsd:sequence>
+              <xsd:element name="MTCH_BASS_ENTR" nillable="true" type="tns:ArrayOfMTCH_BASS_ENTR" minOccurs="0"/>
+              <xsd:element name="MTCH_CNT" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="MTCH_BASS_ENTR">
+            <xsd:sequence>
+              <xsd:element name="SUBJ_TYPE_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="CEO_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MTCH_BASS_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="END_IND" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ArrayOfMTCH_BASS_ENTR"><xsd:sequence>
+			<xsd:element name="ArrayOfMTCH_BASS_ENTRItem" type="tns:MTCH_BASS_ENTR" maxOccurs="unbounded"/>
+		</xsd:sequence>
+
+          </xsd:complexType>
+          <xsd:complexType name="ArrayOfLOOKUPRSCOMPANY"><xsd:sequence>
+			<xsd:element name="ArrayOfLOOKUPRSCOMPANYItem" type="tns:LOOKUPRSCOMPANY" maxOccurs="unbounded"/>
+		</xsd:sequence>
+
+          </xsd:complexType>
+          <xsd:complexType name="FRD_RISK_SCR">
+            <xsd:sequence>
+              <xsd:element name="TRNUID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="STATUS" nillable="true" type="tns:STATUS3" minOccurs="0"/>
+              <xsd:element name="FDSLOOKUPRS" nillable="true" type="tns:FDSLOOKUPRS" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="STATUS3">
+            <xsd:sequence>
+              <xsd:element name="CODE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SEVERITY" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MESSAGE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="TECH_MESSAGE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SUPPORT_MESSAGE" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="FDSLOOKUPRS">
+            <xsd:sequence>
+              <xsd:element name="ALGM_ID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="AGN_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="NME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="ADR_LINE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="POST_TOWN" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="PRIM_GEO_AREA" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="TLCM_NBR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="CTRY_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="POST_CODE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SCR_RSLT_INTERPRET" nillable="true" type="tns:SCR_RSLT_INTERPRET" minOccurs="0"/>
+              <xsd:element name="SRCH_PFL_CHRT" nillable="true" type="tns:SRCH_PFL_CHRT"/>
+              <xsd:element name="LAST_SRCHS" nillable="true" type="tns:LAST_SRCHS"/>
+              <xsd:element name="INFO_CONSISTENCY" nillable="true" type="tns:INFO_CONSISTENCY"/>
+              <xsd:element name="FR_IND" nillable="true" type="tns:FR_IND"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="SCR_RSLT_INTERPRET">
+            <xsd:sequence>
+              <xsd:element name="REQS_DATE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="REQS_TIME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="FR_SCR" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="FR_SCR_CLAS" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SCR_CLAS_LBL" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SCR_CLAS_DESC" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SCR_CLAS_PCTG_POPN" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SCR_CLAS_PCTG_FRD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SCR_MULT_FRD_RSK" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="REAS_1_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="REAS_1_CD_DESC" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="REAS_2_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="REAS_2_CD_DESC" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="REAS_3_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="REAS_3_CD_DESC" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="REAS_4_CD" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="REAS_4_CD_DESC" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="MTCH_CNT" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="SRCH_PFL_CHRT">
+            <xsd:sequence>
+              <xsd:element name="FINANCIAL_SVCS" nillable="true" type="tns:FINANCIAL_SVCS"/>
+              <xsd:element name="SERVICES" nillable="true" type="tns:SERVICES"/>
+              <xsd:element name="MFG_SVCS" nillable="true" type="tns:MFG_SVCS"/>
+              <xsd:element name="WHOLESALE_SVCS" nillable="true" type="tns:WHOLESALE_SVCS"/>
+              <xsd:element name="COMM_SVCS" nillable="true" type="tns:COMM_SVCS"/>
+              <xsd:element name="TRANSPORT_SVCS" nillable="true" type="tns:TRANSPORT_SVCS"/>
+              <xsd:element name="RETAIL_SVCS" nillable="true" type="tns:RETAIL_SVCS"/>
+              <xsd:element name="UTILITY_SVCS" nillable="true" type="tns:UTILITY_SVCS"/>
+              <xsd:element name="CONT_CNST_SVCS" nillable="true" type="tns:CONT_CNST_SVCS"/>
+              <xsd:element name="PUB_SVCS" nillable="true" type="tns:PUB_SVCS"/>
+              <xsd:element name="METAL_MINING_SVCS" nillable="true" type="tns:METAL_MINING_SVCS"/>
+              <xsd:element name="AGRICULTURAL_SVCS" nillable="true" type="tns:AGRICULTURAL_SVCS"/>
+              <xsd:element name="UCLS_SVCS" nillable="true" type="tns:UCLS_SVCS"/>
+              <xsd:element name="TOT_PAST_24HRS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_PAST_1_TO_2_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_PAST_3_TO_7_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_PAST_8_TO_14_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_PAST_15_TO_30_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_PAST_31_TO_60_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_PAST_61_TO_90_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_PAST_91_TO_180_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="CNT_TOT_SRCH" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="FINANCIAL_SVCS">
+            <xsd:sequence>
+              <xsd:element name="PAST_24HRS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_1_TO_2_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_3_TO_7_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_8_TO_14_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_15_TO_30_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_31_TO_60_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_61_TO_90_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_91_TO_180_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_SRCH" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="SERVICES">
+            <xsd:sequence>
+              <xsd:element name="PAST_24HRS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_1_TO_2_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_3_TO_7_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_8_TO_14_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_15_TO_30_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_31_TO_60_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_61_TO_90_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_91_TO_180_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_SRCH" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="MFG_SVCS">
+            <xsd:sequence>
+              <xsd:element name="PAST_24HRS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_1_TO_2_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_3_TO_7_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_8_TO_14_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_15_TO_30_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_31_TO_60_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_61_TO_90_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_91_TO_180_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_SRCH" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="WHOLESALE_SVCS">
+            <xsd:sequence>
+              <xsd:element name="PAST_24HRS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_1_TO_2_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_3_TO_7_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_8_TO_14_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_15_TO_30_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_31_TO_60_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_61_TO_90_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_91_TO_180_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_SRCH" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="COMM_SVCS">
+            <xsd:sequence>
+              <xsd:element name="PAST_24HRS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_1_TO_2_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_3_TO_7_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_8_TO_14_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_15_TO_30_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_31_TO_60_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_61_TO_90_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_91_TO_180_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_SRCH" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="TRANSPORT_SVCS">
+            <xsd:sequence>
+              <xsd:element name="PAST_24HRS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_1_TO_2_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_3_TO_7_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_8_TO_14_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_15_TO_30_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_31_TO_60_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_61_TO_90_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_91_TO_180_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_SRCH" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="RETAIL_SVCS">
+            <xsd:sequence>
+              <xsd:element name="PAST_24HRS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_1_TO_2_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_3_TO_7_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_8_TO_14_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_15_TO_30_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_31_TO_60_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_61_TO_90_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_91_TO_180_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_SRCH" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="UTILITY_SVCS">
+            <xsd:sequence>
+              <xsd:element name="PAST_24HRS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_1_TO_2_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_3_TO_7_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_8_TO_14_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_15_TO_30_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_31_TO_60_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_61_TO_90_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_91_TO_180_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_SRCH" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="CONT_CNST_SVCS">
+            <xsd:sequence>
+              <xsd:element name="PAST_24HRS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_1_TO_2_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_3_TO_7_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_8_TO_14_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_15_TO_30_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_31_TO_60_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_61_TO_90_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_91_TO_180_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_SRCH" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="PUB_SVCS">
+            <xsd:sequence>
+              <xsd:element name="PAST_24HRS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_1_TO_2_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_3_TO_7_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_8_TO_14_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_15_TO_30_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_31_TO_60_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_61_TO_90_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_91_TO_180_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_SRCH" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="METAL_MINING_SVCS">
+            <xsd:sequence>
+              <xsd:element name="PAST_24HRS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_1_TO_2_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_3_TO_7_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_8_TO_14_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_15_TO_30_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_31_TO_60_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_61_TO_90_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_91_TO_180_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_SRCH" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="AGRICULTURAL_SVCS">
+            <xsd:sequence>
+              <xsd:element name="PAST_24HRS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_1_TO_2_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_3_TO_7_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_8_TO_14_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_15_TO_30_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_31_TO_60_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_61_TO_90_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_91_TO_180_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_SRCH" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="UCLS_SVCS">
+            <xsd:sequence>
+              <xsd:element name="PAST_24HRS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_1_TO_2_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_3_TO_7_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_8_TO_14_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_15_TO_30_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_31_TO_60_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_61_TO_90_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="PAST_91_TO_180_DAYS" nillable="true" type="xsd:string"/>
+              <xsd:element name="TOT_SRCH" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="LAST_SRCHS">
+            <xsd:sequence>
+              <xsd:element name="LAST_1_SRCH" nillable="true" type="tns:LAST_1_SRCH"/>
+              <xsd:element name="LAST_2_SRCH" nillable="true" type="tns:LAST_2_SRCH"/>
+              <xsd:element name="LAST_3_SRCH" nillable="true" type="tns:LAST_3_SRCH"/>
+              <xsd:element name="LAST_4_SRCH" nillable="true" type="tns:LAST_4_SRCH"/>
+              <xsd:element name="LAST_5_SRCH" nillable="true" type="tns:LAST_5_SRCH"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="LAST_1_SRCH">
+            <xsd:sequence>
+              <xsd:element name="DATE" nillable="true" type="xsd:string"/>
+              <xsd:element name="TIME" nillable="true" type="xsd:string"/>
+              <xsd:element name="SIC" nillable="true" type="xsd:string"/>
+              <xsd:element name="INDS_CTGY" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="LAST_2_SRCH">
+            <xsd:sequence>
+              <xsd:element name="DATE" nillable="true" type="xsd:string"/>
+              <xsd:element name="TIME" nillable="true" type="xsd:string"/>
+              <xsd:element name="SIC" nillable="true" type="xsd:string"/>
+              <xsd:element name="INDS_CTGY" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="LAST_3_SRCH">
+            <xsd:sequence>
+              <xsd:element name="DATE" nillable="true" type="xsd:string"/>
+              <xsd:element name="TIME" nillable="true" type="xsd:string"/>
+              <xsd:element name="SIC" nillable="true" type="xsd:string"/>
+              <xsd:element name="INDS_CTGY" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="LAST_4_SRCH">
+            <xsd:sequence>
+              <xsd:element name="DATE" nillable="true" type="xsd:string"/>
+              <xsd:element name="TIME" nillable="true" type="xsd:string"/>
+              <xsd:element name="SIC" nillable="true" type="xsd:string"/>
+              <xsd:element name="INDS_CTGY" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="LAST_5_SRCH">
+            <xsd:sequence>
+              <xsd:element name="DATE" nillable="true" type="xsd:string"/>
+              <xsd:element name="TIME" nillable="true" type="xsd:string"/>
+              <xsd:element name="SIC" nillable="true" type="xsd:string"/>
+              <xsd:element name="INDS_CTGY" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="INFO_CONSISTENCY">
+            <xsd:sequence>
+              <xsd:element name="MOST_FREQ_1_TLCM_NBR" nillable="true" type="tns:MOST_FREQ_1_TLCM_NBR"/>
+              <xsd:element name="MOST_FREQ_2_TLCM_NBR" nillable="true" type="tns:MOST_FREQ_2_TLCM_NBR"/>
+              <xsd:element name="MOST_FREQ_3_TLCM_NBR" nillable="true" type="tns:MOST_FREQ_3_TLCM_NBR"/>
+              <xsd:element name="MOST_FREQ_4_TLCM_NBR" nillable="true" type="tns:MOST_FREQ_4_TLCM_NBR"/>
+              <xsd:element name="MOST_FREQ_5_TLCM_NBR" nillable="true" type="tns:MOST_FREQ_5_TLCM_NBR"/>
+              <xsd:element name="CNT_NO_TLCM_NBR" nillable="true" type="xsd:string"/>
+              <xsd:element name="CNT_OTHER_TLCM_NBR" nillable="true" type="xsd:string"/>
+              <xsd:element name="MOST_FREQ_1_DUNS" nillable="true" type="tns:MOST_FREQ_1_DUNS"/>
+              <xsd:element name="MOST_FREQ_2_DUNS" nillable="true" type="tns:MOST_FREQ_2_DUNS"/>
+              <xsd:element name="MOST_FREQ_3_DUNS" nillable="true" type="tns:MOST_FREQ_3_DUNS"/>
+              <xsd:element name="MOST_FREQ_4_DUNS" nillable="true" type="tns:MOST_FREQ_4_DUNS"/>
+              <xsd:element name="MOST_FREQ_5_DUNS" nillable="true" type="tns:MOST_FREQ_5_DUNS"/>
+              <xsd:element name="CNT_NO_DUNS" nillable="true" type="xsd:string"/>
+              <xsd:element name="CNT_OTHER_DUNS" nillable="true" type="xsd:string"/>
+              <xsd:element name="HIST_SRCH_FR_RSK" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="MOST_FREQ_1_TLCM_NBR">
+            <xsd:sequence>
+              <xsd:element name="TLCM_NBR" nillable="true" type="xsd:string"/>
+              <xsd:element name="CNT" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="MOST_FREQ_2_TLCM_NBR">
+            <xsd:sequence>
+              <xsd:element name="TLCM_NBR" nillable="true" type="xsd:string"/>
+              <xsd:element name="CNT" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="MOST_FREQ_3_TLCM_NBR">
+            <xsd:sequence>
+              <xsd:element name="TLCM_NBR" nillable="true" type="xsd:string"/>
+              <xsd:element name="CNT" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="MOST_FREQ_4_TLCM_NBR">
+            <xsd:sequence>
+              <xsd:element name="TLCM_NBR" nillable="true" type="xsd:string"/>
+              <xsd:element name="CNT" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="MOST_FREQ_5_TLCM_NBR">
+            <xsd:sequence>
+              <xsd:element name="TLCM_NBR" nillable="true" type="xsd:string"/>
+              <xsd:element name="CNT" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="MOST_FREQ_1_DUNS">
+            <xsd:sequence>
+              <xsd:element name="DUNS_NBR" nillable="true" type="xsd:string"/>
+              <xsd:element name="CNT" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="MOST_FREQ_2_DUNS">
+            <xsd:sequence>
+              <xsd:element name="DUNS_NBR" nillable="true" type="xsd:string"/>
+              <xsd:element name="CNT" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="MOST_FREQ_3_DUNS">
+            <xsd:sequence>
+              <xsd:element name="DUNS_NBR" nillable="true" type="xsd:string"/>
+              <xsd:element name="CNT" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="MOST_FREQ_4_DUNS">
+            <xsd:sequence>
+              <xsd:element name="DUNS_NBR" nillable="true" type="xsd:string"/>
+              <xsd:element name="CNT" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="MOST_FREQ_5_DUNS">
+            <xsd:sequence>
+              <xsd:element name="DUNS_NBR" nillable="true" type="xsd:string"/>
+              <xsd:element name="CNT" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="FR_IND">
+            <xsd:sequence>
+              <xsd:element name="HR_MISREP_DT" nillable="true" type="xsd:string"/>
+              <xsd:element name="HR_MISREP_NME" nillable="true" type="xsd:string"/>
+              <xsd:element name="HR_MISREP_ADR_LINE" nillable="true" type="xsd:string"/>
+              <xsd:element name="HR_MISREP_POST_TOWN" nillable="true" type="xsd:string"/>
+              <xsd:element name="HR_MISREP_PRIM_GEO_AREA" nillable="true" type="xsd:string"/>
+              <xsd:element name="HR_MISREP_POST_CODE" nillable="true" type="xsd:string"/>
+              <xsd:element name="FRD_INCDE-RANK" nillable="true" type="xsd:string"/>
+              <xsd:element name="HR_MISREP_TLCM_NBR" nillable="true" type="xsd:string"/>
+              <xsd:element name="ZIP_STD" nillable="true" type="xsd:string"/>
+              <xsd:element name="ADR_QLTY" nillable="true" type="xsd:string"/>
+              <xsd:element name="ADR_RSK" nillable="true" type="xsd:string"/>
+              <xsd:element name="CNT_TLCM_ADR_RSK" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        			<xsd:element name="ws_LookUp" type="tns:ws_LookUp"/>
+			<xsd:element name="ws_LookUpResponse" type="tns:ws_LookUpResponse"/>
+	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="wsp_LookUp_V1_PortType_ws_LookUp">
+    <wsdl:part name="parameters" element="tns:ws_LookUp">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="wsp_LookUp_V1_PortType_ws_LookUpResponse">
+    <wsdl:part name="parameters" element="tns:ws_LookUpResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="wsp_LookUp_V1_PortType">
+    <wsdl:operation name="ws_LookUp">
+      <wsdl:input message="tns:wsp_LookUp_V1_PortType_ws_LookUp">
+    </wsdl:input>
+      <wsdl:output message="tns:wsp_LookUp_V1_PortType_ws_LookUpResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DNB_WebServices_Providers_LookUp_V1_wsp_LookUp_V1_Binder" type="tns:wsp_LookUp_V1_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ws_LookUp">
+      <soap:operation soapAction="DNB_WebServices_Providers_LookUp_V1_wsp_LookUp_V1_Binder_ws_LookUp" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsp_LookUp_V1">
+    <wsdl:port name="DNB_WebServices_Providers_LookUp_V1_wsp_LookUp_V1_Port" binding="tns:DNB_WebServices_Providers_LookUp_V1_wsp_LookUp_V1_Binder">
+      <soap:address location="https://toolkit-api.dnb.com/ws/DNB_WebServices.Providers.LookUp_V1:wsp_LookUp_V1"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
