@@ -30,7 +30,7 @@
           "image": "https://www.addisonlee.com/wp-content/uploads/2016/08/brand-image-courier.jpg"
         }
     </script>
-    <?php if(defined('ENVIRONMENT') && ENVIRONMENT == 'production'){
+    <?php if(defined('ENVIRONMENT') && ENVIRONMENT == 'development'){
         require get_template_directory() . '/templates/scripts/scripts-new-relic.php';
     } else if(defined('ENVIRONMENT') && ENVIRONMENT == 'development'){
         require get_template_directory() . '/templates/scripts/scripts-new-relic-dev.php';
@@ -133,6 +133,8 @@
     <!-- End Full Story Google Tag Manager-->
 
     <?php require get_template_directory() . '/assets/functions/meta-pixel-tag-man.php'; ?>
+
+    <?php require get_template_directory() . '/assets/functions/chat-bot.php'; ?>
 
 </head>
 

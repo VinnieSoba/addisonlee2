@@ -161,6 +161,7 @@ if ( 'before_booking' === $widget_position ) {
 	echo $widget_banner_output;
 }
 
+
 $home_hero_style = get_field( 'home_hero_style' );
 
 if ( 'yes' == $home_hero_style ) {
