@@ -161,6 +161,7 @@ if ( 'before_booking' === $widget_position ) {
 	echo $widget_banner_output;
 }
 
+
 $home_hero_style = get_field( 'home_hero_style' );
 
 if ( 'yes' == $home_hero_style ) {
@@ -346,10 +347,10 @@ href="<?php echo $ctalink; ?>">
 					<?php
 					if ( is_front_page() ) {
 						// Show Embed/Donate Widget BEFORE Download App Banner
-						if ( 'before_app' === $widget_position ) {
+						/*if ( 'before_app' === $widget_position ) {
 							echo $widget_output;
 							echo $widget_banner_output;
-						}
+						}*/
 						?>
 
 		<!-- <section class="page-banner hero" style="background-image:url('https://www.addisonlee.com/wp-content/uploads/2017/09/7292_ALee_SHOT2_R3_landscape-1.jpg')">
@@ -390,10 +391,11 @@ href="<?php echo $ctalink; ?>">
 							<?php
 						endif;
 						// Show Embed/Donate Widget AFTER Download App Banner
-						if ( 'after_app' === $widget_position ) {
+						/*if ( 'after_app' === $widget_position ) {
 							echo $widget_output;
 							echo $widget_banner_output;
 						}
+						*/
 					}
 		endif;
 	endif;

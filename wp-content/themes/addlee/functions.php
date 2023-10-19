@@ -63,7 +63,7 @@ require get_template_directory() . '/assets/functions/thumbnails.php';
 /**
  * WPForms
  */
-require get_template_directory() . '/assets/functions/wpforms.php';
+//require get_template_directory() . '/assets/functions/wpforms.php';
 
 /**
  * Gravity Forms: re-push
