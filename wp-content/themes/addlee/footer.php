@@ -155,31 +155,28 @@ if(!is_front_page()) { ?>
             <div id="bottom-footer" class="footer-section">
                 <div class="container-fluid">
                     <div class="row">
-
                         <div id="footer-social" class="col-md-5 col-xs-12">
                             <ul>
-                                <li class="inline">
-                                    <a href="https://www.facebook.com/addisonleecabs/" target="_blank" class="icon-facebook">
-
-                                    </a>
+                            <li class="inline">
+                                    <a href="https://www.instagram.com/addisonleecabs/" target="_blank" class="icon-instagram"></a>
                                 </li>
-                                <li class="inline">
-                                    <a href="https://twitter.com/AddisonLeeCabs/" target="_blank" class="icon-twitter">
-
-                                    </a>
-                                </li>
-                                <li class="inline">
-                                    <a href="https://www.linkedin.com/company/addison-lee/" target="_blank" class="icon-linkedin">
-
-                                    </a>
-                                </li>
+                            <li class="inline">
+                                    <a href="https://www.linkedin.com/company/addison-lee/" target="_blank" class="icon-linkedin"></a>
+                            </li>
+                            <li class="inline">
+                                   <a href="https://www.tiktok.com/@addisonleecabs1" target="_blank" class="icon-tiktok"></a>
+                            </li>
+                            <li class="inline">
+                                <a href="https://twitter.com/AddisonLeeCabs/" target="_blank" class="icon-twitter"></a>
+                            </li>
+                            <li class="inline">
+                                <a href="https://www.facebook.com/addisonleecabs/" target="_blank" class="icon-facebook"></a>
+                            </li>
                             </ul>
                         </div>
-
                         <div id="footer-logo" class="center col-md-2 col-xs-12">
                             <img src="<?php echo get_template_directory_uri();?>/assets/images/logos/logo-letters.png" width="70" height="40" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
                         </div>
-
                         <div id="footer-terms" class="col-md-5 col-xs-12">
                             <?php if ( has_nav_menu( 'footer-menu-terms' ) ) : ?>
                                 <?php wp_nav_menu( array('theme_location' => 'footer-menu-terms', 'container' => '', 'items_wrap' => '<ul class="terms-menu">%3$s</ul>' )); ?>

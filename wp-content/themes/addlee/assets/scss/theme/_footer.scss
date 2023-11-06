@@ -39,7 +39,72 @@ FOOTER STYLES
         #footer-social {
             margin-top: 15px;
             float: right;
-            text-align: right;
+            text-align: center;
+            
+            li {
+
+                a.icon-tiktok {
+                    background-image: url('/wp-content/uploads/2023/10/tiktok-icon.svg');
+                    background-repeat: no-repeat;
+                    background-position-x: center;
+                    background-position-y: center;
+
+                    &:before {
+                        content: "";
+                        padding: 10px;
+                    }
+                }
+                a.icon-twitter {
+                    background-image: url('/wp-content/uploads/2023/10/x-icon.svg');
+                    background-repeat: no-repeat;
+                    background-position-x: center;
+                    background-position-y: center;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+
+                    &:before {
+                        content: "";
+                        padding: 10px;
+                    }
+                }
+
+                a.icon-instagram {
+                    background-image: url('/wp-content/uploads/2023/10/instagram-icon.svg');
+                    background-repeat: no-repeat;
+                    background-position-x: center;
+                    background-position-y: center;
+
+                    &:before {
+                       content: "";
+                       padding: 10px;
+                    }
+                }
+
+                a.icon-linkedin {
+                    background-image: url('/wp-content/uploads/2023/10/linkedin-icon.svg');
+                    background-repeat: no-repeat;
+                    background-position-x: center;
+                    background-position-y: center;
+
+                    &:before {
+                        content: "";
+                        padding: 10px;
+                    }
+                }
+
+                .icon-facebook {
+                    background-image: url('/wp-content/uploads/2023/10/facebook-icon.svg');
+                    background-repeat: no-repeat;
+                    background-position-x: center;
+                    background-position-y: center;
+
+                    &:before {
+                        content: "";
+                        padding: 10px;
+                    }
+                }
+            }
+            
             a {
                 font-size: 1.5rem;
                 padding: 5px;
@@ -47,6 +112,8 @@ FOOTER STYLES
                 white-space: nowrap;
                 overflow: hidden;
                 color: $gray-light;
+
+                
                 &:hover {
                     text-decoration: none;
                     color: $gray-light;
