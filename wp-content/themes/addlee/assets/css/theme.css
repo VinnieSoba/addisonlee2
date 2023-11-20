@@ -7268,7 +7268,7 @@ HEADER STYLES
 .page-banner.hero {
   background-attachment: fixed;
   color: #ffffff;
-  height: 300px;
+  height: 400px;
   width: 100%;
 }
 .page-banner.hero h1 {
@@ -8087,6 +8087,29 @@ body:not(.showBanner) #page-navigation {
 }
 .template-section-privacy-policy #privacy-policy-accordion .accordion-section .accordion-section-content {
   display: none;
+}
+
+#wpforms-form-20273 h1 {
+  font-size: 20px;
+}
+#wpforms-form-20273 .wpforms-page-indicator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#wpforms-form-20273 .wpforms-page-indicator .wpforms-page-indicator-page {
+  display: inline-flex;
+  width: 70px;
+  height: 70px;
+}
+#wpforms-form-20273 .wpforms-page-indicator .wpforms-page-indicator-page span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 54px;
+  padding: 12px;
+  width: 70px;
+  height: 70px;
 }
 
 /* Templates */
