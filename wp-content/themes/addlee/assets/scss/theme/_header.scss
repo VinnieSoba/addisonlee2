@@ -772,6 +772,18 @@ HEADER STYLES
                 color: $yellow-brand;
             }
         }
+
+
+        .home-hero {
+            height: 700px;
+
+            @media screen and (max-width: 544px) {
+                height: auto;
+            }
+            
+        }
+            
+           
     }
     .faqcat {
         &:hover {

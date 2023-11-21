@@ -7282,6 +7282,14 @@ HEADER STYLES
   border-color: #fedb00;
   color: #fedb00;
 }
+.page-banner.hero .home-hero {
+  height: 700px;
+}
+@media screen and (max-width: 544px) {
+  .page-banner.hero .home-hero {
+    height: auto;
+  }
+}
 .page-banner .faqcat:hover {
   text-decoration: none;
 }
