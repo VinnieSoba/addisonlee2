@@ -18,10 +18,9 @@
             line-height: 1.2;
 
             &:before {
-                ul li:before {
-                    content: '✓';
-                    color: $white;
-                }
+                content: '✓';
+                color: $white;  
+                padding-right:12px;
             }
     
         }
