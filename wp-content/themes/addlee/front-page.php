@@ -37,7 +37,12 @@ $bannerUNwomensLogoAl = get_field('banner_logo_al');
 
                 elseif( get_row_layout() == 'video' ):
 
-                        get_template_part('templates/component-parts/component', 'video');
+                    get_template_part('templates/component-parts/component', 'video');
+
+                elseif( get_row_layout() == 'black_taxi_component' ):
+
+                    get_template_part('templates/component-parts/component', 'black-taxi');     
+
                 elseif( get_row_layout() == 'flexible_cols' ):
 
                     get_template_part('templates/component-parts/component', 'flexible-columns');

@@ -63,6 +63,7 @@ if( have_rows('flexible_components') ):
         elseif( get_row_layout() == 'video' ):
 
                 get_template_part('templates/component-parts/component', 'video');
+    
 
         endif;
 
