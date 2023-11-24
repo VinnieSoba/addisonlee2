@@ -9118,9 +9118,10 @@ article.service-carousel .slick-slide:not(.slick-center) p {
   color: #ffffff;
   line-height: 1.2;
 }
-.black-taxi--content ul li:before ul li:before {
+.black-taxi--content ul li:before {
   content: "✓";
   color: #ffffff;
+  padding-right: 12px;
 }
 .black-taxi--content h3 {
   color: #ffffff;
