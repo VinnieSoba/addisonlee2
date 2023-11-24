@@ -14,7 +14,6 @@ if($background_color){
 
 ?>
 <section class="template-section <?php echo $black_taxi_class; ?>" style="background-color: <?php echo $background_color; ?>">
-    <div class="row">
         <div class="container">
             <div class="col-md-6">
                 <div class="black-taxi--image"><img src="<?php echo $black_taxi_image; ?>"  alt="<?php echo $black_taxi_title; ?>"></div>
@@ -24,5 +23,4 @@ if($background_color){
                 <div class="cta-button"><?php echo $black_taxi_content; ?></div>
             </div>
         </div>
-    </div>
 </section>

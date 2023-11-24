@@ -16,6 +16,13 @@
         ul li {
             color: $white;
             line-height: 1.2;
+
+            &:before {
+                ul li:before {
+                    content: '✓';
+                    color: $white;
+                }
+            }
     
         }
 
@@ -43,12 +50,7 @@
             }
             
         }
-
       
-    }
-   
-    .row {
-        padding: 0;
     }
     
 }
