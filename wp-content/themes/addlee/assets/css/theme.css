@@ -9117,6 +9117,8 @@ article.service-carousel .slick-slide:not(.slick-center) p {
 .black-taxi--content ul li {
   color: #ffffff;
   line-height: 1.2;
+  text-indent: -1.7em;
+  padding-left: 2em;
 }
 .black-taxi--content ul li:before {
   content: "✓";

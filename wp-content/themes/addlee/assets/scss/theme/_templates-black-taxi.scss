@@ -16,6 +16,8 @@
         ul li {
             color: $white;
             line-height: 1.2;
+            text-indent: -1.7em;
+            padding-left: 2em;
 
             &:before {
                 content: '✓';
