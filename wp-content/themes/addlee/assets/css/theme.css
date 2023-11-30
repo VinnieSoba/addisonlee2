@@ -6578,13 +6578,63 @@ span.icon-search {
 NAVIGATION STYLES
 *********************/
 #main {
-  padding-top: 79px;
+  padding-top: 50px;
 }
 #main.submenu-open {
   padding-top: 139px;
 }
 
 /* Header */
+.hero-video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  padding-bottom: 57%;
+  /* 4:3 Aspect Ratio */
+  margin-bottom: -10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hero-video--container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+}
+.hero-video--container h1 {
+  color: #ffffff;
+  font-size: 65px;
+  z-index: 111;
+  width: 100%;
+}
+.hero-video--container h2 {
+  color: #ffffff;
+  font-size: 45px;
+  z-index: 111;
+  width: 100%;
+}
+.hero-video--container a {
+  color: #000000;
+  width: 100%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  border: none;
+}
+
 .ie-banner {
   color: #ffffff;
   background: #464646 url("../images/info-icon.png") 20px center no-repeat;

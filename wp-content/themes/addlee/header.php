@@ -150,7 +150,11 @@
 
             <main id="main" class="site-main" role="main">
 
-                <?php get_template_part('templates/content/page', 'banner'); ?>
+                <?php //get_template_part('templates/content/page', 'banner'); ?>
+
+                <?php get_template_part('templates/content/page', 'banner-with-video'); ?>
 
 
                     <?php get_template_part('templates/content/page', 'primary-content'); ?>
+
+
