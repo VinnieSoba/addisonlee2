@@ -41,7 +41,6 @@ NAVIGATION STYLES
          
             @media screen and (max-width: 1000px){
                 justify-content: flex-start;
-                top: 74px;
                 
             }
 
@@ -56,13 +55,23 @@ NAVIGATION STYLES
                 font-size: 65px;
                 z-index: 111;             
                 width: 100%;
+                line-height: 1.3;
 
-                @media screen and ( min-width: 358px) and (max-width: 634px){
+                @media only screen and (max-width : 350px) {
+                   font-size: 12px;
+                }
+              
+
+                @media screen and ( min-width: 351px) and (max-width: 634px){
                     font-size: 19px;
                     line-height: 1.5;
                 }
 
-                @media screen and (max-width: 1400px){
+                @media screen and ( min-width: 635px ) and ( max-width: 992px ) {
+                    font-size: 39px;
+                }
+
+                @media screen and ( min-width: 993px) and  (max-width: 1200px){
                     width: 98%;
                     line-height: 1.3 !important;
                     font-weight: 700;
@@ -95,6 +104,12 @@ NAVIGATION STYLES
             a {
                 color: $rich-black;
                 width: 100%;
+                
+                @media only screen and (max-width : 400px) {
+                    margin: 0;
+                    width: 75%;
+                }
+
             }
 
         }
@@ -111,6 +126,11 @@ NAVIGATION STYLES
     width: 100vw;
     height: 100%;
     border: none;
+
+    @media only screen and (max-width : 350px) {
+        margin: 0;
+        width: 100%;
+    }
   }
 
 
