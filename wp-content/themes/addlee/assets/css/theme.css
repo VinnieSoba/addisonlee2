@@ -6628,6 +6628,7 @@ NAVIGATION STYLES
   z-index: 111;
   width: 100%;
   line-height: 1.3;
+  font-weight: 100;
 }
 @media only screen and (max-width: 350px) {
   .hero-video--container h1 {
