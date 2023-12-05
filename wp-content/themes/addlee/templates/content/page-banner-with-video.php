@@ -194,8 +194,6 @@ if ( $select_video_type == 'video') : ?>
 <!-- else bring in the banner -->
 	<?php  else : ?> 
 
-	<?php echo "false"; ?>
-
 		<?php if ( ! ( is_post_type_archive( 'addlib' ) ) && ! ( is_singular( 'addlib' ) ) && ! ( is_tax( 'categories' ) ) ) : ?>
 
 			<?php if ( ( $url != '' || empty( $banner_bg_color ) == false ) && ! ( is_singular( 'addlib' ) ) ) : ?> 
