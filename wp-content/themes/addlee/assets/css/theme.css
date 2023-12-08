@@ -6660,6 +6660,7 @@ NAVIGATION STYLES
   z-index: 111;
   width: 100%;
   padding-top: 1em;
+  padding-bottom: 2em;
 }
 @media screen and (min-width: 358px) and (max-width: 634px) {
   .hero-video--container h2 {
