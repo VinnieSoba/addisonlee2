@@ -20,6 +20,10 @@
                 
             }
 
+            &:last-child.info-blocks {
+                border: none;
+            }
+
         }   
     }
   
@@ -49,6 +53,10 @@
             //gap: 20px;
             flex-shrink: 0;
             border: 5px solid $rich-black;
+
+             @media screen and ( max-width: 1200px ) {
+                padding: 12px 12px 0px 20px;
+             }
 
             .header-icon {
                 max-width: 100px;
@@ -215,8 +223,7 @@
             }
     
             .header-image {
-                width: 269px;
-                height: 82.434px;
+                height: 146.424px;
                 background-repeat: no-repeat;
                 background-size: contain;
                
@@ -228,6 +235,24 @@
     &:nth-child(9) {
 
         background-color: $grey-light-section;
+
+        .row {
+            .panel {
+                h3 {
+                    font-size: 24px;
+                }
+
+                .inner-content {
+                    p {
+                        color: #7A7A7A;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 1.4; /* 166.667% */
+                    }
+                }
+            }
+        }
 
         .image-container {
 
@@ -252,6 +277,117 @@
             letter-spacing: 1.5px;
             position: relative;
         } 
+    }
+
+    &:nth-child(10) {
+
+        background-color: $grey-light-section;
+
+        .row {
+            .panel {
+                h3 {
+                    font-size: 24px;
+                }
+
+                .inner-content {
+                    p {
+                        color: #7A7A7A;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 1.4; /* 166.667% */
+                    }
+                }
+            }
+        }
+        
+        .image-container {
+
+            .header-image {
+                height: 320px;
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-size: 100%;
+    
+                @media screen and (max-width: 1200px) {
+                    width: 100%;
+                }
+               
+            }
+        }
+
+        .cta {
+            background: $rich-black;
+            margin: 36px 0 18px;
+            color: #fff;
+            letter-spacing: 1.5px;
+            position: relative;
+        } 
+    
+    }
+
+    &:nth-child(11) {
+
+        background-color: $grey-light-section;
+
+        h2 {
+            
+            font-family: inherit;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 66.667% */
+            text-transform: inherit;
+            text-align: left;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-left: 20px;
+
+            span.gold {
+                color: $rich-black;
+                 
+                @media screen and (max-width: 1200px) {
+                    line-height: 1.3;
+                }
+            }
+        }
+
+        .image-container {
+
+            .header-image {
+                height: 320px;
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: center;
+                background-size: inherit;
+                background-color: #D9D9D9;
+                @media screen and (max-width: 1200px) {
+                    width: 100%;
+                }
+               
+            }
+        }
+
+        .info-blocks {
+            .inner-content {
+                height: 348px;
+                background-color: $white;
+                padding: 1em;
+            }
+        }
+
+        .info-blocks:nth-child(2) {
+            .header-image {
+                background-position-y: 100px;
+            }
+        }
+
+        .cta {
+            margin: 38px 7px 34px;
+            color: #fff;
+            letter-spacing: 1.5px;
+        } 
+
     }
 
     a.cta {
