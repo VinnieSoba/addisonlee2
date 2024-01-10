@@ -149,7 +149,7 @@
         <?php get_template_part('templates/content/page', 'navigation'); ?>
 
             <main id="main" class="site-main" role="main">
-                <div style="
+                <!--<div style="
                 background-color: #f7f7ef; width: 100%;
                 height: 100%;
                 padding-top: 5em;
@@ -165,7 +165,7 @@
                     <p>We are currently experiencing technical issues with our booking platforms.</p>
                     <p>You can call us on 0207 387 8888.</p>
                     <p style="margin: 0;">Thank you for your patience whilst we work to resolve this issue.</p>
-                </div>
+                </div>-->
                 <?php //get_template_part('templates/content/page', 'service-message'); ?>
 
                 <?php //get_template_part('templates/content/page', 'banner'); ?>
