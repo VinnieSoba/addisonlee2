@@ -149,6 +149,24 @@
         <?php get_template_part('templates/content/page', 'navigation'); ?>
 
             <main id="main" class="site-main" role="main">
+                <div style="
+                background-color: #f7f7ef; width: 100%;
+                height: 100%;
+                padding-top: 3em;
+                padding-left: 2em;
+                padding-bottom: 2em" class="message-status">
+                    <h3 style="
+                    color: #494a43;
+                    font-weight: 400;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    ">Service Update</h3>
+                    <p>We are currently experiencing technical issues with our booking platforms.</p>
+                    <p>You can call us on 0207 387 8888.</p>
+                    <p style="margin: 0;">Thank you for your patience whilst we work to resolve this issue.</p>
+                </div>
+                <?php get_template_part('templates/content/page', ''); ?>
 
                 <?php //get_template_part('templates/content/page', 'banner'); ?>
 
