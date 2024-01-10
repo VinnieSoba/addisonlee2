@@ -152,7 +152,7 @@
                 <div style="
                 background-color: #f7f7ef; width: 100%;
                 height: 100%;
-                padding-top: 3em;
+                padding-top: 5em;
                 padding-left: 2em;
                 padding-bottom: 2em" class="message-status">
                     <h3 style="
@@ -166,7 +166,7 @@
                     <p>You can call us on 0207 387 8888.</p>
                     <p style="margin: 0;">Thank you for your patience whilst we work to resolve this issue.</p>
                 </div>
-                <?php get_template_part('templates/content/page', ''); ?>
+                <?php //get_template_part('templates/content/page', 'service-message'); ?>
 
                 <?php //get_template_part('templates/content/page', 'banner'); ?>
 
