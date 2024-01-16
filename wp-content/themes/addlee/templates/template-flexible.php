@@ -64,7 +64,9 @@ if( have_rows('flexible_components') ):
 
                 get_template_part('templates/component-parts/component', 'video');
     
+        elseif( get_row_layout() == 'awards_list_component' ):
 
+                get_template_part('templates/component-parts/component', 'awards');
         endif;
 
     endwhile;

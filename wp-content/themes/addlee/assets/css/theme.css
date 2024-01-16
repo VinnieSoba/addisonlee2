@@ -8240,7 +8240,7 @@ body:not(.showBanner) #page-navigation {
 }
 
 .template-section.bw-minimal.esg .row .panel h3 {
-  text-transform: inherit;
+  text-transform: uppercase;
   color: #000;
   font-size: 36px;
   font-style: normal;
@@ -8519,7 +8519,7 @@ body:not(.showBanner) #page-navigation {
   background-position-x: center;
   background-position-y: center;
   background-size: inherit;
-  background-color: #D9D9D9;
+  background-color: #fedb00;
 }
 @media screen and (max-width: 1200px) {
   .template-section.bw-minimal.esg:nth-child(11) .image-container .header-image {
@@ -14481,3 +14481,52 @@ MESSAGE BANNER
 /* Medium Devices, Desktops */
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
+/* Components Awards */
+.awards-container {
+  background-color: #f7f7ef;
+}
+.awards-container--wrapper {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+  /*align-items: center;
+
+  */
+}
+.awards-container--wrapper .item-card {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  background-color: #ffffff;
+  margin-right: 29px;
+  margin-bottom: 29px;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+  position: relative;
+}
+.awards-container--wrapper .item-card img {
+  max-width: 200px;
+  max-height: 147px;
+  position: absolute;
+  top: 73.21px;
+  left: 75px;
+  right: 75px;
+  margin: 0 auto;
+}
+.awards-container--wrapper .item-card p {
+  width: 363px;
+  position: absolute;
+  bottom: 24px;
+}
+.awards-container .header-light--title h1 {
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.91px;
+}
