@@ -11,7 +11,6 @@
 <?php while( have_rows('awards_list') ) : the_row();
     
     $columns = get_sub_field('column_count');
-    echo $columns;
 
     if($columns == 4) :
         $div_class = 'col-xs-12 col-md-3';
