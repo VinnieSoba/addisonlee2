@@ -14492,7 +14492,7 @@ MESSAGE BANNER
   justify-content: flex-start;
   flex-direction: column;
   margin: 0 auto;
-  width: 50%;
+  max-width: 1140px;
   /*align-items: center;
 
   */
