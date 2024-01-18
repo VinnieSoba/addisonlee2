@@ -1,16 +1,21 @@
 <section class="awards-container">
 <?php while(have_rows('awards_list')) : the_row();
     $header_light = get_sub_field('header_light');
+    $columns = get_sub_field('column_count');
 ?>
-    <div class="row header-light--title">
+    <div class="header-light--title">
         <h1><?php echo $header_light; ?></h1>
     </div>
 <?php endwhile; ?>
 
-<div class="awards-container--wrapper">
+<?php if($columns == 12 ) : ?>
+    <div class="awards-container--wrapper__single-item">
+<?php else : ?>
+    <div class="awards-container--wrapper">
+<?php endif; ?>
 <?php while( have_rows('awards_list') ) : the_row();
     
-    $columns = get_sub_field('column_count');
+   
 
     if($columns == 4) :
         $div_class = 'col-xs-12 col-md-3';
@@ -24,16 +29,16 @@
     ?>
     <?php if(have_rows('fields') ) : ?>
         
-            <div class="row">
+            <div class="row" style="margin:0">
 
         <?php while(have_rows('fields') ) : the_row(); ?>
 
             <?php if($columns == 12 ) : ?>
 
-                <div class="item-card <?php echo $div_class; ?>">
+                <div class="item-card-single-item <?php echo $div_class; ?>">
                 <?php $awards_title = get_sub_field('awards_title'); $awards_image = get_sub_field('awards_image'); ?>
                 <img src="<?php echo $awards_image; ?>">
-                <p style="font-size: 16px; font-style: normal; font-weight: 400; text-transform: inherit; padding: 24px"><?php echo $awards_title;?></p>
+                <p style="font-size: 23px; font-style: normal; line-height: normal; font-weight: 400; text-transform: inherit; padding: 24px"><?php echo $awards_title;?></p>
             </div>  
 
             <?php else : ?>
@@ -42,7 +47,10 @@
             <div class="item-card <?php echo $div_class; ?>">
                 <?php $awards_title = get_sub_field('awards_title'); $awards_image = get_sub_field('awards_image'); ?>
                 <img src="<?php echo $awards_image; ?>">
-                <p style="font-size: 16px; font-style: normal; font-weight: 400; text-transform: inherit; padding: 24px"><?php echo $awards_title;?></p>
+                    <div class="item-card-paragraph">
+                        <p style="font-size: 16px; font-style: normal; font-weight: 400; text-transform: inherit; padding: 24px"><?php echo $awards_title;?></p>
+                    </div>
+                    
             </div>  
             
             <?php endif; ?>

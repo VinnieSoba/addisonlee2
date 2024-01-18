@@ -14489,25 +14489,69 @@ MESSAGE BANNER
   padding-top: 2em;
   padding-bottom: 2em;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+  justify-content: space-evenly;
+  flex-direction: row;
   margin: 0 auto;
-  max-width: 1140px;
-  /*align-items: center;
-
-  */
+  max-width: 1400px;
+  align-items: center;
+}
+@media only screen and (max-width: 827px) {
+  .awards-container--wrapper {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.awards-container--wrapper__single-item {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 1235px;
+  align-items: center;
+}
+@media only screen and (max-width: 827px) {
+  .awards-container--wrapper__single-item {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+.awards-container--wrapper__single-item .item-card-single-item {
+  width: 350px;
+  height: 350px;
+  padding: 24px;
+  background-color: #fff;
+  position: relative;
+  margin-right: 64px;
+  margin-bottom: 64px;
+}
+.awards-container--wrapper__single-item .item-card-single-item img {
+  max-width: 200px;
+  max-height: 147px;
+  position: absolute;
+  top: 73.21px;
+  left: 75px;
+  right: 75px;
+  margin: 0 auto;
+}
+.awards-container--wrapper__single-item .item-card-single-item p {
+  width: 230px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .awards-container--wrapper .item-card {
   width: 350px;
   height: 350px;
-  display: flex;
-  background-color: #ffffff;
-  margin-right: 29px;
-  margin-bottom: 29px;
-  align-items: center;
-  flex-direction: column;
   padding: 24px;
+  background-color: #fff;
   position: relative;
+  margin-right: 64px;
+  margin-bottom: 64px;
 }
 .awards-container--wrapper .item-card img {
   max-width: 200px;
@@ -14519,9 +14563,12 @@ MESSAGE BANNER
   margin: 0 auto;
 }
 .awards-container--wrapper .item-card p {
-  width: 363px;
+  width: 230px;
   position: absolute;
-  bottom: 24px;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .awards-container .header-light--title h1 {
   font-size: 23px;
