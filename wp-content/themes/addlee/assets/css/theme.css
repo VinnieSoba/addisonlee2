@@ -14668,6 +14668,11 @@ MESSAGE BANNER
   right: 0;
   margin: 0 auto;
 }
+@media only screen and (max-width: 420px) {
+  .awards-container--wrapper__single-item .item-card-single-item {
+    margin-right: 0;
+  }
+}
 .awards-container--wrapper .item-card {
   width: 350px;
   height: 350px;
@@ -14705,4 +14710,9 @@ MESSAGE BANNER
   font-weight: 400;
   line-height: normal;
   letter-spacing: 3.91px;
+}
+@media only screen and (max-width: 420px) {
+  .awards-container {
+    width: 420px;
+  }
 }
