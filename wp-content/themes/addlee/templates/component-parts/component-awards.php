@@ -43,7 +43,6 @@
 
             <?php else : ?>
                 
-           
             <div class="item-card <?php echo $div_class; ?>">
                 <?php $awards_title = get_sub_field('awards_title'); $awards_image = get_sub_field('awards_image'); ?>
                 <img src="<?php echo $awards_image; ?>">
