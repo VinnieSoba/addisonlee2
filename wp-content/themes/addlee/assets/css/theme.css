@@ -14670,7 +14670,8 @@ MESSAGE BANNER
 }
 @media only screen and (max-width: 420px) {
   .awards-container--wrapper__single-item .item-card-single-item {
-    margin-right: 0;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 .awards-container--wrapper .item-card {
@@ -14702,6 +14703,12 @@ MESSAGE BANNER
 @media only screen and (max-width: 1400px) {
   .awards-container--wrapper .item-card {
     margin-right: 22px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .awards-container--wrapper .item-card {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 .awards-container .header-light--title h1 {
