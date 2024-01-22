@@ -14711,8 +14711,3 @@ MESSAGE BANNER
   line-height: normal;
   letter-spacing: 3.91px;
 }
-@media only screen and (max-width: 420px) {
-  .awards-container {
-    width: 420px;
-  }
-}
