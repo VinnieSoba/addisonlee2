@@ -38,7 +38,7 @@
                 <div class="item-card-single-item <?php echo $div_class; ?>">
                 <?php $awards_title = get_sub_field('awards_title'); $awards_image = get_sub_field('awards_image'); ?>
                 <img src="<?php echo $awards_image; ?>">
-                <p style="font-size: 23px; font-style: normal; line-height: normal; font-weight: 400; text-transform: inherit; padding: 24px"><?php echo $awards_title;?></p>
+                <p style="font-size: 16px; font-style: normal; line-height: normal; font-weight: 400; text-transform: inherit; padding: 24px"><?php echo $awards_title;?></p>
             </div>  
 
             <?php else : ?>
