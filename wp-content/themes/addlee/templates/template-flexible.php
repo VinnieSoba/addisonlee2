@@ -67,6 +67,10 @@ if( have_rows('flexible_components') ):
         elseif( get_row_layout() == 'awards_list_component' ):
 
                 get_template_part('templates/component-parts/component', 'awards');
+        
+        elseif( get_row_layout() == 'esg_roadmap_component' ):
+
+                get_template_part('templates/component-parts/component', 'esg-roadmap');
         endif;
 
     endwhile;
