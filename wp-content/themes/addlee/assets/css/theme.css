@@ -8390,6 +8390,7 @@ section.esg:nth-child(2) h2 {
   text-transform: inherit;
   padding-top: 1em;
   padding-bottom: 2em;
+  text-transform: uppercase;
 }
 section.esg:nth-child(2) .content-blocks {
   background-color: #fedb00;
@@ -8406,9 +8407,10 @@ section.esg:nth-child(2) .content-blocks {
   }
 }
 section.esg:nth-child(2) .content-blocks .header-icon {
-  max-width: 100px;
+  max-width: 49px;
+  margin-right: 20px;
 }
-section.esg:nth-child(2) .content-blocks h3 {
+section.esg:nth-child(2) .content-blocks .inner-content h3 {
   color: #333;
   font-family: inherit;
   font-size: 14px;
@@ -8416,6 +8418,11 @@ section.esg:nth-child(2) .content-blocks h3 {
   font-weight: 400;
   line-height: 24px;
   /* 171.429% */
+}
+@media screen and (max-width: 1400px) {
+  section.esg:nth-child(2) .content-blocks .inner-content h3 {
+    font-size: 12px;
+  }
 }
 section.esg:nth-child(3) {
   display: block;
