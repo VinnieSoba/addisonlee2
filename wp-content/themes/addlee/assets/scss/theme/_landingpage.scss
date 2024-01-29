@@ -136,6 +136,46 @@ section.esg {
             font-weight: 500;
             line-height: 24px; /* 75% */
             text-transform: uppercase;
+            padding-bottom: 60px;
+        }
+
+             
+
+        .flexi.multi {
+            .row {
+                .panel.info-blocks {
+                    .header-icon {
+                        width: 25%;
+                        margin: 0 auto;
+                        padding-bottom: 32px;
+                    }
+
+                    .inner-content {
+                        h3 {
+                            color: #333;
+                            font-family: inherit;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 24px; /* 100% */
+                            letter-spacing: 3.84px;
+                            text-transform: inherit;
+                            text-align: center;
+                        }
+
+                        p {
+                            color: #333;
+                            text-align: center;
+                            font-family: inherit;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 28px; /* 175% */
+                            max-width: 415px;
+                        }
+                    }
+                }
+            }
         }
 
         
