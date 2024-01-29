@@ -213,10 +213,35 @@ section.esg {
             }
         }
 
-        .inner-content {
-            width: 556px;
-            padding-bottom: 0;
+        .row {
+            .panel {
+                .inner-content {
+                    width: 556px;
+                    padding-bottom: 0;
+        
+                    h3 {
+                        color: $rich-black;
+                        font-family: inherit;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 34px; /* 106.25% */
+                        text-transform: uppercase;
+                    }
+        
+                    P {
+                        color: #7A7A7A;
+                        font-family: inherit;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px; /* 166.667% */
+                    }
+                }
+            }
         }
+
+       
 
         .image-container {
             padding-bottom: 6em;
