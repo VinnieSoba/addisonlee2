@@ -250,15 +250,14 @@ section.esg {
 
         h2 {
             
+            color: $white;
             font-family: inherit;
-            font-size: 36px;
+            font-size: 32px;
             font-style: normal;
-            font-weight: 400;
-            line-height: 24px; /* 66.667% */
-            text-transform: inherit;
-            text-align: center;
-            padding-top: 1em;
-            padding-bottom: 2em;
+            font-weight: 500;
+            line-height: 24px; /* 75% */
+            text-transform: uppercase;
+            padding-bottom: 80px;
 
             span.gold {
                 color: $white;

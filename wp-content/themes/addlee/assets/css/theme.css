@@ -8457,16 +8457,15 @@ section.esg:nth-child(6) {
   background-color: #000000;
 }
 section.esg:nth-child(6) h2 {
+  color: #ffffff;
   font-family: inherit;
-  font-size: 36px;
+  font-size: 32px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
-  /* 66.667% */
-  text-transform: inherit;
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 2em;
+  /* 75% */
+  text-transform: uppercase;
+  padding-bottom: 80px;
 }
 section.esg:nth-child(6) h2 span.gold {
   color: #ffffff;
