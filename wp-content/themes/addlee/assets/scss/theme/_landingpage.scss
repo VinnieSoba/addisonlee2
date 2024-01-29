@@ -367,7 +367,7 @@ section.esg {
             font-style: normal;
             font-weight: 400;
             line-height: 24px; /* 66.667% */
-            text-transform: inherit;
+            text-transform: uppercase;
             text-align: center;
             padding-top: 1em;
             padding-bottom: 2em;
@@ -382,12 +382,19 @@ section.esg {
         }
 
         p {
+            color: $white;
             text-align: center;
-            color: #fff;
+            font-family: inherit;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px; /* 133.333% */
+            letter-spacing: 0.6px;
+            text-transform: capitalize;
         }
 
         .image-container {
-            padding-bottom: 6em;
+            padding-bottom: 2em;
             margin: 0 auto;
             width: 40%;
             display: flex;
@@ -409,8 +416,11 @@ section.esg {
 
     // Certifications
     &:nth-child(9) {
-
         background-color: $rich-black;
+
+        .flexi.multi .row .panel:last-child.info-blocks, .flexi.multi .row .panel:nth-child(even).info-blocks {
+            border-right: none;
+        }
 
         h2 {
             
@@ -419,7 +429,7 @@ section.esg {
             font-style: normal;
             font-weight: 400;
             line-height: 24px; /* 66.667% */
-            text-transform: inherit;
+            text-transform: uppercase;
             text-align: center;
             padding-top: 1em;
             padding-bottom: 2em;
@@ -436,7 +446,7 @@ section.esg {
 
         .image-container {
 
-            padding-bottom: 6em;
+            padding-bottom: 2em;
              
             .header-image {
                 height: 146.424px;
@@ -453,6 +463,14 @@ section.esg {
     
                     p {
                         color: $white;
+                        text-align: center;
+                        font-family: inherit;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px; /* 150% */
+                        letter-spacing: 0.8px;
+                        text-transform: capitalize;
                     }
                 }
             }

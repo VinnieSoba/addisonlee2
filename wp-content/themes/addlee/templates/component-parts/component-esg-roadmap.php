@@ -1,6 +1,5 @@
 <section class="roadmap--container">
     
-
 <?php while(have_rows('esg_roadmap')) : the_row(); ?>
         <?php 
             $select_background_image = get_sub_field('select_background_image');
@@ -31,20 +30,15 @@
                     
                     endif;
                 ?>
-                   
-                    
-                            <?php while(have_rows('time_line_panel') ) : the_row(); ?>
+                    <?php while(have_rows('time_line_panel') ) : the_row(); ?>
                                 <?php 
                                         $title = get_sub_field('title');
                                         $image = get_sub_field('images');
                                         $content = get_sub_field('content');
                                         $column_count = get_sub_field('column_count');
-                                ?>    
-                
-                                
+                                ?>                              
 
                                 <?php if($column_count == 4) : ?>
-                                    <?php echo 'You can add a new row'; ?>
                                     <div class="row">
                                         <div class="item-card--wrapper <?php echo $div_class; ?>">
                                             <!-- start card item -->
@@ -62,8 +56,6 @@
                                  <!-- end card item --> 
                                 
                                     <?php else : ?>
-
-                                        <?php echo 'You can add a new row'; ?>
                                         <div class="item-card--wrapper <?php echo $div_class; ?>">
                                             <!-- start card item -->
                                             <div class="item-card">
@@ -79,9 +71,7 @@
 
                                 <?php endif; ?>
                                  
-                            <?php endwhile; ?> <!-- loop through time line panel-->
-                    
-                    
+                            <?php endwhile; ?> <!-- loop through time line panel--> 
                 
             <?php endwhile; ?> <!-- loop through fields-->
         </div>
