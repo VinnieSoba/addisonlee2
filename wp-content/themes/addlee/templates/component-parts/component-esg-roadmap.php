@@ -1,13 +1,14 @@
 <section class="roadmap--container">
-<div class="container">
+    
+
 <?php while(have_rows('esg_roadmap')) : the_row(); ?>
         <?php 
             $select_background_image = get_sub_field('select_background_image');
             $background_image = get_sub_field('background_image');
             $title = get_sub_field('header_dark_title');
         ?>
-
-     <div class="header-title"><h2><?php echo $title; ?></h2></div>
+<div class="header-title"><h2><?php echo $title; ?></h2></div>
+<div class="container">
 
     <div class="wrapper <?php if($select_background_image == 'yes') echo 'background-active'; ?>"  style="background-image: url(<?php if($select_background_image == 'yes') echo  $background_image; ?>)"> 
 
@@ -29,7 +30,7 @@
                         $div_class = 'col-xs-12 col-md-3 col-lg-3';
                     
                     endif;
-                    ?>
+                ?>
                    
                     
                             <?php while(have_rows('time_line_panel') ) : the_row(); ?>
@@ -40,19 +41,44 @@
                                         $column_count = get_sub_field('column_count');
                                 ?>    
                 
-                                <!-- start card item -->
-                                <div class="item-card--wrapper <?php echo $div_class; ?>">
-                                <div class="item-card">
-                                    <div class="item-card--image">
-                                        <img src="<?php echo $image; ?>"  class="esg-image-container" alt="addison lee esg" />
+                                
+
+                                <?php if($column_count == 4) : ?>
+                                    <?php echo 'You can add a new row'; ?>
+                                    <div class="row">
+                                        <div class="item-card--wrapper <?php echo $div_class; ?>">
+                                            <!-- start card item -->
+                                            <div class="item-card">
+                                                <div class="item-card--image">
+                                                    <img src="<?php echo $image; ?>"  class="esg-image-container" alt="addison lee esg" />
+                                                </div>
+                                                <div class="item-card--content">
+                                                    <h4><?php echo $title; ?></h4>
+                                                    <p><?php echo $content; ?></p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="item-card--content">
-                                        <h4><?php echo $title; ?></h4>
-                                        <p><?php echo $content; ?></p>
-                                    </div>
-                                </div>
-                                <!-- end card item --> 
-                                </div>
+                                 <!-- end card item --> 
+                                
+                                    <?php else : ?>
+
+                                        <?php echo 'You can add a new row'; ?>
+                                        <div class="item-card--wrapper <?php echo $div_class; ?>">
+                                            <!-- start card item -->
+                                            <div class="item-card">
+                                                <div class="item-card--image">
+                                                    <img src="<?php echo $image; ?>"  class="esg-image-container" alt="addison lee esg" />
+                                                </div>
+                                                <div class="item-card--content">
+                                                    <h4><?php echo $title; ?></h4>
+                                                    <p><?php echo $content; ?></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                <?php endif; ?>
+                                 
                             <?php endwhile; ?> <!-- loop through time line panel-->
                     
                     
