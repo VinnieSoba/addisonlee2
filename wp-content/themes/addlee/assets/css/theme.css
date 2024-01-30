@@ -8712,7 +8712,10 @@ section.esg a.cta {
 }
 @media screen and (max-width: 1000px) {
   .roadmap--container .container .background-active {
-    background-image: none !important;
+    background-image: url("http://localhost/addisonlee2/wp-content/uploads/2024/01/esg_roadmap_timeine_mobile.svg") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 2031px;
   }
 }
 .roadmap--container .container .item-card {
@@ -8828,6 +8831,7 @@ section.esg a.cta {
     top: 0;
     right: 0;
     left: 0;
+    margin-top: 60px;
   }
 }
 .roadmap--container .container .item-card--wrapper:nth-child(8) {
@@ -8845,6 +8849,7 @@ section.esg a.cta {
     position: relative;
     top: 0;
     right: 0;
+    margin-top: 60px;
   }
 }
 .roadmap--container .container .item-card--wrapper:nth-child(9) {
@@ -8862,6 +8867,11 @@ section.esg a.cta {
     top: 482px;
   }
 }
+@media screen and (max-width: 1000px) {
+  .roadmap--container .container .item-card--wrapper:nth-child(9) {
+    margin-top: 60px;
+  }
+}
 .roadmap--container .container .item-card--wrapper:nth-child(10) {
   display: flex;
   justify-content: center;
@@ -8874,6 +8884,7 @@ section.esg a.cta {
 }
 @media screen and (max-width: 1000px) {
   .roadmap--container .container .item-card--wrapper:nth-child(10) {
+    margin-top: 60px;
     position: relative;
     top: 0;
     right: 0;
@@ -8905,6 +8916,8 @@ section.esg a.cta {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }
 @media screen and (max-width: 1920px) {

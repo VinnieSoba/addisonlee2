@@ -584,7 +584,10 @@ section.esg {
                 }
 
                 @media screen and (max-width: 1000px) {
-                    background-image: none !important;
+                    background-image: url('http://localhost/addisonlee2/wp-content/uploads/2024/01/esg_roadmap_timeine_mobile.svg') !important;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    height: 2031px;
                 }
             }
             
@@ -720,6 +723,7 @@ section.esg {
                                 top: 0;
                                 right: 0;
                                 left: 0;
+                                margin-top: 60px;
                             }
                         }
 
@@ -741,6 +745,7 @@ section.esg {
                                 position: relative;
                                 top: 0;
                                 right: 0;
+                                margin-top: 60px;
                             }
                         }
 
@@ -760,6 +765,11 @@ section.esg {
                              @media screen and (max-width: 1400px) {
                                 top:482px;
                              }
+
+                             @media screen and (max-width: 1000px) {
+                                margin-top: 60px;
+                                
+                             }
                          }
 
                         &:nth-child(10) {
@@ -776,6 +786,7 @@ section.esg {
                             }
 
                             @media screen and (max-width: 1000px) {
+                                margin-top: 60px;
                                 position: relative;
                                 top: 0;
                                 right: 0;
@@ -809,6 +820,8 @@ section.esg {
                                 margin: 0 auto;
                                 display: flex;
                                 justify-content: center;
+                                margin-top: 80px;
+                                margin-bottom: 80px;
                             }
                         }
                         
