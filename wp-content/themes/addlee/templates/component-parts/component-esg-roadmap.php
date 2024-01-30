@@ -19,14 +19,14 @@
                 $column_count = get_sub_field('column_count');
 
                     if($column_count == 12) : 
-                        $div_class = 'col-xs-12 col-md-12';
+                        $div_class = 'col-xs-12 col-sm-12 col-md-12';
                     elseif($column_count == 6) : 
-                        $div_class = 'col-xs-12 col-md-6 col-lg-6';
+                        $div_class = 'col-xs-12 col-sm-12 col-md-6 col-lg-6';
                     elseif($column_count == 3) :
                         $div_row = 'row';
-                        $div_class = 'col-xs-12 col-md-4 col-lg-4';
+                        $div_class = 'col-xs-12 col-sm-12 col-md-4 col-lg-4';
                     elseif($column_count == 4) :
-                        $div_class = 'col-xs-12 col-md-3 col-lg-3';
+                        $div_class = 'col-xs-12 col-sm-12 col-md-12 col-lg-3';
                     
                     endif;
                 ?>

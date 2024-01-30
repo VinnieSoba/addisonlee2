@@ -580,6 +580,10 @@ section.esg {
                 @media screen and (max-width: 1200px) {
                     height: 466px;
                 }
+
+                @media screen and (max-width: 1000px) {
+                    background-image: none !important;
+                }
             }
             
 
@@ -660,7 +664,11 @@ section.esg {
                         &:nth-child(4) {
                             float: right;
                             width: 233px;
+
+                            @media screen and (max-width: 1000px) {
+                                width: 100%;
                             
+                            }
                         }
                         
                         &:nth-child(5) {
@@ -668,13 +676,23 @@ section.esg {
                             margin-top: 3em;
                             width: 233px;
                             right: 80px;
+
+                            @media screen and (max-width: 1000px) {
+                                width: 100%;
+                                right: 0;
+                            }
                         }
                         
                         &:nth-child(6) {
                             float: right;
                             margin-top: 3em;
                             width: 233px;
-                            right: 143px;
+                            right: 224px;
+
+                            @media screen and (max-width: 1000px) {
+                                width: 100%;
+                                right: 0;
+                            }
                         }
 
                         &:nth-child(7) {
@@ -692,6 +710,15 @@ section.esg {
                             @media screen and (max-width: 1400px) {
                                 margin-top: 2em;
                             }
+
+                            @media screen and (max-width: 1000px) {
+                                width: 100%;
+                                margin: 0 auto;
+                                position: relative;
+                                top: 0;
+                                right: 0;
+                                left: 0;
+                            }
                         }
 
                         &:nth-child(8) {
@@ -706,6 +733,12 @@ section.esg {
                                 &--content {
                                     width: 200px;
                                 }
+                            }
+
+                            @media screen and (max-width: 1000px) {
+                                position: relative;
+                                top: 0;
+                                right: 0;
                             }
                         }
 
@@ -733,10 +766,17 @@ section.esg {
                             position: absolute;
                             right: 280px;
                             top: 450px;
+
                             .item-card {
                                 &--content {
                                     width: 200px;
                                 }
+                            }
+
+                            @media screen and (max-width: 1000px) {
+                                position: relative;
+                                top: 0;
+                                right: 0;
                             }
                         }
 
@@ -757,16 +797,32 @@ section.esg {
                                 top: 486px;
                                 
                             }
+
+                            @media screen and (max-width: 1000px) {
+                                width: 100%;
+                                top: 0px;
+                                position: relative;
+                                left: 0;
+                                right: 0;
+                                margin: 0 auto;
+                                display: flex;
+                                justify-content: center;
+                            }
                         }
+                        
                     
                 }
-
                
             }
             
             @media screen and (max-width: 1920px) {
                 max-width: 1453px;
             }
+            
+        }
+
+        @media screen and (max-width: 1000px) {
+            height: auto;
             
         }
         
