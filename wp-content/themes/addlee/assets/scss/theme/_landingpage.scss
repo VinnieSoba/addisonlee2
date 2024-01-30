@@ -216,8 +216,9 @@ section.esg {
         .row {
             .panel {
                 .inner-content {
-                    width: 556px;
+                    max-width: 556px;
                     padding-bottom: 0;
+                    width: 100%;
         
                     h3 {
                         color: $rich-black;
@@ -252,7 +253,8 @@ section.esg {
 
     
             .header-image {
-                width: 537.651px;
+                width: 100%;
+                max-width: 537.651px;
                 height: 273.55px;
                 flex-shrink: 0;
                 background-repeat: no-repeat;
