@@ -557,7 +557,7 @@ section.esg {
             }
 
             @media screen and (max-width: 1400px) {
-                width: 83%;
+                width: 98%;
             }
             
         } 
@@ -632,6 +632,31 @@ section.esg {
                             }
                         }
 
+
+                        &:nth-child(2) {
+                            @media screen and (max-width: 1400px) {
+                                top: 37px;
+                                .item-card {
+
+                                    &--content {
+                                        width: 214px;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            @media screen and (max-width: 1400px) {
+                                top: 61px;
+                                .item-card {
+                                   
+                                    &--content {
+                                        width: 214px;
+                                    }
+                                }
+                            }
+                        }
+
                         &:nth-child(4) {
                             float: right;
                             width: 233px;
@@ -642,14 +667,14 @@ section.esg {
                             float: right;
                             margin-top: 3em;
                             width: 233px;
-                            right: 146px;
+                            right: 80px;
                         }
                         
                         &:nth-child(6) {
                             float: right;
                             margin-top: 3em;
                             width: 233px;
-                            right: 313px;
+                            right: 143px;
                         }
 
                         &:nth-child(7) {

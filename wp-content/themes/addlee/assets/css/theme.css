@@ -8686,7 +8686,7 @@ section.esg a.cta {
 }
 @media screen and (max-width: 1400px) {
   .roadmap--container .header-title {
-    width: 83%;
+    width: 98%;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -8750,6 +8750,22 @@ section.esg a.cta {
     width: 214px;
   }
 }
+@media screen and (max-width: 1400px) {
+  .roadmap--container .container .item-card--wrapper:nth-child(2) {
+    top: 37px;
+  }
+  .roadmap--container .container .item-card--wrapper:nth-child(2) .item-card--content {
+    width: 214px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .roadmap--container .container .item-card--wrapper:nth-child(3) {
+    top: 61px;
+  }
+  .roadmap--container .container .item-card--wrapper:nth-child(3) .item-card--content {
+    width: 214px;
+  }
+}
 .roadmap--container .container .item-card--wrapper:nth-child(4) {
   float: right;
   width: 233px;
@@ -8758,13 +8774,13 @@ section.esg a.cta {
   float: right;
   margin-top: 3em;
   width: 233px;
-  right: 146px;
+  right: 80px;
 }
 .roadmap--container .container .item-card--wrapper:nth-child(6) {
   float: right;
   margin-top: 3em;
   width: 233px;
-  right: 313px;
+  right: 143px;
 }
 .roadmap--container .container .item-card--wrapper:nth-child(7) {
   float: left;
