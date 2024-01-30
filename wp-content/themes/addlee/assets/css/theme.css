@@ -8719,6 +8719,12 @@ section.esg a.cta {
   align-items: center;
   gap: 16px;
 }
+@media screen and (max-width: 1400px) {
+  .roadmap--container .container .item-card {
+    width: 100%;
+    height: auto !important;
+  }
+}
 .roadmap--container .container .item-card p, .roadmap--container .container .item-card h4 {
   color: #ffffff;
   text-align: center;
@@ -8739,60 +8745,91 @@ section.esg a.cta {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 1400px) {
+  .roadmap--container .container .item-card--wrapper:nth-child(1) .item-card--content {
+    width: 214px;
+  }
+}
 .roadmap--container .container .item-card--wrapper:nth-child(4) {
   float: right;
   width: 233px;
 }
 .roadmap--container .container .item-card--wrapper:nth-child(5) {
   float: right;
-  margin-top: 7em;
+  margin-top: 3em;
   width: 233px;
+  right: 146px;
 }
 .roadmap--container .container .item-card--wrapper:nth-child(6) {
   float: right;
-  margin-top: 7em;
+  margin-top: 3em;
   width: 233px;
+  right: 313px;
 }
 .roadmap--container .container .item-card--wrapper:nth-child(7) {
-  float: right;
-  margin-top: 7em;
+  float: left;
+  margin-top: 6em;
   width: 233px;
+  left: 94px;
 }
 .roadmap--container .container .item-card--wrapper:nth-child(7) .item-card--content {
   width: 200px;
 }
+@media screen and (max-width: 1400px) {
+  .roadmap--container .container .item-card--wrapper:nth-child(7) {
+    margin-top: 2em;
+  }
+}
+.roadmap--container .container .item-card--wrapper:nth-child(8) {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 939px;
+  top: 465px;
+}
+.roadmap--container .container .item-card--wrapper:nth-child(8) .item-card--content {
+  width: 200px;
+}
 .roadmap--container .container .item-card--wrapper:nth-child(9) {
-  /* float: right;
-   margin-top: 7em;
-   width: 233px;
-   position: relative;
-   right:0;
-   */
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 632px;
+  bottom: 0;
 }
 .roadmap--container .container .item-card--wrapper:nth-child(9) .item-card--content {
   width: 200px;
 }
+@media screen and (max-width: 1400px) {
+  .roadmap--container .container .item-card--wrapper:nth-child(9) {
+    top: 482px;
+  }
+}
 .roadmap--container .container .item-card--wrapper:nth-child(10) {
-  /* float: right;
-   margin-top: 7em;
-   width: 233px;
-   position: relative;
-   right:0;
-   */
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 280px;
+  top: 450px;
 }
 .roadmap--container .container .item-card--wrapper:nth-child(10) .item-card--content {
   width: 200px;
 }
 .roadmap--container .container .item-card--wrapper:nth-child(11) {
-  /*float: right;
-  margin-top: 7em;
-  width: 233px;
-  position: relative;
-  right:0;
-  */
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 .roadmap--container .container .item-card--wrapper:nth-child(11) .item-card--content {
   width: 200px;
+}
+@media screen and (max-width: 1400px) {
+  .roadmap--container .container .item-card--wrapper:nth-child(11) {
+    width: 300px;
+    top: 486px;
+  }
 }
 @media screen and (max-width: 1920px) {
   .roadmap--container .container {

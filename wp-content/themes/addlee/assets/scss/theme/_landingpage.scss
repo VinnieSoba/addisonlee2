@@ -595,6 +595,11 @@ section.esg {
                 align-items: center;
                 gap: 16px;
 
+                    @media screen and (max-width: 1400px) {
+                        width: 100%;
+                        height: auto !important;
+                    }
+
                 p, h4 {
                     color: $white;
                     text-align: center;
@@ -613,6 +618,20 @@ section.esg {
                 &--wrapper {
                     display: flex;
                     justify-content: center;
+
+                        &:nth-child(1) {
+
+
+                            @media screen and (max-width: 1400px) {
+                                .item-card {
+
+                                    &--content {
+                                        width: 214px;
+                                    }
+                                }
+                            }
+                        }
+
                         &:nth-child(4) {
                             float: right;
                             width: 233px;
@@ -621,20 +640,42 @@ section.esg {
                         
                         &:nth-child(5) {
                             float: right;
-                            margin-top: 7em;
+                            margin-top: 3em;
                             width: 233px;
+                            right: 146px;
                         }
                         
                         &:nth-child(6) {
                             float: right;
-                            margin-top: 7em;
+                            margin-top: 3em;
                             width: 233px;
+                            right: 313px;
                         }
 
                         &:nth-child(7) {
-                            float: right;
-                            margin-top: 7em;
+                            float: left;
+                            margin-top: 6em;
                             width: 233px;
+                            left: 94px;
+
+                            .item-card {
+                                &--content {
+                                    width: 200px;
+                                }
+                            }
+
+                            @media screen and (max-width: 1400px) {
+                                margin-top: 2em;
+                            }
+                        }
+
+                        &:nth-child(8) {
+                            display: flex;
+                            justify-content: center;
+                            position: absolute;
+                            right: 939px;
+                            top: 465px;
+                        
 
                             .item-card {
                                 &--content {
@@ -644,26 +685,29 @@ section.esg {
                         }
 
                         &:nth-child(9) {
-                            /* float: right;
-                             margin-top: 7em;
-                             width: 233px;
-                             position: relative;
-                             right:0;
-                             */
+                            display: flex;
+                            justify-content: center;
+                            position: absolute;
+                            right: 632px;
+                            bottom: 0;
                              .item-card {
                                  &--content {
                                      width: 200px;
                                  }
                              }
+
+
+                             @media screen and (max-width: 1400px) {
+                                top:482px;
+                             }
                          }
 
                         &:nth-child(10) {
-                           /* float: right;
-                            margin-top: 7em;
-                            width: 233px;
-                            position: relative;
-                            right:0;
-                            */
+                            display: flex;
+                            justify-content: center;
+                            position: absolute;
+                            right: 280px;
+                            top: 450px;
                             .item-card {
                                 &--content {
                                     width: 200px;
@@ -672,16 +716,21 @@ section.esg {
                         }
 
                         &:nth-child(11) {
-                            /*float: right;
-                            margin-top: 7em;
-                            width: 233px;
-                            position: relative;
-                            right:0;
-                            */
+                            display: flex;
+                            justify-content: end;
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
                             .item-card {
                                 &--content {
                                     width: 200px;
                                 }
+                            }
+
+                            @media screen and (max-width: 1400px) {
+                                width: 300px;
+                                top: 486px;
+                                
                             }
                         }
                     
