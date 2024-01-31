@@ -260,7 +260,7 @@ section.esg {
     
             .header-image {
                 width: 100%;
-                width: 537.651px;
+                max-width: 537.651px;
                 height: 410.55px;
                 flex-shrink: 0;
                 background-repeat: no-repeat;
@@ -601,11 +601,11 @@ section.esg {
 
             
             .item-card {
-                max-width: 200px;
-                height: 174px;
+                /*max-width: 200px;
+                height: 174px;*/
                 background-color: $rich-black;
                 display: inline-flex;
-                padding: 16px;
+                /*padding: 16px;*/
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -636,7 +636,8 @@ section.esg {
                     justify-content: center;
 
                         &:nth-child(1) {
-
+                            position: absolute;
+                            left: 60px;
 
                             @media screen and (max-width: 1400px) {
                                 .item-card {
@@ -646,10 +647,22 @@ section.esg {
                                     }
                                 }
                             }
+
+                            @media screen and (max-width: 1000px) {
+                                width: 100%;
+                                position: unset;
+                                margin-top: 3em;
+                            
+                            }
                         }
 
 
                         &:nth-child(2) {
+                            position: relative;
+                            left: 457px;
+                            float: left;
+                            top: 20px;
+
                             @media screen and (max-width: 1400px) {
                                 top: 37px;
                                 .item-card {
@@ -659,9 +672,20 @@ section.esg {
                                     }
                                 }
                             }
+
+                            @media screen and (max-width: 1000px) {
+                                width: 100%;
+                                position: unset;
+                                margin-top: 3em;
+                            
+                            }
                         }
 
                         &:nth-child(3) {
+                            float: left;
+                            position: absolute;
+                            left: 808px;
+                            top: 30px;
                             @media screen and (max-width: 1400px) {
                                 top: 61px;
                                 .item-card {
@@ -670,6 +694,13 @@ section.esg {
                                         width: 214px;
                                     }
                                 }
+                            }
+
+                            @media screen and (max-width: 1000px) {
+                                width: 100%;
+                                position: unset;
+                                margin-top: 3em;
+                            
                             }
                         }
 
@@ -685,21 +716,23 @@ section.esg {
                         
                         &:nth-child(5) {
                             float: right;
-                            margin-top: 3em;
+                            margin-top: 6em;
                             width: 233px;
                             right: 80px;
+                            
 
                             @media screen and (max-width: 1000px) {
                                 width: 100%;
-                                right: 0;
+                                right:0;
                             }
+                           
                         }
                         
                         &:nth-child(6) {
                             float: right;
-                            margin-top: 3em;
-                            width: 233px;
-                            right: 224px;
+                            margin-top: 6em;
+                            width: 247px;
+                            right: 223px;
 
                             @media screen and (max-width: 1000px) {
                                 width: 100%;
@@ -739,7 +772,7 @@ section.esg {
                             justify-content: center;
                             position: absolute;
                             right: 939px;
-                            top: 465px;
+                            top: 500px;
                         
 
                             .item-card {
@@ -761,7 +794,7 @@ section.esg {
                             justify-content: center;
                             position: absolute;
                             right: 632px;
-                            bottom: 0;
+                            top: 450px;
                              .item-card {
                                  &--content {
                                      width: 200px;
@@ -784,7 +817,7 @@ section.esg {
                             justify-content: center;
                             position: absolute;
                             right: 280px;
-                            top: 450px;
+                            top: 474px;
 
                             .item-card {
                                 &--content {
@@ -805,7 +838,7 @@ section.esg {
                             justify-content: end;
                             position: absolute;
                             right: 0;
-                            bottom: 0;
+                            top: 460px;
                             .item-card {
                                 &--content {
                                     width: 200px;
