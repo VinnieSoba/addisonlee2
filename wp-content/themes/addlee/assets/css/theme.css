@@ -8357,6 +8357,11 @@ section.esg:nth-child(2) .content-blocks .inner-content h3 {
     font-size: 12px;
   }
 }
+section.esg:nth-child(2) .row.no-gutter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 section.esg:nth-child(3) .flexi.multi .row .panel:last-child.info-blocks,
 section.esg:nth-child(3) .flexi.multi .row .panel:nth-child(even).info-blocks {
   border-right: none;
@@ -8463,11 +8468,12 @@ section.esg:nth-child(5) .image-container {
 }
 section.esg:nth-child(5) .image-container .header-image {
   width: 100%;
-  max-width: 537.651px;
-  height: 273.55px;
+  width: 537.651px;
+  height: 410.55px;
   flex-shrink: 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position-x: -445px;
 }
 section.esg:nth-child(5) a.cta {
   background-color: #000000;

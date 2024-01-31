@@ -116,6 +116,12 @@ section.esg {
             }
 
         }
+        
+        .row.no-gutter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     // Highlights
@@ -254,11 +260,12 @@ section.esg {
     
             .header-image {
                 width: 100%;
-                max-width: 537.651px;
-                height: 273.55px;
+                width: 537.651px;
+                height: 410.55px;
                 flex-shrink: 0;
                 background-repeat: no-repeat;
-                background-size: contain;
+                background-size: cover;
+                background-position-x: -445px;
                
             }
         }
