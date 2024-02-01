@@ -472,6 +472,7 @@ section.esg {
                  
                 @media screen and (max-width: 1200px) {
                     line-height: 1.3;
+                    font-size: 25px;;
                 }
             }
 
@@ -482,9 +483,11 @@ section.esg {
             padding-bottom: 2em;
              
             .header-image {
-                height: 146.424px;
+                height: 110.424px;
                 background-repeat: no-repeat;
                 background-size: contain;
+                margin: 0 auto;
+                width: 75%;
                
             }
         }
@@ -640,8 +643,8 @@ section.esg {
                             left: 60px;
 
                             @media screen and (max-width: 1400px) {
+                                margin-top: 3em;
                                 .item-card {
-
                                     &--content {
                                         width: 214px;
                                     }
@@ -664,9 +667,8 @@ section.esg {
                             top: 20px;
 
                             @media screen and (max-width: 1400px) {
-                                top: 37px;
+                                margin-top: 3em;
                                 .item-card {
-
                                     &--content {
                                         width: 214px;
                                     }
@@ -707,7 +709,7 @@ section.esg {
                         &:nth-child(4) {
                             float: right;
                             width: 233px;
-
+                            margin-top: 3em;
                             @media screen and (max-width: 1000px) {
                                 width: 100%;
                             
@@ -732,7 +734,7 @@ section.esg {
                             float: right;
                             margin-top: 6em;
                             width: 247px;
-                            right: 223px;
+                            right: 159px;
 
                             @media screen and (max-width: 1000px) {
                                 width: 100%;
@@ -753,7 +755,7 @@ section.esg {
                             }
 
                             @media screen and (max-width: 1400px) {
-                                margin-top: 2em;
+                                margin-top: 8em;
                             }
 
                             @media screen and (max-width: 1000px) {
@@ -781,6 +783,10 @@ section.esg {
                                 }
                             }
 
+                            @media screen and (max-width: 1400px) {
+                                right: 785px;
+                             }
+
                             @media screen and (max-width: 1000px) {
                                 position: relative;
                                 top: 0;
@@ -804,6 +810,7 @@ section.esg {
 
                              @media screen and (max-width: 1400px) {
                                 top:482px;
+                                right: 494px;
                              }
 
                              @media screen and (max-width: 1000px) {
@@ -824,6 +831,10 @@ section.esg {
                                     width: 200px;
                                 }
                             }
+
+                            @media screen and (max-width: 1400px) {
+                                right: 220px;
+                             }
 
                             @media screen and (max-width: 1000px) {
                                 margin-top: 60px;

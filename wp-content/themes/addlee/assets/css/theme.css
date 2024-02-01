@@ -8642,15 +8642,18 @@ section.esg:nth-child(9) h2 span.gold {
 @media screen and (max-width: 1200px) {
   section.esg:nth-child(9) h2 span.gold {
     line-height: 1.3;
+    font-size: 25px;
   }
 }
 section.esg:nth-child(9) .image-container {
   padding-bottom: 2em;
 }
 section.esg:nth-child(9) .image-container .header-image {
-  height: 146.424px;
+  height: 110.424px;
   background-repeat: no-repeat;
   background-size: contain;
+  margin: 0 auto;
+  width: 75%;
 }
 section.esg:nth-child(9) .row .panel .inner-content {
   padding-bottom: 0;
@@ -8766,6 +8769,9 @@ section.esg a.cta {
   left: 60px;
 }
 @media screen and (max-width: 1400px) {
+  .roadmap--container .container .item-card--wrapper:nth-child(1) {
+    margin-top: 3em;
+  }
   .roadmap--container .container .item-card--wrapper:nth-child(1) .item-card--content {
     width: 214px;
   }
@@ -8785,7 +8791,7 @@ section.esg a.cta {
 }
 @media screen and (max-width: 1400px) {
   .roadmap--container .container .item-card--wrapper:nth-child(2) {
-    top: 37px;
+    margin-top: 3em;
   }
   .roadmap--container .container .item-card--wrapper:nth-child(2) .item-card--content {
     width: 214px;
@@ -8822,6 +8828,7 @@ section.esg a.cta {
 .roadmap--container .container .item-card--wrapper:nth-child(4) {
   float: right;
   width: 233px;
+  margin-top: 3em;
 }
 @media screen and (max-width: 1000px) {
   .roadmap--container .container .item-card--wrapper:nth-child(4) {
@@ -8844,7 +8851,7 @@ section.esg a.cta {
   float: right;
   margin-top: 6em;
   width: 247px;
-  right: 223px;
+  right: 159px;
 }
 @media screen and (max-width: 1000px) {
   .roadmap--container .container .item-card--wrapper:nth-child(6) {
@@ -8863,7 +8870,7 @@ section.esg a.cta {
 }
 @media screen and (max-width: 1400px) {
   .roadmap--container .container .item-card--wrapper:nth-child(7) {
-    margin-top: 2em;
+    margin-top: 8em;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -8887,6 +8894,11 @@ section.esg a.cta {
 .roadmap--container .container .item-card--wrapper:nth-child(8) .item-card--content {
   width: 200px;
 }
+@media screen and (max-width: 1400px) {
+  .roadmap--container .container .item-card--wrapper:nth-child(8) {
+    right: 785px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .roadmap--container .container .item-card--wrapper:nth-child(8) {
     position: relative;
@@ -8908,6 +8920,7 @@ section.esg a.cta {
 @media screen and (max-width: 1400px) {
   .roadmap--container .container .item-card--wrapper:nth-child(9) {
     top: 482px;
+    right: 494px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -8924,6 +8937,11 @@ section.esg a.cta {
 }
 .roadmap--container .container .item-card--wrapper:nth-child(10) .item-card--content {
   width: 200px;
+}
+@media screen and (max-width: 1400px) {
+  .roadmap--container .container .item-card--wrapper:nth-child(10) {
+    right: 220px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .roadmap--container .container .item-card--wrapper:nth-child(10) {
