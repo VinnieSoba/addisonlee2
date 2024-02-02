@@ -8534,6 +8534,45 @@ section.esg:nth-child(7) h2 span {
   /* 75% */
   text-transform: uppercase;
 }
+section.esg:nth-child(7) .container-fluid {
+  position: relative;
+}
+section.esg:nth-child(7) .container-fluid .row .panel .image-container {
+  background-color: #ffffff;
+  display: flex;
+  height: 300px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+section.esg:nth-child(7) .container-fluid .row .panel .image-container .header-image {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 100%;
+  width: 250px;
+  height: 100%;
+  flex-shrink: 0;
+  max-height: 228px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  section.esg:nth-child(7) .container-fluid .row .panel .image-container .header-image {
+    max-width: 250px;
+  }
+}
+section.esg:nth-child(7) .container-fluid .row .panel .inner-content {
+  background-color: #000000;
+  padding: 29px;
+  height: 100%;
+  min-height: 344px;
+}
+section.esg:nth-child(7) .container-fluid .row .panel .inner-content h3, section.esg:nth-child(7) .container-fluid .row .panel .inner-content p {
+  color: #ffffff;
+}
 section.esg:nth-child(7) .container {
   position: relative;
   max-width: 540px;
