@@ -154,6 +154,11 @@ section.esg {
                         width: 25%;
                         margin: 0 auto;
                         padding-bottom: 32px;
+
+                        @media screen and (max-width: 1000px) {
+                            display: flex;
+                            
+                        }
                     }
 
                     .inner-content {
@@ -167,6 +172,10 @@ section.esg {
                             letter-spacing: 3.84px;
                             text-transform: inherit;
                             text-align: center;
+
+                            @media screen and (max-width: 1000px) {
+                                padding-top: 2em;
+                            }
                         }
 
                         p {
@@ -179,6 +188,14 @@ section.esg {
                             line-height: 28px; /* 175% */
                             max-width: 415px;
                         }
+                    }
+
+                    @media screen and (max-width: 1000px) {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        
                     }
                 }
             }
@@ -323,7 +340,7 @@ section.esg {
         }
     }
 
-    // Our ESG Projects
+    // Our Social Projects
     &:nth-child(7) {
         background-color: $grey-light-section;
 
@@ -384,8 +401,8 @@ section.esg {
                     .inner-content {
                         background-color: $rich-black;
                         padding: 29px;
-                        height: 100%;
-                        min-height: 344px;
+                        height: auto;
+                        min-height: 444px;
                         h3, p {
                             color: $white;
                         }
@@ -419,9 +436,9 @@ section.esg {
                         .header-image {
                             background-repeat: no-repeat;
                             background-position-x: center;
-                            background-size: 100%;
+                            background-size: cover;
                             width: 250px;
-                            height: 70.801px;
+                            height: 100%;
                             flex-shrink: 0;
                 
                             @media screen and (max-width: 1200px) {
@@ -490,6 +507,10 @@ section.esg {
             display: flex;
             justify-content: center;
 
+            @media screen and (max-width: 1000px) {
+                width: 29%;
+            }
+
             .inner-content {
                 padding-bottom: 0;
             }
@@ -546,6 +567,49 @@ section.esg {
                 margin: 0 auto;
                 width: 75%;
                
+            }
+        }
+
+        .container-fluid {
+            .row {   
+                .info-blocks {
+                    .image-container {
+
+                        padding-bottom: 2em;
+
+                        @media screen and (max-width: 1000px) {
+                            display: block;
+                            width: 100%;
+                            margin: 0 auto;
+                            padding-top: 1em;
+
+                        }
+    
+                         
+                        .header-image {
+                            height: 110.424px;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            margin: 0 auto;
+                            width: 75%;
+
+                            @media screen and (max-width: 1000px) {
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                            }
+                          
+                        }
+
+                        @media screen and (max-width: 1000px) {
+                            width: 35%;
+                        }
+                    }
+
+
+                    
+                }
+    
             }
         }
 
@@ -872,6 +936,7 @@ section.esg {
 
                              @media screen and (max-width: 1000px) {
                                 margin-top: 60px;
+                                position: unset;
                                 
                              }
                          }
