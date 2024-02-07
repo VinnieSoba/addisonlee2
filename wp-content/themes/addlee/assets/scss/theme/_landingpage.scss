@@ -200,8 +200,6 @@ section.esg {
                 }
             }
         }
-
-        
     }
 
  
@@ -339,9 +337,229 @@ section.esg {
             }
         }
     }
+    // Addison Lee Greener Future Programme
+    &:nth-child(7) {
+        background-color: $grey-light-section;
+    
+
+        .flexi.multi .row .panel:last-child.info-blocks,
+        .flexi.multi .row .panel:nth-child(even).info-blocks{
+            border-right: none;
+        }
+        .template-section .flexi.multi .row .panel.info-blocks:nth-child(3) h3 {
+            padding-bottom: 10px !important;
+        }
+
+        h2 {
+            color: $rich-black;
+            font-family: inherit;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 75% */
+            text-transform: uppercase;
+            padding-bottom: 40px;
+            letter-spacing: normal;
+        }
+
+             
+
+        .flexi.multi {
+            p {
+                font-size: 16px;
+                line-height: 28px;
+                font-family: inherit;
+                letter-spacing: normal;
+                font-weight: 700;
+                color: #333;
+            }
+            .row {
+                .panel.info-blocks {
+                    .header-icon {
+                        width: 25%;
+                        margin: 0 auto;
+                        padding-bottom: 32px;
+
+                        @media screen and (max-width: 1000px) {
+                            display: flex;
+                            
+                        }
+                    }
+
+                    .inner-content {
+                        h3 {
+                            color: #333;
+                            font-family: inherit;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 37px; /* 100% */
+                            letter-spacing: 3.84px;
+                            text-transform: inherit;
+                            text-align: center;
+
+                            @media screen and (max-width: 1000px) {
+                                padding-top: 2em;
+                            }
+                        }
+
+                        p {
+                            color: #333;
+                            text-align: center;
+                            font-family: inherit;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 28px; /* 175% */
+                            max-width: 415px;
+                        }
+                    }
+
+                    @media screen and (max-width: 1000px) {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    &:nth-child(8) {
+        background-color: $grey-light-section;
+
+        .flexi.multi .row .panel:last-child.info-blocks, .flexi.multi .row .panel:nth-child(even).info-blocks {
+            border-right: none;
+        }
+
+        h2 span {
+            color: $rich-black;
+            font-family: inherit;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 75% */
+            text-transform: uppercase;
+            letter-spacing: normal;
+        }
+       
+        .container-fluid {
+            position: relative;
+
+            .sub-content {
+                p {
+                    text-align: center;
+                }
+            }
+
+            .row {
+                .panel {
+                    .image-container {
+                        background-color: $white;
+                        display: flex;
+                        height: 180px;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 10px;
+                        width: 100%;
+
+                        @media screen and (max-width: 1000px) {
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                    
+            
+                        .header-image {
+                            background-repeat: no-repeat;
+                            background-position-x: center;
+                            background-size: cover;
+                            width: 100%;
+                            height: 100%;
+                            max-width: 406px;
+                            margin: 0 auto;
+                
+                            @media screen and (max-width: 1200px) {
+                                max-width: 250px;
+                                margin: 0 auto;
+                            }
+                            
+                        }
+                    
+                    }
+
+                    .inner-content {
+                        background-color: $rich-black;
+                        padding: 5px;
+                        height: auto;
+                        min-height: 88px;
+                        h3, p {
+                            color: $white;
+                            font-size: 12.8px;
+                            text-align: center;
+                        }
+
+                        @media screen and (max-width: 1400px) {
+                            height: auto;
+                            min-height: 88px;
+                        }
+                    }
+                }
+            }
+        
+        }
+
+        .container {
+            position: relative;
+            max-width: 540px;
+
+            .row {
+                .panel {
+                    .image-container {
+                        background-color: $white;
+                        display: flex;
+                        height: 300px;
+                        padding: 10px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                    
+            
+                        .header-image {
+                            background-repeat: no-repeat;
+                            background-position-x: center;
+                            background-size: cover;
+                            width: 250px;
+                            height: 100%;
+                            flex-shrink: 0;
+                
+                            @media screen and (max-width: 1200px) {
+                                max-width: 250px;
+                            }
+                            
+                        }
+                    
+                    }
+
+                    .inner-content {
+                        background-color: $rich-black;
+                        padding: 29px;
+                        h3, p {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
 
     // Our Social Projects
-    &:nth-child(7) {
+    &:nth-child(9) {
         background-color: $grey-light-section;
 
         .flexi.multi .row .panel:last-child.info-blocks, .flexi.multi .row .panel:nth-child(even).info-blocks {
@@ -464,7 +682,7 @@ section.esg {
     }
 
     // Awards
-    &:nth-child(8) {
+    &:nth-child(10) {
         background-color: $rich-black;
 
         h2 {
@@ -526,7 +744,7 @@ section.esg {
     }
 
     // Certifications
-    &:nth-child(9) {
+    &:nth-child(11) {
         background-color: $rich-black;
 
         .flexi.multi .row .panel:last-child.info-blocks, .flexi.multi .row .panel:nth-child(even).info-blocks {
@@ -1016,6 +1234,4 @@ section.esg {
         
     }
 }
-                       
                     
-

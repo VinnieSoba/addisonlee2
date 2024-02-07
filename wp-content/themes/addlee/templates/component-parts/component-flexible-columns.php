@@ -8,6 +8,7 @@ $flex_cols_class = get_sub_field('flexible_columns_class');
     $width  = get_sub_field('row_width');
     $columns  = get_sub_field('column_count');
     $draw_line = get_sub_field('draw_line');
+    $sub_content = get_sub_field('sub_content');
 
     if($columns == 12) :
         $div_class = 'col-xs-12';
@@ -39,6 +40,7 @@ $flex_cols_class = get_sub_field('flexible_columns_class');
 									<?php echo $header_light; ?>
 							</span>
 					</h2>
+                    <div class="sub-content"><p><?php echo $sub_content; ?></p></div>
 				<?php endif; ?>
 
         <div class="row no-gutter">
