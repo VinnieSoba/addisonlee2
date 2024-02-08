@@ -9073,7 +9073,7 @@ section.esg a.cta {
 }
 @media screen and (max-width: 1000px) {
   .roadmap--container .container .background-active {
-    background-image: url("http://localhost/addisonlee2/wp-content/uploads/2024/01/esg_roadmap_timeine_mobile.svg") !important;
+    background-image: url("/wp-content/uploads/2024/02/esg_roadmap_timeine_mobile.svg") !important;
     background-size: contain;
     background-repeat: no-repeat;
     height: 2031px;
