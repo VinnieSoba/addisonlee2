@@ -8862,9 +8862,9 @@ section.esg:nth-child(10) {
 }
 section.esg:nth-child(10) h2 {
   font-family: inherit;
-  font-size: 36px;
+  font-size: 32px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   /* 66.667% */
   text-transform: uppercase;
@@ -8946,9 +8946,9 @@ section.esg:nth-child(11) .flexi.multi .row .panel:last-child.info-blocks, secti
 }
 section.esg:nth-child(11) h2 {
   font-family: inherit;
-  font-size: 36px;
+  font-size: 32px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   /* 66.667% */
   text-transform: uppercase;
