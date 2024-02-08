@@ -8495,7 +8495,7 @@ section.esg:nth-child(5) .image-container .header-image {
 }
 @media screen and (min-width: 776px) and (max-width: 999px) {
   section.esg:nth-child(5) .image-container .header-image {
-    background-image: url("http://localhost/addisonlee2/wp-content/uploads/2024/02/mobile-res-multivan.jpg") !important;
+    background-image: url("/wp-content/uploads/2024/02/mobile-res-multivan-1.jpg") !important;
     background-position: 0px !important;
     width: 350px;
     height: 263px;
@@ -8503,7 +8503,7 @@ section.esg:nth-child(5) .image-container .header-image {
 }
 @media screen and (max-width: 775px) and (min-width: 200px) {
   section.esg:nth-child(5) .image-container .header-image {
-    background-image: url("http://localhost/addisonlee2/wp-content/uploads/2024/02/mobile-res-multivan.jpg") !important;
+    background-image: url("/wp-content/uploads/2024/02/mobile-res-multivan-1.jpg") !important;
     background-position: 0px !important;
     width: 350px;
     height: 263px;
