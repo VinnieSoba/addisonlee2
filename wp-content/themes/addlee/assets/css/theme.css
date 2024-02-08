@@ -8493,6 +8493,22 @@ section.esg:nth-child(5) .image-container .header-image {
   background-size: cover;
   background-position-x: -445px;
 }
+@media screen and (min-width: 776px) and (max-width: 999px) {
+  section.esg:nth-child(5) .image-container .header-image {
+    background-image: url("http://localhost/addisonlee2/wp-content/uploads/2024/02/mobile-res-multivan.jpg") !important;
+    background-position: 0px !important;
+    width: 350px;
+    height: 263px;
+  }
+}
+@media screen and (max-width: 775px) and (min-width: 200px) {
+  section.esg:nth-child(5) .image-container .header-image {
+    background-image: url("http://localhost/addisonlee2/wp-content/uploads/2024/02/mobile-res-multivan.jpg") !important;
+    background-position: 0px !important;
+    width: 350px;
+    height: 263px;
+  }
+}
 section.esg:nth-child(5) a.cta {
   background-color: #000000;
   color: #ffffff;
@@ -8537,7 +8553,7 @@ section.esg:nth-child(6) .image-container .header-image {
   background-size: contain;
 }
 section.esg:nth-child(7) {
-  background-color: #F6F6F6;
+  background-color: #ffffff;
 }
 section.esg:nth-child(7) .flexi.multi .row .panel:last-child.info-blocks,
 section.esg:nth-child(7) .flexi.multi .row .panel:nth-child(even).info-blocks {
@@ -8557,6 +8573,9 @@ section.esg:nth-child(7) h2 {
   text-transform: uppercase;
   padding-bottom: 40px;
   letter-spacing: normal;
+}
+section.esg:nth-child(7) .flexi.multi {
+  position: relative;
 }
 section.esg:nth-child(7) .flexi.multi p {
   font-size: 16px;
@@ -8611,6 +8630,22 @@ section.esg:nth-child(7) .flexi.multi .row .panel.info-blocks .inner-content p {
     flex-direction: column;
     align-items: center;
   }
+}
+section.esg:nth-child(7) .flexi.multi .cta-container {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+section.esg:nth-child(7) .flexi.multi .cta-container a {
+  max-width: 141px;
+  max-height: 48px;
+  background-color: #fedb00;
+  padding: 12px 16px;
+  font-weight: 700;
+  font-family: inherit;
+  text-transform: uppercase;
+  text-align: center;
 }
 section.esg:nth-child(8) {
   background-color: #F6F6F6;
@@ -8860,13 +8895,29 @@ section.esg:nth-child(10) p {
 section.esg:nth-child(10) .image-container {
   padding-bottom: 2em;
   margin: 0 auto;
-  width: 40%;
+  width: 63%;
   display: flex;
   justify-content: center;
+  padding-left: 58px;
+}
+@media screen and (min-width: 1001px) and (max-width: 1400px) {
+  section.esg:nth-child(10) .image-container {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 1000px) {
   section.esg:nth-child(10) .image-container {
     width: 56%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 999px) {
+  section.esg:nth-child(10) .image-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  section.esg:nth-child(10) .image-container {
+    width: 100%;
   }
 }
 section.esg:nth-child(10) .image-container .inner-content {
@@ -8880,6 +8931,11 @@ section.esg:nth-child(10) .image-container .header-image {
 @media screen and (max-width: 1000px) {
   section.esg:nth-child(10) .image-container .header-image {
     width: 56%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 999px) {
+  section.esg:nth-child(10) .image-container .header-image {
+    width: 60%;
   }
 }
 section.esg:nth-child(11) {
@@ -8942,6 +8998,8 @@ section.esg:nth-child(11) .container-fluid .row .info-blocks .image-container .h
     display: flex;
     justify-content: center;
     flex-direction: column;
+    min-width: 91px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 1000px) {
