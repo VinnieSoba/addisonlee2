@@ -71,7 +71,7 @@ section.esg {
             font-size: 28px;
             font-style: normal;
             font-weight: 700;
-            line-height: 24px; /* 85.714% */
+            line-height: 1.2; /* 85.714% */
             letter-spacing: 5.32px;
             text-transform: inherit;
             padding-top: 1em;
@@ -356,7 +356,7 @@ section.esg {
             font-size: 32px;
             font-style: normal;
             font-weight: 500;
-            line-height: 24px; /* 75% */
+            line-height: 1.2; /* 75% */
             text-transform: uppercase;
             padding-bottom: 40px;
             letter-spacing: normal;
@@ -426,7 +426,7 @@ section.esg {
             }
         }
     }
-
+    // Our Carbon OffSet Projects
     &:nth-child(8) {
         background-color: $grey-light-section;
 
@@ -494,16 +494,19 @@ section.esg {
                         background-color: $rich-black;
                         padding: 5px;
                         height: auto;
-                        min-height: 88px;
-                        h3, p {
+                        h3 {
                             color: $white;
-                            font-size: 12.8px;
+                            font-size: 12px;
                             text-align: center;
+                            padding-top: 10px !important;
+                            padding-bottom: 10px !important;
                         }
+
+                       
 
                         @media screen and (max-width: 1400px) {
                             height: auto;
-                            min-height: 88px;
+                            min-height: 64px;
                         }
                     }
                 }
@@ -620,8 +623,14 @@ section.esg {
                         background-color: $rich-black;
                         padding: 29px;
                         height: auto;
-                        min-height: 444px;
-                        h3, p {
+                        min-height: 327px;
+                        color: $white;
+                        h3 {
+                            color: $white;
+                            font-size: 22px;
+                        }
+
+                        p {
                             color: $white;
                         }
 
@@ -726,7 +735,7 @@ section.esg {
             justify-content: center;
 
             @media screen and (max-width: 1000px) {
-                width: 29%;
+                width: 56%;
             }
 
             .inner-content {
@@ -737,6 +746,10 @@ section.esg {
                 width: 408.238px;
                 height: 212px;
                 background-repeat: no-repeat;
+
+                @media screen and (max-width: 1000px) {
+                    width: 56%;
+                }
                
             }
         }
@@ -1073,7 +1086,11 @@ section.esg {
                             float: right;
                             margin-top: 6em;
                             width: 247px;
-                            right: 159px;
+                            right: 226px;
+
+                            @media screen and (max-width: 1400px) {
+                                right: 164px;
+                            }
 
                             @media screen and (max-width: 1000px) {
                                 width: 100%;

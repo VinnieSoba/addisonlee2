@@ -8317,7 +8317,7 @@ section.esg:nth-child(2) h2 {
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.2;
   /* 85.714% */
   letter-spacing: 5.32px;
   text-transform: inherit;
@@ -8552,7 +8552,7 @@ section.esg:nth-child(7) h2 {
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.2;
   /* 75% */
   text-transform: uppercase;
   padding-bottom: 40px;
@@ -8670,17 +8670,18 @@ section.esg:nth-child(8) .container-fluid .row .panel .inner-content {
   background-color: #000000;
   padding: 5px;
   height: auto;
-  min-height: 88px;
 }
-section.esg:nth-child(8) .container-fluid .row .panel .inner-content h3, section.esg:nth-child(8) .container-fluid .row .panel .inner-content p {
+section.esg:nth-child(8) .container-fluid .row .panel .inner-content h3 {
   color: #ffffff;
-  font-size: 12.8px;
+  font-size: 12px;
   text-align: center;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 @media screen and (max-width: 1400px) {
   section.esg:nth-child(8) .container-fluid .row .panel .inner-content {
     height: auto;
-    min-height: 88px;
+    min-height: 64px;
   }
 }
 section.esg:nth-child(8) .container {
@@ -8772,9 +8773,14 @@ section.esg:nth-child(9) .container-fluid .row .panel .inner-content {
   background-color: #000000;
   padding: 29px;
   height: auto;
-  min-height: 444px;
+  min-height: 327px;
+  color: #ffffff;
 }
-section.esg:nth-child(9) .container-fluid .row .panel .inner-content h3, section.esg:nth-child(9) .container-fluid .row .panel .inner-content p {
+section.esg:nth-child(9) .container-fluid .row .panel .inner-content h3 {
+  color: #ffffff;
+  font-size: 22px;
+}
+section.esg:nth-child(9) .container-fluid .row .panel .inner-content p {
   color: #ffffff;
 }
 @media screen and (max-width: 1400px) {
@@ -8860,7 +8866,7 @@ section.esg:nth-child(10) .image-container {
 }
 @media screen and (max-width: 1000px) {
   section.esg:nth-child(10) .image-container {
-    width: 29%;
+    width: 56%;
   }
 }
 section.esg:nth-child(10) .image-container .inner-content {
@@ -8870,6 +8876,11 @@ section.esg:nth-child(10) .image-container .header-image {
   width: 408.238px;
   height: 212px;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1000px) {
+  section.esg:nth-child(10) .image-container .header-image {
+    width: 56%;
+  }
 }
 section.esg:nth-child(11) {
   background-color: #000000;
@@ -9134,7 +9145,12 @@ section.esg a.cta {
   float: right;
   margin-top: 6em;
   width: 247px;
-  right: 159px;
+  right: 226px;
+}
+@media screen and (max-width: 1400px) {
+  .roadmap--container .container .item-card--wrapper:nth-child(6) {
+    right: 164px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .roadmap--container .container .item-card--wrapper:nth-child(6) {
