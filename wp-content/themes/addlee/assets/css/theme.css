@@ -8272,6 +8272,12 @@ section.esg:nth-child(1) .row .panel:nth-child(1) .inner-content {
   padding-bottom: 4em;
   padding-right: 10px;
 }
+@media screen and (max-width: 767px) {
+  section.esg:nth-child(1) .row .panel:nth-child(1) .inner-content {
+    padding-top: 1em;
+    padding-bottom: 0em;
+  }
+}
 section.esg:nth-child(1) .row .panel:nth-child(1) .inner-content h3 {
   color: #000000;
   font-family: inherit;
@@ -8366,7 +8372,7 @@ section.esg:nth-child(3) .flexi.multi .row .panel:last-child.info-blocks,
 section.esg:nth-child(3) .flexi.multi .row .panel:nth-child(even).info-blocks {
   border-right: none;
 }
-section.esg:nth-child(3) .template-section .flexi.multi .row .panel.info-blocks:nth-child(3) h3 {
+section.esg:nth-child(3) .flexi.multi .row .panel.info-blocks:nth-child(3) .inner-content h3 {
   padding-bottom: 10px !important;
 }
 section.esg:nth-child(3) h2 {
@@ -8912,7 +8918,8 @@ section.esg:nth-child(10) .image-container {
 }
 @media screen and (min-width: 401px) and (max-width: 999px) {
   section.esg:nth-child(10) .image-container {
-    width: 80%;
+    max-width: 228px;
+    padding-left: 0px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -8935,7 +8942,7 @@ section.esg:nth-child(10) .image-container .header-image {
 }
 @media screen and (min-width: 401px) and (max-width: 999px) {
   section.esg:nth-child(10) .image-container .header-image {
-    width: 60%;
+    width: 73%;
   }
 }
 section.esg:nth-child(11) {
