@@ -11,7 +11,7 @@ section.esg {
 
                 @media screen and ( max-width: 767px) {
                     padding-top: 1em;
-                    padding-bottom: 0em;
+            
                 }
 
                 h3 {
@@ -39,6 +39,10 @@ section.esg {
                     font-weight: 400;
                     line-height: 1.9; /* 187.5% */
 
+                    @media screen and ( max-width: 767px) {
+                        height: auto;
+                
+                    }
                     
                 }
                         }                  
@@ -450,6 +454,7 @@ section.esg {
                 bottom: 0;
                 text-align: center;
                 width: 100%;
+                z-index: 111;
 
                 a {
                     max-width: 141px;
@@ -781,14 +786,11 @@ section.esg {
                 width: 56%;
             }
 
-            @media screen and (min-width: 401px) and (max-width: 999px) {
+            @media screen and (min-width: 300px) and (max-width: 999px) {
                 max-width: 228px;
                 padding-left: 0px;
             }
 
-            @media screen and (max-width: 400px) {
-                width: 100%;
-            }
 
             .inner-content {
                 padding-bottom: 0;
@@ -800,7 +802,7 @@ section.esg {
                 background-repeat: no-repeat;
 
                 @media screen and (max-width: 1000px) {
-                    width: 56%;
+                    width: 79%;
                 }
 
                 @media screen and (min-width: 401px) and (max-width: 999px) {
