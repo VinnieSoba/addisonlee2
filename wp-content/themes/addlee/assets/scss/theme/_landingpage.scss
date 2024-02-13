@@ -76,9 +76,9 @@ section.esg {
         h2 {
             color: $white;
             font-family: inherit;
-            font-size: 28px;
+            font-size: 32px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 500;
             line-height: 1.2; /* 85.714% */
             letter-spacing: 5.32px;
             text-transform: inherit;
@@ -177,11 +177,16 @@ section.esg {
                             font-family: inherit;
                             font-size: 24px;
                             font-style: normal;
-                            font-weight: 700;
+                            font-weight: 500;
                             line-height: 24px; /* 100% */
                             letter-spacing: 3.84px;
                             text-transform: inherit;
                             text-align: center;
+
+                            @media screen and ( min-width: 1001px) and ( max-width: 1400px) {
+                                font-size: 21px;
+                
+                            }
 
                             @media screen and (max-width: 1000px) {
                                 padding-top: 2em;
@@ -194,7 +199,7 @@ section.esg {
                             font-family: inherit;
                             font-size: 16px;
                             font-style: normal;
-                            font-weight: 500;
+                            font-weight: 400;
                             line-height: 28px; /* 175% */
                             max-width: 415px;
                         }
@@ -357,6 +362,11 @@ section.esg {
                 height: 104px;
                 background-repeat: no-repeat;
                 background-size: contain;
+
+                @media screen and ( max-width: 1400px) {
+                    margin: 0 auto;
+                    width: 251.238px;
+                }
                
             }
         }
@@ -395,7 +405,7 @@ section.esg {
                 line-height: 28px;
                 font-family: inherit;
                 letter-spacing: normal;
-                font-weight: 700;
+                font-weight: 400;
                 color: #333;
             }
             .row {
@@ -417,7 +427,7 @@ section.esg {
                             font-family: inherit;
                             font-size: 24px;
                             font-style: normal;
-                            font-weight: 700;
+                            font-weight: 500;
                             line-height: 37px; /* 100% */
                             letter-spacing: 3.84px;
                             text-transform: inherit;
@@ -434,7 +444,7 @@ section.esg {
                             font-family: inherit;
                             font-size: 16px;
                             font-style: normal;
-                            font-weight: 500;
+                            font-weight: 400;
                             line-height: 28px; /* 175% */
                             max-width: 415px;
                         }
@@ -494,6 +504,9 @@ section.esg {
             .sub-content {
                 p {
                     text-align: center;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: inherit;
                 }
             }
 
@@ -625,6 +638,14 @@ section.esg {
         .container-fluid {
             position: relative;
 
+            .info-blocks:nth-child(3){
+                .inner-content {
+                    h3 {
+                        padding-bottom: 12px !important;
+                    }
+                }
+            }
+
             .row {
                 .panel {
                     .image-container {
@@ -671,10 +692,17 @@ section.esg {
                         h3 {
                             color: $white;
                             font-size: 22px;
+
+                            @media screen and (max-width: 1400px) {
+                                padding-bottom: 22px !important;
+                                font-size: 16px;
+                                font-weight: 700;
+                            }
                         }
 
                         p {
                             color: $white;
+                            padding-bottom: 0;
                         }
 
                         @media screen and (max-width: 1400px) {
@@ -779,7 +807,7 @@ section.esg {
             padding-left: 58px;
 
             @media screen and (min-width: 1001px) and (max-width: 1400px) {
-                width: 80%;
+                width: 72%;
             }
 
             @media screen and (max-width: 1000px) {
