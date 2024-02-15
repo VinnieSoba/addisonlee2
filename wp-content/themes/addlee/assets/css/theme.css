@@ -8610,6 +8610,7 @@ section.esg:nth-child(7) .flexi.multi .row .panel.info-blocks .header-icon {
   width: 25%;
   margin: 0 auto;
   padding-bottom: 32px;
+  display: flex;
 }
 @media screen and (max-width: 1000px) {
   section.esg:nth-child(7) .flexi.multi .row .panel.info-blocks .header-icon {
