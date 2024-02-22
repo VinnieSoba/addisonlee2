@@ -15369,7 +15369,7 @@ MESSAGE BANNER
 .awards-container--wrapper .item-card {
   width: 350px;
   height: 350px;
-  padding: 24px;
+  padding: 0px;
   background-color: #fff;
   position: relative;
   margin-right: 64px;
@@ -15385,7 +15385,7 @@ MESSAGE BANNER
   margin: 0 auto;
 }
 .awards-container--wrapper .item-card p {
-  width: 230px;
+  width: 245px;
   position: absolute;
   bottom: 30px;
   left: 0;
