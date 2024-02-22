@@ -15337,7 +15337,7 @@ MESSAGE BANNER
 .awards-container--wrapper__single-item .item-card-single-item {
   width: 350px;
   height: 350px;
-  padding: 24px;
+  padding: 0px;
   background-color: #fff;
   position: relative;
   margin-right: 64px;
