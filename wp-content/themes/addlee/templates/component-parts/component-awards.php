@@ -47,7 +47,7 @@
                 <?php $awards_title = get_sub_field('awards_title'); $awards_image = get_sub_field('awards_image'); ?>
                 <img src="<?php echo $awards_image; ?>">
                     <div class="item-card-paragraph">
-                        <p style="font-size: 16px; font-style: normal; font-weight: 400; text-transform: inherit; padding: 24px"><?php echo $awards_title;?></p>
+                        <p style="font-size: 16px; font-style: normal; font-weight: 400; text-transform: inherit; padding: 0px"><?php echo $awards_title;?></p>
                     </div>
                     
             </div>  
