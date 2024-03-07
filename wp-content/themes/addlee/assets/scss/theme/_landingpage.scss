@@ -1340,4 +1340,156 @@ section.esg {
         
     }
 }
+
+
+// variables b2b landing page
+
+.pt1 { padding-top: 1em }
+.pt2 { padding-top: 2em }
+.pt3 { padding-top: 3em }
+.pt4 { padding-top: 4em }
+.pt5 { padding-top: 5em }
+.pt6 { padding-top: 6em }
+
+.pb1 { padding-bottom: 1em }
+.pb2 { padding-bottom: 2em }
+.pb3 { padding-bottom: 3em }
+.pb4 { padding-bottom: 4em }
+.pb5 { padding-bottom: 5em }
+.pb6 { padding-bottom: 6em }
+
+
+.landing-page-content.black.b2b {
+
+    background-color: $rich-black;
+   
+
+    h1 {
+        color: $white;
+        font-family: inherit;
+        text-transform: inherit;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+
+    }
+    .landing-page-wrapper {
+        justify-content: center;
+
+        .standard-content {
+
+            form#wpforms-form-20568 {
+
+                h3, label {
+                    color: $beige-dark;
+                    padding-left: 6px;
+                }
+
+                #wpforms-20568-field_14-container{
+                    background-color: $white;
                     
+                    ul#wpforms-20568-field_14 {
+                        display: inline-flex;
+                        max-width: 528px;
+                        width: 100%;
+                        padding: 10px 20px 10px 0px;
+    
+                        li {
+                            margin-right: 30px;
+                            list-style: none;
+    
+                            label {
+                            color: #c1ba97;
+                            font-size: 14px;
+                            padding-left: 6px;
+                            }
+                            
+                        }
+                    }
+                }  
+                
+                #wpforms-20568-field_16-container.ppbg {
+                    background-color: $rich-black;
+                    border: none;
+                    text-align: center;
+                    a {
+                        color: $white;
+                        
+                    }
+
+                }
+                
+            }
+          
+        }
+    }
+}
+
+
+.landing-page-content {
+    
+    .heading-title {
+
+        h1 {
+            font-family: inherit;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.19em;
+    
+        }
+
+    }
+
+
+    .landing-page-wrapper {
+
+        display: flex;
+        justify-content: center;
+
+        @media screen and ( max-width: 1000px ) {
+            display: block;
+            margin: 0 auto;
+            width: 40%;
+            
+        }
+    
+        .inner-content {
+            display: flex;
+            background-color: $yellow-brand;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            max-width: 367px;
+            width: 100%;
+            
+            .card-item {
+                display: flex;
+                justify-content: flex-start;
+                gap: 27px;
+                max-width: 449px;
+                height: 88px;
+                //grid-template-columns: auto auto;
+                align-items: center;
+                flex-direction: row-reverse;
+            }
+        }
+
+       
+    }
+    
+    
+}
+
+
+.landing-page-content.grey.b2b {
+    background-color: #e8e8e8;
+
+    #wpsm_accordion_20716 .wpsm_panel {
+        border-color: #e8e8e8 !important;
+        border-bottom-color: #32323240 !important;
+    }
+   
+}
+
