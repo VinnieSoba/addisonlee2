@@ -1380,17 +1380,18 @@ section.esg {
 
         .standard-content {
 
-            form#wpforms-form-20568 {
+            //form#wpforms-form-20568,
+            form#wpforms-form-20613 {
 
                 h3, label {
                     color: $beige-dark;
                     padding-left: 6px;
                 }
 
-                #wpforms-20568-field_14-container{
+                #wpforms-20613-field_14-container{
                     background-color: $white;
                     
-                    ul#wpforms-20568-field_14 {
+                    ul#wpforms-20613-field_14 {
                         display: inline-flex;
                         max-width: 528px;
                         width: 100%;
@@ -1410,7 +1411,7 @@ section.esg {
                     }
                 }  
                 
-                #wpforms-20568-field_16-container.ppbg {
+                #wpforms-20613-field_16-container.ppbg {
                     background-color: $rich-black;
                     border: none;
                     text-align: center;
