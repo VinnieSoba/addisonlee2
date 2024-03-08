@@ -1359,6 +1359,7 @@ section.esg {
 .pb6 { padding-bottom: 6em }
 
 
+
 .landing-page-content.black.b2b {
 
     background-color: $rich-black;
@@ -1380,7 +1381,23 @@ section.esg {
 
         .standard-content {
 
-            //form#wpforms-form-20568,
+            &:nth-child(2) {
+
+             .standard-content {
+                &--image {
+                    padding-top: 203px;
+
+                    @media only screen and (max-width: 767px) {
+                        padding-top: 20px;
+                    }
+                }
+                    
+                }
+                
+            }
+          
+
+            form#wpforms-form-20568,
             form#wpforms-form-20613 {
 
                 h3, label {
@@ -1388,9 +1405,11 @@ section.esg {
                     padding-left: 6px;
                 }
 
+                #wpforms-20568-field_14-container,
                 #wpforms-20613-field_14-container{
                     background-color: $white;
                     
+                    ul#wpforms-20568-field_14, 
                     ul#wpforms-20613-field_14 {
                         display: inline-flex;
                         max-width: 528px;
@@ -1411,6 +1430,7 @@ section.esg {
                     }
                 }  
                 
+                #wpforms-20568-field_16-container.ppbg,
                 #wpforms-20613-field_16-container.ppbg {
                     background-color: $rich-black;
                     border: none;
@@ -1421,6 +1441,10 @@ section.esg {
                     }
 
                 }
+
+                .wpforms-error {
+                    color: $red;
+                }
                 
             }
           
@@ -1429,7 +1453,7 @@ section.esg {
 }
 
 
-.landing-page-content {
+.landing-page-content.white.b2b {
     
     .heading-title {
 
@@ -1450,11 +1474,11 @@ section.esg {
         display: flex;
         justify-content: center;
 
-        @media screen and ( max-width: 1000px ) {
+        @media only screen and (max-width: 1000px) {
             display: block;
-            margin: 0 auto;
-            width: 40%;
-            
+            margin-left: auto;
+            margin-right: auto;
+            width: 53%;
         }
     
         .inner-content {
@@ -1479,14 +1503,15 @@ section.esg {
 
        
     }
-    
-    
 }
+    
+
 
 
 .landing-page-content.grey.b2b {
     background-color: #e8e8e8;
 
+    #wpsm_accordion_20716 .wpsm_panel,
     #wpsm_accordion_20614 .wpsm_panel {
         border-color: #e8e8e8 !important;
         border-bottom-color: #32323240 !important;

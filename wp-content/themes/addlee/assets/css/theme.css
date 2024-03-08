@@ -9569,56 +9569,101 @@ section.esg a.cta {
 .landing-page-content.black.b2b .landing-page-wrapper {
   justify-content: center;
 }
-.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 h3, .landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 label {
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content:nth-child(2) .standard-content--image {
+  padding-top: 203px;
+}
+@media only screen and (max-width: 767px) {
+  .landing-page-content.black.b2b .landing-page-wrapper .standard-content:nth-child(2) .standard-content--image {
+    padding-top: 20px;
+  }
+}
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 h3, .landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 label,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 h3,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 label {
   color: #c1ba97;
   padding-left: 6px;
 }
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20568-field_14-container,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20613-field_14-container,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20568-field_14-container,
 .landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20613-field_14-container {
   background-color: #ffffff;
 }
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20568-field_14-container ul#wpforms-20568-field_14,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20568-field_14-container ul#wpforms-20613-field_14,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20613-field_14-container ul#wpforms-20568-field_14,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20613-field_14-container ul#wpforms-20613-field_14,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20568-field_14-container ul#wpforms-20568-field_14,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20568-field_14-container ul#wpforms-20613-field_14,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20613-field_14-container ul#wpforms-20568-field_14,
 .landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20613-field_14-container ul#wpforms-20613-field_14 {
   display: inline-flex;
   max-width: 528px;
   width: 100%;
   padding: 10px 20px 10px 0px;
 }
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20568-field_14-container ul#wpforms-20568-field_14 li,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20568-field_14-container ul#wpforms-20613-field_14 li,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20613-field_14-container ul#wpforms-20568-field_14 li,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20613-field_14-container ul#wpforms-20613-field_14 li,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20568-field_14-container ul#wpforms-20568-field_14 li,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20568-field_14-container ul#wpforms-20613-field_14 li,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20613-field_14-container ul#wpforms-20568-field_14 li,
 .landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20613-field_14-container ul#wpforms-20613-field_14 li {
   margin-right: 30px;
   list-style: none;
 }
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20568-field_14-container ul#wpforms-20568-field_14 li label,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20568-field_14-container ul#wpforms-20613-field_14 li label,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20613-field_14-container ul#wpforms-20568-field_14 li label,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20613-field_14-container ul#wpforms-20613-field_14 li label,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20568-field_14-container ul#wpforms-20568-field_14 li label,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20568-field_14-container ul#wpforms-20613-field_14 li label,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20613-field_14-container ul#wpforms-20568-field_14 li label,
 .landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20613-field_14-container ul#wpforms-20613-field_14 li label {
   color: #c1ba97;
   font-size: 14px;
   padding-left: 6px;
 }
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20568-field_16-container.ppbg,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20613-field_16-container.ppbg,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20568-field_16-container.ppbg,
 .landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20613-field_16-container.ppbg {
   background-color: #000000;
   border: none;
   text-align: center;
 }
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20568-field_16-container.ppbg a,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 #wpforms-20613-field_16-container.ppbg a,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20568-field_16-container.ppbg a,
 .landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 #wpforms-20613-field_16-container.ppbg a {
   color: #ffffff;
 }
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20568 .wpforms-error,
+.landing-page-content.black.b2b .landing-page-wrapper .standard-content form#wpforms-form-20613 .wpforms-error {
+  color: #e74c3c;
+}
 
-.landing-page-content .heading-title h1 {
+.landing-page-content.white.b2b .heading-title h1 {
   font-family: inherit;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.19em;
 }
-.landing-page-content .landing-page-wrapper {
+.landing-page-content.white.b2b .landing-page-wrapper {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 1000px) {
-  .landing-page-content .landing-page-wrapper {
+@media only screen and (max-width: 1000px) {
+  .landing-page-content.white.b2b .landing-page-wrapper {
     display: block;
-    margin: 0 auto;
-    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 53%;
   }
 }
-.landing-page-content .landing-page-wrapper .inner-content {
+.landing-page-content.white.b2b .landing-page-wrapper .inner-content {
   display: flex;
   background-color: #fedb00;
   margin-right: 20px;
@@ -9626,7 +9671,7 @@ section.esg a.cta {
   max-width: 367px;
   width: 100%;
 }
-.landing-page-content .landing-page-wrapper .inner-content .card-item {
+.landing-page-content.white.b2b .landing-page-wrapper .inner-content .card-item {
   display: flex;
   justify-content: flex-start;
   gap: 27px;
@@ -9639,6 +9684,7 @@ section.esg a.cta {
 .landing-page-content.grey.b2b {
   background-color: #e8e8e8;
 }
+.landing-page-content.grey.b2b #wpsm_accordion_20716 .wpsm_panel,
 .landing-page-content.grey.b2b #wpsm_accordion_20614 .wpsm_panel {
   border-color: #e8e8e8 !important;
   border-bottom-color: #32323240 !important;

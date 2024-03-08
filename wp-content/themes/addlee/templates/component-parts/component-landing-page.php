@@ -62,18 +62,12 @@ if($column_class == 'full black b2b'):
 
                                 <?php elseif('standard selection') : ?>
 
-                                    <div class="standard-content <?php echo $divclass; ?>" style="
-                                        background-image: url('<?php echo $image; ?>'); 
-                                        background-repeat: no-repeat; 
-                                        background-position-x: center;
-                                        background-position-y: center; 
-                                        background-size: cover;
-                                        background-size: 100%;
-                                        height: auto;
-                                        width: 35%;
-                                        " >
+                                    <div class="standard-content <?php echo $divclass; ?>" >
                                         <h4><?php echo $title; ?></h4>
                                         <p><?php echo $content; ?></p>
+                                        <?php if($image) : ?>
+                                                <img src="<?php echo $image; ?>" class="standard-content--image">
+                                        <?php endif; ?>
                                       
                                     </div>
 
