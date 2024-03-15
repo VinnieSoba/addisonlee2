@@ -9730,6 +9730,7 @@ section.esg a.cta {
   line-height: 36px;
   letter-spacing: 0.04em;
   text-align: center;
+  text-transform: uppercase;
 }
 .single-resource #sidebar {
   display: none;
