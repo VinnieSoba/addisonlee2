@@ -8,7 +8,8 @@
  *
  * @see get_post_type_labels() for label keys.
  */
- function wpdocs_codex_resource_init() {
+ 
+ /*function wpdocs_codex_resource_init() {
 	$labels = array(
 		'name'                  => _x( 'Resource', 'Post type general name', 'textdomain' ),
 		'singular_name'         => _x( 'Resource', 'Post type singular name', 'textdomain' ),
@@ -50,3 +51,4 @@
 }
 
 add_action( 'init', 'wpdocs_codex_resource_init' );
+*/
