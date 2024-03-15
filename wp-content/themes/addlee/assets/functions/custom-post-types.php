@@ -39,9 +39,9 @@
         'show_in_rest'       => true,
 		'query_var'          => true,
 		'rewrite'            => array( 'slug', 'resource'),
-		'has_archive'		=>  false,
+		'has_archive'		=>  true,
 		'capability_type'    => 'post',
-		'hierarchical'       => true,
+		'hierarchical'       => false,
 		'menu_position'      => null,
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'taxonomies', 'page-attributes','custom-fields', 'post-formats' ),
 	);
