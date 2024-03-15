@@ -9698,6 +9698,54 @@ section.esg a.cta {
   border-bottom-color: #32323240 !important;
 }
 
+.single-resource .template-section.dark-grey {
+  background-color: #f7f7ef;
+}
+.single-resource .page-banner.hero h1 {
+  display: none;
+}
+.single-resource article.container {
+  text-align: center;
+}
+.single-resource .page-banner {
+  height: 771px;
+  background-attachment: initial;
+}
+@media only screen and (max-width: 1400px) {
+  .single-resource .page-banner {
+    height: 400px;
+  }
+}
+.single-resource .page-banner .content-header article.container .heading-title {
+  display: block;
+  line-height: 54.21px;
+  font-size: 48px;
+  font-weight: 500;
+  padding-bottom: 0.4em;
+}
+.single-resource .page-banner .content-header article.container .resource-title {
+  font-family: inherit;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+.single-resource #sidebar {
+  display: none;
+}
+.single-resource .page-content .template-section .inner-content {
+  text-align: center;
+}
+.single-resource .page-content .template-section .inner-content .resource-content-title {
+  font-family: inherit;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 /* Templates */
 .page-template-template-careers .row {
   margin: 0 !important;
