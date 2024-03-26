@@ -145,7 +145,8 @@ function topFunction() {
 
 jQuery(document).ready(function($){
     var showpolicy = $(".show-full-policy");
-  
+    var step1 = $(".wpforms-page-indicator-page-1");
+    var active = $(".active");  
      $(showpolicy).click(function(){
         if(showpolicy){
             $(".accordion-section").css("display", "block");
@@ -153,4 +154,15 @@ jQuery(document).ready(function($){
         } 
 
     });
+
+    if(active) {
+        $(".wpforms-page-indicator-page-1").after("<p style='text-transform: inherit'>Account Type</p>");
+        $(".wpforms-page-indicator-page-2").after("<p style='text-transform: inherit'>Contact Details</p>");
+        $(".wpforms-page-indicator-page-3").after("<p style='text-transform: inherit'>Company Details</p>");  
+           
+        
+    }
+    
+
+
 });

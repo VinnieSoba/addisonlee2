@@ -1,10 +1,96 @@
 .single-resource {
 
-    .template-section.dark-grey {
-        background-color: #f7f7ef;
+    .resource-wrapper {
+        background-color: $rich-black;
+        padding-top: 5em;
+        padding-bottom: 2em;
+
+        .container {
+            max-width: 1600px;
+        }
+
+        .resource-container {
+            background-color: $rich-black;         
+        }
+
+        .sidebar {
+            padding: 20px;
+
+            .resource-side-bar-links {
+                ul li {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    padding: 10px;
+                    transition: 0.5s;
+
+                    &:before {
+                        content: "\f061";
+                        font-size: 12px;
+                        font-family: fontawesome;
+                        color: $yellow-brand;
+                        padding-right: 17px;
+                        
+                    }
+
+                    &:active {
+                        background-color: aqua;
+                    }
+
+                    &:hover {
+                        background-color: $beige-light;
+                        opacity: 1;
+
+                        a {
+                            text-decoration: none;
+                            color: $rich-black;
+                        }
+
+                        &:before {
+                            color: $rich-black;
+                            margin-left: 15px;
+                        }
+                    }
+                    a {
+                        color:  $white;
+                        font-size: 19px;
+                    }
+
+                } 
+            }
+        }
+
+        .template-section.full.black {
+
+            .container {
+
+                max-width: 1600px;
+
+                .info-blocks {
+                    border-right: none;
+                }
+    
+
+            }
+
+            .container-fluid {
+                max-width: 1265px;
+
+                .info-blocks {
+                    border-right: none;
+                }
+                
+            }
+        }
     }
 
-    .page-banner.hero h1 {
+    .template-section.dark-grey {
+        background-color: $rich-black;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+    .page-banner.hero  {
         display: none
     }
         
@@ -64,8 +150,14 @@
                 line-height: 42px; 
                 letter-spacing: 0.04em;
                 text-transform: uppercase;
+
+                span {
+                    padding-bottom: 2em;
+                }
+                
                }
             }
         }
     }
 }
+
