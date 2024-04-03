@@ -1,21 +1,21 @@
 jQuery(document).ready(function ($) {
-    var phone_call =  $("#wpforms-20908-field_10-container ul#wpforms-20908-field_10 label");
-    var input = $("input#wpforms-20908-field_10_1");
-    var email =  $("#wpforms-20908-field_11-container ul#wpforms-20908-field_11 label");
-    var email_input = $("input#wpforms-20908-field_11_1");
-    var text =  $("#wpforms-20908-field_12-container ul#wpforms-20908-field_12 label");
-    var text_input = $("input#wpforms-20908-field_12_1");
+    var phone_call =  $("#wpforms-20687-field_1-container ul#wpforms-20687-field_1 label");
+    var input = $("input#wpforms-20687-field_1_1");
+    var email =  $("#wpforms-20687-field_2-container ul#wpforms-20687-field_2 label");
+    var email_input = $("input#wpforms-20687-field_2_1");
+    var text =  $("#wpforms-20687-field_3-container ul#wpforms-20687-field_3 label");
+    var text_input = $("input#wpforms-20687-field_3_1");
 
     // news & updates
 
-    var general_news = $("#wpforms-20908-field_14-container ul#wpforms-20908-field_14 label");
-    var general_input = $("input#wpforms-20908-field_14_1");
+    var general_news = $("#wpforms-20687-field_4-container ul#wpforms-20687-field_4 label");
+    var general_input = $("input#wpforms-20687-field_4_1");
 
-    var sustainability = $("#wpforms-20908-field_15-container ul#wpforms-20908-field_15 label");
-    var sustainability_input = $("input#wpforms-20908-field_15_1");
+    var sustainability = $("#wpforms-20687-field_5-container ul#wpforms-20687-field_5 label");
+    var sustainability_input = $("input#wpforms-20687-field_5_1");
 
-    var pros = $("#wpforms-20908-field_16-container ul#wpforms-20908-field_16 label");
-    var pros_input = $("input#wpforms-20908-field_16_1");
+    var pros = $("#wpforms-20687-field_6-container ul#wpforms-20687-field_6 label");
+    var pros_input = $("input#wpforms-20687-field_6_1");
 
     // h1 text on market submission page
     //var bannerh1 = $(".page-banner .content-header");
