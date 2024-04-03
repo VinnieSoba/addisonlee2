@@ -1,0 +1,174 @@
+#wpforms-form-20908,
+#wpforms-form-20687
+{
+
+        ul#wpforms-20908-field_10,
+        ul#wpforms-20687-field_1,
+        ul#wpforms-20908-field_11,
+        ul#wpforms-20687-field_2,
+        ul#wpforms-20908-field_12,
+        ul#wpforms-20687-field_3,
+        ul#wpforms-20908-field_14,
+        ul#wpforms-20687-field_4,
+        ul#wpforms-20908-field_15,
+        ul#wpforms-20687-field_5,
+        ul#wpforms-20908-field_16,
+        ul#wpforms-20687-field_6
+      
+        {
+            li {
+                .switch {
+                    position: relative;
+                    display: inline-block;
+                    width: 439px;
+                    height: 34px;
+                    }
+                    
+                .switch input { 
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                    }
+                    
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 375px;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #fedb00;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                    }
+                    
+                    .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 26px;
+                    width: 26px;
+                    left: 4px;
+                    bottom: 4px;
+                    background-color: #464040;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+
+                    }
+                    
+                    input:checked + .slider {
+                    background-color: #2196F3;
+
+                    &:before {
+                        -webkit-transform: translate3d(20px, 0%,0) !important;
+                        -ms-transform: translate3d(20px, 0%,0) !important;
+                        transform: translate3d(20px, 0%,0) !important;
+                    }
+
+                    }
+                    
+                    input:focus + .slider {
+                        box-shadow: 0 0 1px #2196F3;
+                    }
+                    
+                   
+                    
+                    /* Rounded sliders */
+                    .slider.round {
+                    border-radius: 34px;
+                    }
+                    
+                    .slider.round:before {
+                    border-radius: 50%;
+                    } 
+                    
+                    .switch-container {
+                        width: 700px;
+                    }
+
+            }
+        }
+
+}
+
+.page-template-template-marketing-submission {
+
+    .page-banner {
+
+        background-color: #454641;
+
+        .content-header {
+            
+            article.container {
+
+                color: $white;
+                font-family: inherit;
+                font-size: 20px;
+                line-height: 1.8em;
+                font-weight: 400;
+
+                .heading-title {
+                    color: $white;
+                    font-size: 40px;
+                    font-family: inherit;
+                    padding-bottom: 1em;
+                }
+            }
+        }
+    }
+
+    .marketing-submission {
+
+        article.panel.info-blocks {
+            width: 100%;
+
+            .wpforms-container {
+                margin: 0;
+                max-width: 100%;
+
+                .wpforms-field-container {
+
+                    gap: 14px;
+                    display: flex;
+
+                    .left-cont {
+                        background-color: $white;
+                        border: 1px solid #000;
+                        box-shadow: none;
+    
+                        .wpforms-image-choices-image {
+                            width: 50px;
+                            float: left;
+                        }
+    
+                        .test-1 {
+                            border: none;
+                        }
+                    }
+    
+                    .right-cont {
+                        background-color: $white;
+                        border: 1px solid #000;
+                        box-shadow: none;
+    
+                        .wpforms-image-choices-image {
+                            width: 50px;
+                            float: left;
+                        }
+    
+                        .test-2 {
+                            border: none;
+                        }
+                    }
+
+                }
+
+               
+            }
+        }                                               
+    }
+
+}
+
+
+
+
