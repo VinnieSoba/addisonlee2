@@ -63,7 +63,7 @@ jQuery(document).ready(function ($) {
 
 
         // slit the form into 2 columns
-        var formWrap = $('form#wpforms-form-20908 .wpforms-field-container');
+        var formWrap = $('form#wpforms-form-20687 .wpforms-field-container');
 
         //$('<p>My text goes here</p>').appendTo(bannerh1);
         
