@@ -20,10 +20,17 @@ endwhile;
 <div class="row">
 <div class="col-md-4 sidebar">
 <ul>
+<li><a href="/prism">Go Back to Prism Page</a></li>
 <li><a href="/resource/learn-how-to-understand-your-prism-dashboard-indicating-trends-and-spend-on-your-account/">Dashboard</a></li>
 <li><a href="/resource/learn-how-to-create-edit-and-update-a-travel-policy-with-prism/">Travel Policy</a></li>
 <li><a href="/resource/learn-how-to-manage-multiple-traveller-profiles-in-real-time-access-levels-and-how-to-upload-new-users-to-your-account/">People Management</a></li>
 <li><a href="/resource/learn-how-to-access-and-download-all-live-and-historic-booking-data-via-prism/">Job Listing Report</a></li>
+<li><a href="/resource/learn-how-to-link-your-colleagues-to-your-addison-lee-profile-so-they-can-book-and-manage-services-for-others/">Delegate Functionality</a></li>
+<li><a href="/resource/learn-about-prisms-billing-features-including-invoice-downloads-and-references/">Billing</a></li>
+<li><a href="/resource/learn-how-to-manage-referencing-captured-within-your-account-when-a-booking-is-made/">Invoice by reference</a></li>
+<li><a href="/resource/learn-how-to-change-or-update-credit-card-information/">Credit Card Update</a></li>
+<li><a href="/resource/learn-how-to-locate-credit-card-receipts/">Card Receipt</a></li>
+<li><a href="/resource/learn-about-prisms-alert-feature-that-helps-you-identify-where-your-travellers-are/">Alerts</a></li>
 </ul>
 </div>
 

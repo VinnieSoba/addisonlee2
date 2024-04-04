@@ -74,6 +74,16 @@
                 padding: 10px;
                 transition: 0.5s;
 
+                &:nth-child(1) {
+                    &:before {
+                        content: "\f060";
+                        font-size: 12px;
+                        font-family: fontawesome;
+                        color: $white;
+                        padding-right: 17px;
+                    }   
+                }
+
                 &:before {
                     content: "\f061";
                     font-size: 12px;

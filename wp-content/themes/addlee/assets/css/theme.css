@@ -9973,6 +9973,13 @@ section.esg a.cta {
   padding: 10px;
   transition: 0.5s;
 }
+.resource-template .prism-page .sidebar ul li:nth-child(1):before {
+  content: "";
+  font-size: 12px;
+  font-family: fontawesome;
+  color: #ffffff;
+  padding-right: 17px;
+}
 .resource-template .prism-page .sidebar ul li:before {
   content: "";
   font-size: 12px;
