@@ -9916,13 +9916,40 @@ section.esg a.cta {
 }
 
 .resource-template .prism-page {
+  padding-top: 2em;
+}
+.resource-template .prism-page .black {
   background-color: #000000;
-  padding-top: 3em;
 }
-.resource-template .prism-page:nth-child(1) {
-  display: none;
+.resource-template .prism-page .beige {
+  background-color: #f7f7ef;
 }
-.resource-template .prism-page .black h2 {
+.resource-template .prism-page .beige h2, .resource-template .prism-page .beige p, .resource-template .prism-page .beige .sidebar ul li a {
+  color: #000000;
+}
+.resource-template .prism-page .beige .sidebar ul li:hover {
+  background-color: #ffffff;
+}
+.resource-template .prism-page .white {
+  background-color: #ffffff;
+}
+.resource-template .prism-page .white h2, .resource-template .prism-page .white p, .resource-template .prism-page .white .sidebar ul li a {
+  color: #000000;
+}
+.resource-template .prism-page .white .sidebar ul li:hover {
+  background-color: #ffffff;
+}
+.resource-template .prism-page .yellow {
+  background-color: #ffd600;
+}
+.resource-template .prism-page .yellow h2, .resource-template .prism-page .yellow p, .resource-template .prism-page .yellow .sidebar ul li:before,
+.resource-template .prism-page .yellow .sidebar ul li {
+  color: #000000;
+}
+.resource-template .prism-page .yellow .sidebar ul li:hover {
+  background-color: #ffffff;
+}
+.resource-template .prism-page h2 {
   font-family: inherit;
   font-size: 32px;
   font-weight: 400;
@@ -9931,7 +9958,69 @@ section.esg a.cta {
   text-transform: uppercase;
   color: #ffffff;
 }
-.resource-template .page-banner.hero {
+.resource-template .prism-page p {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  text-transform: inherit;
+  color: #F6F6F6;
+}
+.resource-template .prism-page .sidebar ul li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  transition: 0.5s;
+}
+.resource-template .prism-page .sidebar ul li:before {
+  content: "";
+  font-size: 12px;
+  font-family: fontawesome;
+  color: #fedb00;
+  padding-right: 17px;
+}
+.resource-template .prism-page .sidebar ul li:active {
+  background-color: aqua;
+}
+.resource-template .prism-page .sidebar ul li:hover {
+  background-color: #f7f7ef;
+  opacity: 1;
+}
+.resource-template .prism-page .sidebar ul li:hover a {
+  text-decoration: none;
+  color: #000000;
+}
+.resource-template .prism-page .sidebar ul li:hover:before {
+  color: #000000;
+  margin-left: 15px;
+}
+.resource-template .prism-page .sidebar ul li a {
+  color: #ffffff;
+  font-size: 19px;
+}
+.resource-template .prism-page .container {
+  max-width: 1387px;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+.resource-template .prism-page .container-fluid {
+  padding-left: 3em !important;
+  padding-right: 3em !important;
+}
+.resource-template .prism-page .container-fluid .sidebar {
+  display: flex;
+  justify-content: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 626px;
+  margin: 0 auto;
+  width: 100%;
+}
+.resource-template .prism-page .container-fluid .sidebar ul {
+  width: 500px;
+}
+.resource-template section.page-banner {
   display: none;
 }
 .resource-template .resource-wrapper {

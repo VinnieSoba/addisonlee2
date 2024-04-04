@@ -4,43 +4,24 @@ Template Name: Resources
 Template Post Type: resource
 */
 get_header();
- 
-$cols = get_field('flexible_components');
-if($cols) : 
-
-    while(have_rows('flexible_components') ) : the_row();
-
-        while(have_rows( 'flexible_columns' ) ) : the_row();
-
-            $row_width = get_sub_field('row_width');
-
-            if($row_width == 'normal') :
-                $row_class = 'container';
-            elseif($row_width == 'full') :
-                $row_class = 'container-fluid';
-            endif;
-
-        endwhile;
 
 
-    endwhile;
 ?>
 
-<section class="resource-wrapper">
+<section class="prism-page">
+<?php 
+if(have_rows( 'prism_instructional_video' ) ) :
+    while(have_rows( 'prism_instructional_video' ) ) : the_row();
+    $column_class = get_sub_field('column_class'); 
 
-<div class="resource-container <?php echo $row_class; ?>">
+    if( get_row_layout() == 'prism_component' ):
+        get_template_part('templates/component-parts/component', 'prism');
+    endif;
+?>
 
-        <div class="sidebar col-md-3">
-            <?php get_template_part('sidebar', 'resource'); ?>
-        </div>
-        <div class="resource-container--content col-md-9">
-            <?php get_template_part('templates/template', 'flexible'); ?>
-        </div>
+<?php endwhile; ?>
 
-</div>
+<?php endif; ?>
 </section>
 
-
-  
-<?php endif; ?>
 <?php get_footer(); ?>

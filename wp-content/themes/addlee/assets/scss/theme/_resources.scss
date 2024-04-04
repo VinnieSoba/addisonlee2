@@ -1,163 +1,218 @@
-.single-resource {
+.resource-template {
 
-    .resource-wrapper {
-        background-color: $rich-black;
-        padding-top: 5em;
-        padding-bottom: 2em;
-
-        .container {
-            max-width: 1600px;
+    .prism-page {
+        padding-top: 2em;
+        
+        .black {
+            background-color: $rich-black;
         }
 
-        .resource-container {
-            background-color: $rich-black;         
+        .beige {
+            background-color: $beige-light;
+
+            h2, p, .sidebar ul li a {
+                color: $rich-black;
+            }
+
+            .sidebar ul li:hover {
+                background-color: $white;
+            }
+
         }
 
-        .sidebar {
-            padding: 20px;
+        .white {
+            background-color: $white;
 
-            .resource-side-bar-links {
-                ul li {
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                    padding: 10px;
-                    transition: 0.5s;
+            h2, p, .sidebar ul li a {
+                color: $rich-black;
+            }
 
-                    &:before {
-                        content: "\f061";
-                        font-size: 12px;
-                        font-family: fontawesome;
-                        color: $yellow-brand;
-                        padding-right: 17px;
-                        
-                    }
-
-                    &:active {
-                        background-color: aqua;
-                    }
-
-                    &:hover {
-                        background-color: $beige-light;
-                        opacity: 1;
-
-                        a {
-                            text-decoration: none;
-                            color: $rich-black;
-                        }
-
-                        &:before {
-                            color: $rich-black;
-                            margin-left: 15px;
-                        }
-                    }
-                    a {
-                        color:  $white;
-                        font-size: 19px;
-                    }
-
-                } 
+            .sidebar ul li:hover {
+                background-color: $white;
             }
         }
 
-        .template-section.full.black {
+        .yellow {
+            background-color: $yellow-bright;
 
-            .container {
+            h2, p, .sidebar ul li:before,
+            .sidebar ul li {
+                color: $rich-black;
+            }
 
-                max-width: 1600px;
-
-                .info-blocks {
-                    border-right: none;
-                }
+            .sidebar ul li:hover {
+                background-color: $white;
+            }
+        }
     
 
-            }
-
-            .container-fluid {
-                max-width: 1265px;
-
-                .info-blocks {
-                    border-right: none;
-                }
-                
-            }
+        h2 {
+            font-family: inherit; 
+            font-size: 32px; 
+            font-weight: 400; 
+            line-height: 42px; 
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: $white;
         }
-    }
 
-    .template-section.dark-grey {
-        background-color: $rich-black;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-
-    .page-banner.hero  {
-        display: none
-    }
+        p {
+            font-family: inherit; 
+            font-size: 18px; 
+            font-weight: 200; 
+            line-height: 1.6; 
+            letter-spacing: 0.04em;
+            text-transform: inherit;
+            color: $grey-light-section;
+        }
         
-    article.container {
-        text-align: center;
-    }
 
-    .page-banner {
-        height: 771px;
-        background-attachment: initial;
+        .sidebar {
+            ul li {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding: 10px;
+                transition: 0.5s;
 
-        @media only screen and (max-width: 1400px) {
-            height: 400px;
-            
-        }
-
-        .content-header {
-
-            article.container {
-
-                .heading-title {
-                    display: block;
-                    line-height: 54.21px;   
-                    font-size: 48px;
-                    font-weight: 500;
-                    padding-bottom: 0.4em;
+                &:before {
+                    content: "\f061";
+                    font-size: 12px;
+                    font-family: fontawesome;
+                    color: $yellow-brand;
+                    padding-right: 17px;
+                    
                 }
 
-                .resource-title {
-                    font-family: inherit; 
-                    font-size: 32px;
-                    font-weight: 400;
-                    line-height: 36px;
-                    letter-spacing: 0.04em;
-                    text-align: center;
-                    text-transform: uppercase;
+                &:active {
+                    background-color: aqua;
+                }
+
+                &:hover {
+                    background-color: $beige-light;
+                    opacity: 1;
+
+                    a {
+                        text-decoration: none;
+                        color: $rich-black;
+                    }
+
+                    &:before {
+                        color: $rich-black;
+                        margin-left: 15px;
+                    }
+                }
+
+                a {
+                    color:  $white;
+                    font-size: 19px;
+                }
+
+            } 
+        }
+
+        .container {
+            max-width: 1387px;
+            padding-top: 3em;
+            padding-bottom: 2em;
+        }
+
+        .container-fluid {
+            padding-left:3em !important;
+            padding-right: 3em !important;
+
+            .sidebar {
+                display: flex;
+                justify-content: center;
+                padding-left: 1em;
+                padding-right: 1em;
+                max-width: 626px;
+                margin: 0 auto;
+                width: 100%;
+            
+
+                ul {
+                    width: 500px;
                 }
             }
         }
     }
 
-    #sidebar {
+    section.page-banner  {
         display: none;
     }
 
-    .page-content {
+    .resource-wrapper {
 
-        .template-section {
+        .resource-container {
 
-            .inner-content {
-                text-align: center;
-
-               .resource-content-title {
-                font-family: inherit; 
-                font-size: 32px; 
-                font-weight: 400; 
-                line-height: 42px; 
-                letter-spacing: 0.04em;
-                text-transform: uppercase;
-
-                span {
-                    padding-bottom: 2em;
+            .sidebar {
+                padding: 20px;
+    
+                .resource-side-bar-links {
+                    ul li {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        padding: 10px;
+                        transition: 0.5s;
+    
+                        &:before {
+                            content: "\f061";
+                            font-size: 12px;
+                            font-family: fontawesome;
+                            color: $yellow-brand;
+                            padding-right: 17px;
+                            
+                        }
+    
+                        &:active {
+                            background-color: aqua;
+                        }
+    
+                        &:hover {
+                            background-color: $beige-light;
+                            opacity: 1;
+    
+                            a {
+                                text-decoration: none;
+                                color: $rich-black;
+                            }
+    
+                            &:before {
+                                color: $rich-black;
+                                margin-left: 15px;
+                            }
+                        }
+                        a {
+                            color:  $white;
+                            font-size: 19px;
+                        }
+    
+                    } 
                 }
-                
-               }
+            }
+
+            .content {
+
+                h2 {
+                    font-family: inherit; 
+                    font-size: 32px; 
+                    font-weight: 400; 
+                    line-height: 42px; 
+                    letter-spacing: 0.04em;
+                    text-transform: uppercase;
+                    color: $white;
+                }
             }
         }
-    }
-}
 
+        padding:4em;
+
+        &.black {
+            background-color: $rich-black;
+        }
+        
+    }
+
+
+
+}
