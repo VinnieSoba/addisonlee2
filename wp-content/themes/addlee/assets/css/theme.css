@@ -9918,6 +9918,11 @@ section.esg a.cta {
 .resource-template .prism-page {
   padding-top: 2em;
 }
+@media only screen and (max-width: 1000px) {
+  .resource-template .prism-page {
+    padding-top: 0;
+  }
+}
 .resource-template .prism-page .black {
   background-color: #000000;
 }
@@ -9957,6 +9962,11 @@ section.esg a.cta {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media only screen and (max-width: 991px) {
+  .resource-template .prism-page h2 {
+    text-align: left;
+  }
 }
 .resource-template .prism-page p {
   font-family: inherit;
@@ -10007,7 +10017,6 @@ section.esg a.cta {
   font-size: 19px;
 }
 .resource-template .prism-page .container {
-  max-width: 1387px;
   padding-top: 3em;
   padding-bottom: 2em;
 }
@@ -10026,6 +10035,11 @@ section.esg a.cta {
 }
 .resource-template .prism-page .container-fluid .sidebar ul {
   width: 500px;
+}
+@media only screen and (max-width: 400px) {
+  .resource-template .prism-page .prism-content iframe {
+    height: auto;
+  }
 }
 .resource-template section.page-banner {
   display: none;

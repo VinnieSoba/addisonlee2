@@ -34,7 +34,7 @@ endwhile;
 </ul>
 </div>
 
-<div class="col-md-8">
+<div class="col-md-8 prism-content">
 <?php
 
 while(have_rows( 'flexible_components' ) ) : the_row();
