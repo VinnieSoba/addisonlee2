@@ -10116,6 +10116,7 @@ section.esg a.cta {
 }
 .page-template-template-resources-hub .resource-hub-cont {
   background-color: #f7f7ef;
+  padding-top: 3em;
 }
 .page-template-template-resources-hub .resource-hub-cont #card-row {
   padding-bottom: 3em;
@@ -10136,6 +10137,7 @@ section.esg a.cta {
   position: relative;
   min-height: 80px;
   height: 100%;
+  padding: 12px;
 }
 .page-template-template-resources-hub .resource-hub-cont #card-row .card .card-body .card-title-cont {
   padding-top: 1em;

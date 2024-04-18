@@ -277,8 +277,8 @@
 
 
     .resource-hub-cont {
-
         background-color: $beige-light;
+        padding-top: 3em;
 
         #card-row {
             padding-bottom: 3em; 
@@ -300,6 +300,7 @@
                     position: relative;
                     min-height: 80px;
                     height: 100%;
+                    padding: 12px;
         
                     .card-title-cont {
                         padding-top: 1em;
