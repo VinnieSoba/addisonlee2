@@ -63,7 +63,7 @@ require get_template_directory() . '/assets/functions/thumbnails.php';
 /**
  * WPForms
  */
-//require get_template_directory() . '/assets/functions/wpforms.php';
+require get_template_directory() . '/assets/functions/wpforms.php';
 
 /**
  * Gravity Forms: re-push
@@ -110,3 +110,68 @@ add_filter( 'wpseo_opengraph_type', 'remove_yoast_meta_tags_from_sos_page' );
 add_filter( 'wpseo_opengraph_site_name', 'remove_yoast_meta_tags_from_sos_page' );
 
 add_theme_support( 'yoast-seo-breadcrumbs' );
+
+add_action( 'wp_enqueue_scripts', 'my_enqueue' );
+
+function my_enqueue() {
+
+  wp_enqueue_script( 'ajax-script', get_template_directory_uri() . '/js/vendor/test.js', array('jquery') );
+
+  wp_localize_script( 'ajax-script', 'my_ajax_object',
+          array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
+}
+
+
+
+function my_action() {
+    /**
+	 * frontend ajax requests.
+	 */
+  global $wpdb;
+  include(dirname( __FILE__ ) . '/templates/component-parts/component-get-all.php');
+  die();
+ 
+}
+
+add_action( 'wp_ajax_my_action', 'my_action' );
+
+add_action( 'wp_ajax_nopriv_my_action', 'my_action' );
+
+
+function get_web_results() {
+  global $wpdb;
+  include(dirname( __FILE__ ) . '/templates/component-parts/component-get-web.php');
+  die();
+}
+
+add_action( 'wp_ajax_get_web_results', 'get_web_results' );
+
+add_action( 'wp_ajax_nopriv_get_web_results', 'get_web_results' );
+
+
+function get_app_results() {
+
+  global $wpdb;
+  include(dirname( __FILE__ ) . '/templates/component-parts/component-get-app.php');
+  die();
+
+}
+
+add_action( 'wp_ajax_get_app_results', 'get_app_results' );
+
+add_action( 'wp_ajax_nopriv_get_app_results', 'get_app_results' );
+
+
+function get_prism_results() {
+
+  global $wpdb;
+  include(dirname( __FILE__ ) . '/templates/component-parts/component-get-prism.php');
+  die();
+
+}
+
+add_action( 'wp_ajax_get_prism_results', 'get_prism_results' );
+
+add_action( 'wp_ajax_nopriv_get_prism_results', 'get_prism_results' );
+
+
