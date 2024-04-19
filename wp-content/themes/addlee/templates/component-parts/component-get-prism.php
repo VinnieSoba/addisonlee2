@@ -31,7 +31,7 @@ WHERE
 p1.post_status='publish'
 AND p1.post_type='resource'
 AND wtx.taxonomy = 'category'
-AND wtm.term_id = 113
+AND wtm.term_id = 114
 ORDER BY wtm.term_id DESC
 LIMIT 0,10");
 $result = $wpdb->get_results($query);
