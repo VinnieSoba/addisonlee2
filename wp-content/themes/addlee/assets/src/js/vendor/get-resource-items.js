@@ -1,7 +1,15 @@
 
 (function($){
     $(document).ready(function () {
+
+        $('.makeactive').click(function(){
+            $('.makeactive').removeClass('selected');
+            $(this).addClass('selected');
+        });
+
         $("#get-all").click(function(e){
+            $('#get-all').removeClass('selected');
+            $(this).addClass('selected');
             e.preventDefault();
             $.ajax({
                 url: my_ajax_object.ajaxurl,
@@ -19,6 +27,7 @@
     // get web
 
     $("#get-web").click(function(e){
+        
         e.preventDefault();
         $.ajax({
             url: my_ajax_object.ajaxurl, 

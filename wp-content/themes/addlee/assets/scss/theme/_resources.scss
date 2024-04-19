@@ -380,11 +380,11 @@
                 li {
                     cursor: pointer;
                     margin-right: 30px;
+                }
 
-                    &.active {
-                        font-weight: bold;
-                        text-decoration: underline;
-                    }
+                .selected {
+                    font-weight: bold;
+                    border-bottom: solid 2px #000;    
                 }
             }
         }
@@ -394,12 +394,20 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
+            padding-right: 50px;
+
+            &:after {
+                content: url('/wp-content/uploads/2024/04/magnigying-glass.jpg');
+                height: 48px;
+                cursor: pointer;
+            }
 
             input {
                 width: 320px;
                 height: 48px;
                 background-color: #f7f7ef;
                 padding: 19px;
+                
             }
         }   
         

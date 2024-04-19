@@ -10197,14 +10197,20 @@ section.esg a.cta {
   cursor: pointer;
   margin-right: 30px;
 }
-.page-template-template-resources-hub .resource-hub-cont .category ul li.active {
+.page-template-template-resources-hub .resource-hub-cont .category ul .selected {
   font-weight: bold;
-  text-decoration: underline;
+  border-bottom: solid 2px #000;
 }
 .page-template-template-resources-hub .resource-hub-cont .search-form {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-right: 50px;
+}
+.page-template-template-resources-hub .resource-hub-cont .search-form:after {
+  content: url("/wp-content/uploads/2024/04/magnigying-glass.jpg");
+  height: 48px;
+  cursor: pointer;
 }
 .page-template-template-resources-hub .resource-hub-cont .search-form input {
   width: 320px;
