@@ -10128,27 +10128,21 @@ section.esg a.cta {
   margin-right: 43px;
   margin-bottom: 43px;
   width: 100%;
+  border: none;
+}
+.page-template-template-resources-hub .resource-hub-cont #card-row .card .card-header {
+  padding: 0;
 }
 .page-template-template-resources-hub .resource-hub-cont #card-row .card .card-image-cont {
   width: 100%;
-  height: 348px;
 }
 .page-template-template-resources-hub .resource-hub-cont #card-row .card .card-body {
   position: relative;
-  min-height: 80px;
+  min-height: 200px;
   height: 100%;
   padding: 12px;
 }
-.page-template-template-resources-hub .resource-hub-cont #card-row .card .card-body .card-title-cont {
-  padding-top: 1em;
-  padding-bottom: 2em;
-  max-height: 239px;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  width: 93%;
-}
-.page-template-template-resources-hub .resource-hub-cont #card-row .card .card-body .card-title-cont a.card-title {
+.page-template-template-resources-hub .resource-hub-cont #card-row .card .card-body a.card-title {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -10157,7 +10151,7 @@ section.esg a.cta {
   text-decoration: none;
   padding-bottom: 10px;
 }
-.page-template-template-resources-hub .resource-hub-cont #card-row .card .card-body .card-title-cont p {
+.page-template-template-resources-hub .resource-hub-cont #card-row .card .card-body p {
   padding-top: 12px;
 }
 .page-template-template-resources-hub .resource-hub-cont #card-row .card .card-body .tags {
@@ -10173,16 +10167,16 @@ section.esg a.cta {
   background-color: #fedb00;
   margin-bottom: 10px;
 }
-.page-template-template-resources-hub .resource-hub-cont #card-row .card .card-title-cont a.resources-btn {
+.page-template-template-resources-hub .resource-hub-cont #card-row .card a.resources-btn {
   color: #000000;
   font-weight: 700;
   font-size: 16px;
   text-decoration: none;
   position: absolute;
   bottom: 15px;
-  width: 100%;
+  width: 91%;
 }
-.page-template-template-resources-hub .resource-hub-cont #card-row .card .card-title-cont a.resources-btn:after {
+.page-template-template-resources-hub .resource-hub-cont #card-row .card a.resources-btn:after {
   content: "";
   font-family: fontawesome;
   position: absolute;

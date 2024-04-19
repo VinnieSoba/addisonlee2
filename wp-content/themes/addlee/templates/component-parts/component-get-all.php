@@ -1,5 +1,4 @@
 <?php
-
 global $wpdb;
 $query = $wpdb->prepare("
 SELECT p1.*, wm2.meta_value, wtx.taxonomy, wtm.term_id, name
@@ -35,31 +34,26 @@ AND wtx.taxonomy = 'category'
 ORDER BY wtm.term_id DESC
 LIMIT 0,10");
 $result = $wpdb->get_results($query);
-
 ?>
-
 
 <?php
 foreach ($result as $instance) {
     $image = $instance->meta_value;
     ?>
-    
     <div class="col-sm-6 col-md-3 col-lg-3 card">
-        <div class="card-img-top card-image-cont" style="background-size: inherit; background-repeat: no-repeat; background-image: url('http://localhost/addisonlee2/wp-content/uploads/<?php echo $image; ?>')"></div>
-        <div class="card-body">
-        <div class="card-title-cont"> 
-        <div class="tags">
-            <h6><?php echo $instance->name; ?></h6>
+        <div class="card-header">
+            <div class="card-img-top card-image-cont" style="background-size: cover; height: 175px; background-repeat: no-repeat; background-image: url('/wp-content/uploads/<?php echo $image; ?>')"></div>
         </div>
+        <div class="card-body">
+            <div class="tags">
+            <h6><?php echo $instance->name; ?></h6>
+            </div>
             <a class="card-title"><?php echo $instance->post_title; ?></a>
-            <p>Lorem ipsum text goes here</p>
+            <p><?php echo $instance->post_content; ?></p>
             <a href="<?php echo $instance->post_name; ?>" class="resources-btn btn-primary">See More</a>
         </div>
-        </div>
     </div>
-    
-    <?php
-    
+    <?php 
 }
 ?>
    
