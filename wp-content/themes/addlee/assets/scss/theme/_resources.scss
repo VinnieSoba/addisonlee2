@@ -305,7 +305,8 @@
                     .card-title-cont {
                         padding-top: 1em;
                         padding-bottom: 2em;
-                        height: 209px;
+                        max-height: 239px;
+                        height: 100%;
                         position: absolute;
                         bottom: 0;
                         width: 93%;
@@ -333,11 +334,12 @@
                         height: 24px;
                         top: 191px;
                         left: 16px;
-                        padding: 0px 12px 0px 12px;
+                        padding: 2px 12px;
                         gap: 0px;
                         border-radius: 16px;
-                        opacity: 1px;
+                        opacity: 1;
                         background-color: $yellow-brand;
+                        margin-bottom: 10px;
                         
                     }
                 }

@@ -10142,7 +10142,8 @@ section.esg a.cta {
 .page-template-template-resources-hub .resource-hub-cont #card-row .card .card-body .card-title-cont {
   padding-top: 1em;
   padding-bottom: 2em;
-  height: 209px;
+  max-height: 239px;
+  height: 100%;
   position: absolute;
   bottom: 0;
   width: 93%;
@@ -10165,11 +10166,12 @@ section.esg a.cta {
   height: 24px;
   top: 191px;
   left: 16px;
-  padding: 0px 12px 0px 12px;
+  padding: 2px 12px;
   gap: 0px;
   border-radius: 16px;
-  opacity: 1px;
+  opacity: 1;
   background-color: #fedb00;
+  margin-bottom: 10px;
 }
 .page-template-template-resources-hub .resource-hub-cont #card-row .card .card-title-cont a.resources-btn {
   color: #000000;

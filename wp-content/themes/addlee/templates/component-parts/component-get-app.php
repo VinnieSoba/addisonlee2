@@ -44,10 +44,10 @@ foreach ($result as $instance) {
     <div class="col-sm-6 col-md-3 col-lg-3 card">
         <div class="card-img-top card-image-cont" style="background-size: inherit; background-repeat: no-repeat; background-image: url('http://localhost/addisonlee2/wp-content/uploads/<?php echo $image; ?>')"></div>
         <div class="card-body">
-        <div class="tags">
-            <?php echo $instance->name; ?>
-        </div>
         <div class="card-title-cont"> 
+            <div class="tags">
+                <h6><?php echo $instance->name; ?></h6>
+            </div>
                 <a class="card-title"><?php echo $instance->post_title; ?></a>
                 <p>Lorem ipsum text goes here</p>
                 <a href="<?php echo $instance->post_name; ?>" class="resources-btn btn-primary">See More</a>
