@@ -1,7 +1,5 @@
-
 (function($){
     $(document).ready(function () {
-
         $('.makeactive').click(function(){
             $('.makeactive').removeClass('selected');
             $(this).addClass('selected');
@@ -25,7 +23,6 @@
     
 
     // get web
-
     $("#get-web").click(function(e){
         
         e.preventDefault();
@@ -77,7 +74,6 @@
 
     });
     
- 
 });    
 
 
@@ -85,6 +81,7 @@
 
 // search and filter by title
 function search() {
+    console.log('filter works');
     var input, filter, div,li, a, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
@@ -94,9 +91,9 @@ function search() {
         a = li[i].getElementsByTagName("a")[0];
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+        li[i].style.display = "";
         } else {
-            li[i].style.display = "none";
+        li[i].style.display = "none";
         }
     }
 }
