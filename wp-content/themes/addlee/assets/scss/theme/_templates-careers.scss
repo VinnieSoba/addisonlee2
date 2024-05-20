@@ -122,10 +122,7 @@
                 
         
     }
-    
 
-
-   
 
     .current-vacancies {
         margin-bottom: 2em;
@@ -201,6 +198,25 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+                padding: 0px 40px 40px 40px;
+
+                @media only screen and (max-width : 500px) {
+                    padding: 0px;
+                }
+
+                h3 {
+                    min-height: 91px;
+                    text-align: center;
+                    line-height: 1.5;
+                }
+
+                p {
+                    text-align: center;
+
+                    @media only screen and (max-width : 500px) {
+                        padding-bottom: 50px;
+                    }
+                }
 
             }
            
@@ -209,7 +225,7 @@
         &--cont {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
 
             h2 {
                 text-transform: inherit;
@@ -219,6 +235,10 @@
             @media only screen and (max-width : 992px) {
                 display: block;
                 padding: 50px;
+            }
+
+            @media only screen and (max-width : 500px) {
+                padding: 0px;
             }
         }
 

@@ -6451,7 +6451,7 @@ span.icon-search {
   /* .page-banner.home-hero */
 }
 .home .page-banner.home-hero {
-  background-position: center center;
+  background-position: inherit;
   height: auto;
   display: flex;
   justify-content: center;
@@ -6500,13 +6500,10 @@ span.icon-search {
   width: 100%;
   height: fit-content;
   height: -moz-fit-content;
-  margin-left: 5vw;
-  margin-top: 50px;
-  margin-top: clamp(40px, 6vw, 100px);
-  margin-bottom: 50px;
-  margin-bottom: clamp(40px, 6vw, 100px);
+  margin-left: 2vw;
+  margin-top: clamp(45px, 19vw, 268px);
+  margin-bottom: clamp(51px, 5vw, 118px);
   align-self: center;
-  padding: 40px;
   color: #000000;
   display: flex;
   flex-direction: column;
@@ -6517,9 +6514,9 @@ span.icon-search {
 }
 @media (min-width: 545px) {
   .home .page-banner.home-hero .content-header .container {
-    width: 35vw;
-    min-width: 460px;
-    max-width: 600px;
+    width: 20vw;
+    min-width: 364px;
+    max-width: 533px;
   }
 }
 @media (max-width: 544px) {
@@ -6531,7 +6528,7 @@ span.icon-search {
 .home .page-banner.home-hero .content-header h1 {
   height: auto;
   color: #000000;
-  font-size: 2.85em;
+  font-size: 28px;
   text-align: left;
   font-weight: 300;
   line-height: 1.2;
@@ -10380,11 +10377,30 @@ section.esg a.cta {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0px 40px 40px 40px;
+}
+@media only screen and (max-width: 500px) {
+  .page-template-template-careers .teams-page--wrapper .items {
+    padding: 0px;
+  }
+}
+.page-template-template-careers .teams-page--wrapper .items h3 {
+  min-height: 91px;
+  text-align: center;
+  line-height: 1.5;
+}
+.page-template-template-careers .teams-page--wrapper .items p {
+  text-align: center;
+}
+@media only screen and (max-width: 500px) {
+  .page-template-template-careers .teams-page--wrapper .items p {
+    padding-bottom: 50px;
+  }
 }
 .page-template-template-careers .teams-page--cont {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .page-template-template-careers .teams-page--cont h2 {
   text-transform: inherit;
@@ -10394,6 +10410,11 @@ section.esg a.cta {
   .page-template-template-careers .teams-page--cont {
     display: block;
     padding: 50px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .page-template-template-careers .teams-page--cont {
+    padding: 0px;
   }
 }
 .page-template-template-careers .benefits-section {
