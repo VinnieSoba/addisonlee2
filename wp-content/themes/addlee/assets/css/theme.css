@@ -15957,7 +15957,6 @@ MESSAGE BANNER
     justify-content: start;
     padding-left: 0px;
     display: flex;
-    margin-left: 75px;
   }
 }
 .awards-container--wrapper .item-card {
@@ -16008,15 +16007,20 @@ MESSAGE BANNER
 .awards-container .left {
   justify-content: flex-start;
   padding: 70px;
-}
-@media screen and (max-width: 420px) {
-  .awards-container .left {
-    padding: 0;
-  }
+  /*@media screen and (max-width: 420px) {
+     padding: 0;
+  }*/
 }
 @media screen and (max-width: 1000px) {
   .awards-container .left {
     justify-content: center;
+  }
+}
+@media screen and (min-width: 421px) and (max-width: 1000px) {
+  .awards-container .left {
+    margin: 0 auto;
+    width: 84%;
+    max-width: min-content;
   }
 }
 .awards-container .right {
@@ -16033,5 +16037,6 @@ MESSAGE BANNER
   .awards-container .none {
     margin: 0 auto;
     width: 84%;
+    max-width: min-content;
   }
 }
