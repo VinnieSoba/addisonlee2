@@ -161,9 +161,9 @@
     }
 
     .none {
-        @media screen and ( max-width: 1000px) {
+        @media screen and (min-width: 400px) and  ( max-width: 1000px) {
             margin: 0 auto;
-            width: 76%;
+            width: 84%;
             
         }
     }

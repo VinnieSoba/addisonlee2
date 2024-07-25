@@ -16027,9 +16027,9 @@ MESSAGE BANNER
     padding: 0;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 400px) and (max-width: 1000px) {
   .awards-container .none {
     margin: 0 auto;
-    width: 76%;
+    width: 84%;
   }
 }
