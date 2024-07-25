@@ -15954,8 +15954,10 @@ MESSAGE BANNER
 }
 @media screen and (min-width: 500px) and (max-width: 1000px) {
   .awards-container--wrapper__single-item {
-    justify-content: flex-start;
-    padding-left: 118px;
+    justify-content: start;
+    padding-left: 0px;
+    display: flex;
+    margin-left: 75px;
   }
 }
 .awards-container--wrapper .item-card {
