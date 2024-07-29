@@ -433,6 +433,7 @@ section.esg {
                             letter-spacing: 3.84px;
                             text-transform: inherit;
                             text-align: center;
+                            min-height: 120px;
 
                             @media screen and (max-width: 1000px) {
                                 padding-top: 2em;
@@ -486,6 +487,7 @@ section.esg {
 
         .flexi.multi .row .panel:last-child.info-blocks, .flexi.multi .row .panel:nth-child(even).info-blocks {
             border-right: none;
+            border-left: none;
         }
 
         h2 span {
@@ -499,6 +501,7 @@ section.esg {
             letter-spacing: normal;
         }
        
+
         .container-fluid {
             position: relative;
 
@@ -834,8 +837,13 @@ section.esg {
                     width: 79%;
                 }
 
-                @media screen and (min-width: 401px) and (max-width: 999px) {
+                @media screen and (min-width: 1000px) and (max-width: 1320px) {
+                    background-size: contain;
+                }
+
+                @media screen and (min-width: 306px) and (max-width: 999px) {
                     width: 73%;
+                    background-size: contain;
                 }
                
             }
@@ -1082,7 +1090,7 @@ section.esg {
                         &:nth-child(1) {
                             position: absolute;
                             left: 60px;
-
+                            top: -16px;
                             @media screen and (max-width: 1400px) {
                                 margin-top: 3em;
                                 .item-card {
@@ -1245,7 +1253,7 @@ section.esg {
                             justify-content: center;
                             position: absolute;
                             right: 632px;
-                            top: 450px;
+                            top: 429px;
                              .item-card {
                                  &--content {
                                      width: 200px;
@@ -1254,7 +1262,7 @@ section.esg {
 
 
                              @media screen and (max-width: 1400px) {
-                                top:482px;
+                                top:437px;
                                 right: 494px;
                              }
 
@@ -1270,7 +1278,7 @@ section.esg {
                             justify-content: center;
                             position: absolute;
                             right: 280px;
-                            top: 474px;
+                            top: 483px;
 
                             .item-card {
                                 &--content {
@@ -1295,7 +1303,7 @@ section.esg {
                             justify-content: end;
                             position: absolute;
                             right: 0;
-                            top: 460px;
+                            top: 441px;
                             .item-card {
                                 &--content {
                                     width: 200px;
@@ -1304,7 +1312,7 @@ section.esg {
 
                             @media screen and (max-width: 1400px) {
                                 width: 300px;
-                                top: 486px;
+                                top: 438px;
                                 
                             }
 

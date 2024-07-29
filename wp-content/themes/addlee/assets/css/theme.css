@@ -9240,6 +9240,7 @@ section.esg a.cta {
 .roadmap--container .container .item-card--wrapper:nth-child(1) {
   position: absolute;
   left: 60px;
+  top: -16px;
 }
 @media screen and (max-width: 1400px) {
   .roadmap--container .container .item-card--wrapper:nth-child(1) {
@@ -9390,14 +9391,14 @@ section.esg a.cta {
   justify-content: center;
   position: absolute;
   right: 632px;
-  top: 450px;
+  top: 429px;
 }
 .roadmap--container .container .item-card--wrapper:nth-child(9) .item-card--content {
   width: 200px;
 }
 @media screen and (max-width: 1400px) {
   .roadmap--container .container .item-card--wrapper:nth-child(9) {
-    top: 482px;
+    top: 437px;
     right: 494px;
   }
 }
@@ -9412,7 +9413,7 @@ section.esg a.cta {
   justify-content: center;
   position: absolute;
   right: 280px;
-  top: 474px;
+  top: 483px;
 }
 .roadmap--container .container .item-card--wrapper:nth-child(10) .item-card--content {
   width: 200px;
@@ -9435,7 +9436,7 @@ section.esg a.cta {
   justify-content: end;
   position: absolute;
   right: 0;
-  top: 460px;
+  top: 441px;
 }
 .roadmap--container .container .item-card--wrapper:nth-child(11) .item-card--content {
   width: 200px;
@@ -9443,7 +9444,7 @@ section.esg a.cta {
 @media screen and (max-width: 1400px) {
   .roadmap--container .container .item-card--wrapper:nth-child(11) {
     width: 300px;
-    top: 486px;
+    top: 438px;
   }
 }
 @media screen and (max-width: 1000px) {
