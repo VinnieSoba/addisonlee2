@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
                 const b = localStorage.getItem('utm_medium');
                 const c = localStorage.getItem('utm_campaign');
 
-            window.location.href = 'https://preview.addisonlee.com/al/booking/new/airport_pickup?utm_source=' + a + '&utm_medium=' + b + '&utm_campaign='+ c +'';
+            window.location.href = 'https://book.addisonlee.com/al/booking/new/airport_pickup?utm_source=' + a + '&utm_medium=' + b + '&utm_campaign='+ c +'';
             console.log('send to booking site', utmSource);
             console.log('send to booking', utmCampaign);
             console.log('sendto booking site', utmMedium);
